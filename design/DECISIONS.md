@@ -13,9 +13,20 @@ A running log of significant choices made, why, and which ones belong to the pro
 | D-05 | Contemporary Irish figures carry an "as of" date, with October 2026 the latest | Homelessness, the triple lock bill and polling change monthly | n/a |
 | D-06 | The EU, the North and the party question are presented as options with trade-offs, not resolved | The brief says so explicitly, and the research shows each has a serious case on more than one side | n/a |
 
+## Decisions made (Phase 1b — FM-16/17/18 and the options outline)
+
+| # | Decision | Why | Reversible? |
+|---|---|---|---|
+| D-07 | FM-16 was rewritten around three positions (degrowth, eco-modernist socialism, Half-Earth). Its "What the literature suggests" section lists only the *common ground* (physical budgets, an independent ecological body, electrification first, public luxury, a just transition for farmers). The throughput disagreement is left for you | You asked for the debate, not a verdict. The common ground is real and is enough to design institutions | Yes |
+| D-08 | Added FM-17 (legitimacy decay / "grey socialism") and FM-18 (social-reproduction failure), as requested. Total is now 18 | As requested. Both produced concrete mechanisms: privilege-free rationing, price formulas, design budgets; care counted in the plan, reserved parental leave, entrenched reproductive rights | Yes |
+| D-09 | Included Kern & Hainmueller (2009) in FM-17 even though it cuts against a common left assumption | It is the best causal evidence on everyday legitimacy in the GDR. Leaving it out would be selective | n/a |
+| D-10 | Proposed a ninth open question (Q9: the ecological commitment) | It came out of the FM-16 research and is a genuine choice. You can drop it | Yes — your call |
+| D-11 | Scored options with `++ / + / 0 / − / −− / ?` and a reason for every cell, and did **not** total the scores | Totals would imply equal weights across failure modes, which is itself a value judgement you should make | Yes |
+| D-12 | Irish names in the outline are marked provisional | I am not a reliable authority on Irish grammar; they need a fluent speaker's check | n/a |
+
 ## Choices I think you should make yourself
 
-These are flagged in `research/SYNTHESIS.md` Part C. Each will be laid out as a comparison against the failure modes in the Phase 2 outline.
+These are flagged in `research/SYNTHESIS.md` Part C and set out side by side, with scores and costs, in [`PHASE2-OUTLINE.md`](PHASE2-OUTLINE.md).
 
 1. **The party question.** Vanguard with internal democracy / multi-party socialist pluralism / open pluralism including pro-capitalist parties / no-party councils.
 2. **Entrenchment vs reversibility of social ownership.** How hard should a future majority find it to undo?
@@ -25,3 +36,4 @@ These are flagged in `research/SYNTHESIS.md` Part C. Each will be laid out as a 
 6. **Separation of powers vs Commune-style fusion** of legislature and executive.
 7. **Market share of the consumer economy.** Nove-heavy ↔ parecon-heavy.
 8. **Name and tone.** "Poblacht na nOibrithe" (Workers' Republic) is your working title. Is it final? A name centred on "workers" may affect how it reads to farmers, carers and people in the North. Worth considering.
+9. **(Proposed) The ecological commitment.** Falling throughput / decarbonisation only / binding physical budgets with the mix left open / a Half-Earth land target.

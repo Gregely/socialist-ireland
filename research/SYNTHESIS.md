@@ -1,6 +1,6 @@
 # SYNTHESIS — How socialist states fail, and what might stop it
 
-This is the backbone of the project. Each **failure mode** gets a stable ID (FM-xx). In Phase 2 every institution's *Safeguards* block will reference these IDs, and the site's "How it fails" section and institution map will key off them.
+This is the backbone of the project. There are 18 failure modes (FM-16 was expanded and FM-17 and FM-18 were added in the second pass). Each **failure mode** gets a stable ID (FM-xx). In Phase 2 every institution's *Safeguards* block will reference these IDs, and the site's "How it fails" section and institution map will key off them.
 
 For each failure mode:
 
@@ -412,22 +412,129 @@ For each failure mode:
 
 ### FM-16 · Ecological overshoot (productivism)
 
-**Cases.** The Aral Sea, as a Soviet planning example ([source note above](#fm-05--planning-breakdown-the-knowledge-problem); scholarly sourcing still needed). Ireland's own over-reliance on the herd and data centres ([08](08-ireland-today.md)). *This mode is under-researched; see the gaps.*
+**Cases.**
+
+- Soviet productivism. The Aral Sea: cotton irrigation, leaky canals and catastrophic shrinkage; Feshbach & Friendly, *Ecocide in the USSR* (1992) ([09](09-ecology-and-growth.md)). Exact volume figures are still unverified.
+- Cuba's Special Period: degrowth by necessity. Calories fell from about 2,900 to about 1,800 a day, and urban agroecology filled part of the gap ([09](09-ecology-and-growth.md)).
+- Ireland today ([09 §3](09-ecology-and-growth.md)):
+  - agriculture is 38% of greenhouse-gas emissions, from a 6.9 m cattle herd;
+  - data centres use 23% of metered electricity;
+  - Dublin Airport's passenger cap is being lifted (36.4 m passengers last year);
+  - transport is 21.7% of emissions;
+  - food waste is 835,000 t;
+  - forestry planting runs at about a third of target.
 
 **Root causes.**
 
-1. Growth targets used as the measure of legitimacy.
-2. Ecological costs that no institution represents.
-3. Local livelihoods tied to extractive sectors.
+1. Output growth used as the measure of legitimacy, in planned and market economies alike.
+2. No institution represents ecological limits with real power. The Soviet press and civil society could not raise the alarm.
+3. Local livelihoods are tied to extractive sectors (the herd).
+4. A political offer of "more stuff" that sufficiency cannot match (Huber's challenge to degrowth).
+5. Physical limits set as prices only, so whoever can pay can still overshoot.
 
-**What the literature suggests** (to be fully sourced in Phase 2):
+**What the literature suggests.** The positions differ ([09 §1](09-ecology-and-growth.md)):
 
-- Binding physical caps set politically: emissions, water, land use.
-- A standing ecological body with a veto, or a referral power to a citizens' assembly.
-- "Public luxury, private sufficiency".
-- Just-transition guarantees for affected workers and farmers.
+- **Degrowth.** Hickel and Saito: planned reduction of aggregate throughput in rich countries. Hickel & Kallis (2020) find no evidence of absolute decoupling at the necessary speed.
+- **Eco-modernist socialism.** Huber: electrify everything under public ownership and win the working class with material gains.
+- **Half-Earth.** Vettese & Pendergrass: rewild half the land, a vegan diet and per-person energy quotas; no nuclear, no geoengineering.
 
-**Residual tension.** Caps on the herd and data centres hit rural incomes and public revenue. Those are exactly the constituencies whose loss drives FM-14 and FM-11.
+What they share, and what the design can adopt without picking a side:
+
+- binding **physical budgets**, set politically and enforced as quantities;
+- an **independent ecological institution** with a suspensive veto (the piece Soviet planning lacked);
+- **electrification first**;
+- "**private sufficiency, public luxury**" as the political offer (Monbiot; Saito's redefinition of wealth);
+- a **generous just transition for farmers**: guaranteed income, payment for stewardship, re-mutualised processing, representation by right.
+
+**Residual tension.**
+
+- Caps on the herd and data centres hit rural incomes and public revenue. Those are exactly the constituencies whose loss drives FM-14 and FM-11.
+- Sufficiency pulls against variety and consumer pleasure (FM-17).
+- **The throughput question is flagged for the user** (Part C, item 9).
+
+---
+
+### FM-17 · Legitimacy decay / "grey socialism"
+
+**Cases** ([10](10-legitimacy-and-everyday-life.md)):
+
+- **Late-Soviet ritualised participation.** Yurchak's "performative shift": people kept performing official language while its meaning stopped mattering, until a system that "was forever" suddenly wasn't.
+- **The GDR's two-tier consumption.** Trabant waiting lists of 13 or more years; Intershop goods for hard currency only; Czechoslovakia's Tuzex.
+- **The Kitchen Debate (1959).** Socialism let capitalism set the terms of the contest (consumer goods) and lost on them.
+- **Poland 1970 and 1980.** Price rises set by the state turned everyday grievance into revolt against the state, ending in Solidarność.
+- **A counter-intuitive datum.** Kern & Hainmueller (2009): East Germans *with* West German TV were *more* satisfied with the regime. They watched for entertainment, and enjoyment stabilised the system.
+
+**Root causes.**
+
+1. Rituals of participation emptied of consequence (links to FM-08).
+2. Scarcity and poor quality in *visible, desirable* goods (FM-06).
+3. Access by connection or hard currency, which is worse than equal scarcity.
+4. Comparison with richer neighbours.
+5. Administered prices make the state the target of every grievance.
+6. Neglect of beauty and design; Morris's warning against an "efficient drabness" socialism like Bellamy's.
+7. A sacrificial political offer that leaves desire to capitalism (Fisher).
+8. Target and audit culture that teaches performed compliance. Fisher calls the capitalist version "market Stalinism".
+
+**What the literature suggests.**
+
+- Morris: pleasure in work and *"the ornamental part of life"* as core goals, not luxuries for later.
+- Fisher: *"disarticulate desire from capitalism"*. Offer free time, collective joy and novelty, not sacrifice.
+- Public luxury that is actually luxurious, with design budgets protected.
+- Open, rule-based rationing where scarcity remains. **Never** a privilege or hard-currency tier.
+- Markets kept where variety matters (food, clothing, music, craft, hospitality).
+- Full cultural openness.
+- Few binding assemblies rather than many symbolic ones.
+- Price changes by published formula with compensation built in.
+- Few, rotating, democratically chosen indicators instead of target culture.
+
+**Residual tension.**
+
+- Variety and consumer pleasure pull against ecological sufficiency (FM-16).
+- Whether *public* abundance can satisfy people raised on *private* consumption is plausible but unproven.
+- A democratic system can lose legitimacy and be voted out. The design must accept that rather than prevent it (FM-12 vs FM-02).
+
+---
+
+### FM-18 · Social-reproduction failure / the "double burden"
+
+**Cases** ([11](11-social-reproduction.md)):
+
+- **The promise.** Lenin (1919): housework *"crushes, strangles, stultifies and degrades her"*. Kollontai (1920): communal kitchens and central laundries.
+- **The reversal.** Abortion was legalised in 1920, charged for from 1930 and banned in 1936 as a pronatalist measure. Births rose, and so did maternal and infant mortality.
+- **The double burden.**
+  - Soviet time-budget surveys (1920s and 1960s–70s) and the 1970s *Soviet Studies* debate: housework still fell overwhelmingly on women.
+  - The GDR: 78–91% of women employed, with an extensive crèche network, yet housework stayed women's work.
+  - The "reprivatisation" of women's lives from the 1970s.
+- **Ireland.**
+  - The Constitution's Art. 41.2 ("woman in the home") survived the 2024 care referendum, rejected 73.9% No, partly because the replacement offered no material guarantee.
+  - 299,128 unpaid carers (61% women).
+  - Childcare costs among Europe's highest.
+  - No national time-use survey since 2005.
+  - The marriage bar lasted until 1973–74.
+
+**Root causes.**
+
+1. Socialised care was underfunded relative to "productive" investment, because care did not count in the plan.
+2. The state changed women's role and not men's.
+3. Reproduction was treated as a demographic resource of the state.
+4. Care is not measured, so it is not planned.
+5. Leaderships were male (needs sourcing).
+
+**What the literature suggests.**
+
+- Count care: a regular official time-use survey, and care investment planned alongside production.
+- Socialise what people *want* socialised, and fund it properly: universal childcare; good canteens and food halls (which meets FM-17 too); home care; well-paid, unionised care workers.
+- Change men's role: a shorter standard week; non-transferable, well-paid parental leave for each parent; care counted as civic service.
+- Reproductive autonomy as an entrenched constitutional right.
+- A care constituency in planning bodies.
+- An enforceable right to receive and give care, worded *with* carers' and disability organisations.
+- Lineage: Ghodsee on economic independence; Wages for Housework and Federici; social reproduction theory (Bhattacharya); Ireland's own Thompson & Wheeler, *Appeal* (1825).
+
+**Residual tension.**
+
+- Socialised care can slide into institutionalisation, a fear sharpened by Ireland's history of laundries and mother-and-baby homes. Many people want to care for their own family members.
+- "Choice with support" (public services *and* an income for home carers) is expensive.
+- Paying for care risks turning family relationships into wage relationships, Federici's own dilemma.
 
 ---
 
@@ -444,6 +551,9 @@ For each failure mode:
 9. **Sunset everything coercive.** (FM-04, FM-15.)
 10. **Irish roots without nationalist capture.** 1919, the soviets, Connolly and Thompson as lineage; civic membership and GFA-style protection of identity. (FM-14.)
 11. **Legality as defence.** Transition through Art. 46 and referendum; the 1937 plebiscite as precedent. (FM-10.)
+12. **Physical limits as quantities, set democratically and watched independently.** Carbon, nitrogen, land and electricity budgets, with an ecological body holding a suspensive veto. (FM-05, FM-16.)
+13. **Public luxury, private sufficiency, and beauty.** Public goods that are genuinely good; design and culture budgets protected; no privilege tier; free time as the headline good. (FM-16, FM-17.)
+14. **Care is counted, planned and shared.** Care appears in the national accounts and in the plan; universal services; non-transferable parental leave; reproductive autonomy entrenched. (FM-18, FM-07.)
 
 ## Part C — Open tensions I will NOT resolve silently (for your decision)
 
@@ -453,13 +563,18 @@ For each failure mode:
 4. **The EU.** Options: work within; negotiated derogations; exit; selective non-compliance ([08 §10](08-ireland-today.md)).
 5. **Binding sortition.** Should randomly selected bodies have binding powers (veto, agenda-setting) or stay advisory?
 6. **Separation of powers vs the Commune's fusion** of legislature and executive. The literature leans toward keeping independent courts at least.
-7. **Markets.** How much of the consumer economy stays market-based? There is a dial from Nove-heavy to parecon-heavy.
+7. **Markets.** How much of the consumer economy stays market-based? There is a dial from Nove-heavy to parecon-heavy. FM-17 now pulls toward more markets for variety, and FM-16 toward less consumption.
+8. **The name.** Is "Poblacht na nOibrithe" right?
+9. **Ecological commitment** (new, from FM-16): should the constitution commit to falling throughput, to decarbonisation only, or to binding physical budgets with the mix left to democratic choice? *This was added to the Phase 2 outline as a ninth question because it emerged from the new research. It is the user's to drop or keep.*
 
-## Part D — Gaps remaining after Phase 1
+All of these are set out as side-by-side options in [`design/PHASE2-OUTLINE.md`](../design/PHASE2-OUTLINE.md).
+
+## Part D — Gaps remaining after Phase 1 (updated after the FM-16/17/18 pass)
 
 These are flagged so they are not mistaken for settled claims:
 
 - **Not yet sourced:** the German Stasi Records Act; the conversion of the Irish co-op creameries (IAOS → PLCs); Vienna's social housing; the Sláintecare report itself; self-determination theory and the four-day-week trials; Italian and Mondragon indivisible reserves; Pinochet as Allende's appointee; the exact text of Art. 29.4.6.
 - **Weakly sourced and needing scholarly backup:** the Aral Sea figures; the Cuban "133,000 meetings"; Fagor job-loss numbers (sources conflict); the Porto Alegre "World Bank evaluation" (not found); the soviets' 25% share in the factory-committee federation (anarchist source only).
 - **Not researched:** Rojava's current status after the events of 2024–26 in Syria; the ICJ *Nicaragua* holdings (case page linked, text not checked); the Venezuelan communal councils (a possibly useful further case); Allende-era nationalisation of copper; post-1991 Cuban reforms.
-- **Books cited from reviews, not read directly:** Siegelbaum (Stakhanovism); Medina (Cybersyn); Van Reybrouck; Woodward; Kotz & Weir; Isaac & Franke. Claims attributed to them are as reported in the linked reviews and summaries.
+- **New gaps from the FM-16/17/18 pass:** Ireland's aviation emissions per head; the SUV share of new cars; the Irish advertising and fast-fashion figures; one-off housing; vegetable import dependence; hours-per-week figures for Soviet and GDR women's housework (see Mespoulet); a direct Fisher passage on Soviet "greyness" (none found, so don't attribute one); Yurchak's own definition of "hypernormalisation"; the Nordic "daddy quota"; the Magdalene laundries and mother-and-baby homes (needs careful, sourced treatment).
+- **Books cited from reviews, not read directly:** Siegelbaum (Stakhanovism); Medina (Cybersyn); Van Reybrouck; Woodward; Kotz & Weir; Isaac & Franke; Hickel; Saito; Huber; Vettese & Pendergrass; Yurchak; Ghodsee; Bhattacharya; Bren & Neuburger. Claims attributed to them are as reported in the linked reviews and summaries.

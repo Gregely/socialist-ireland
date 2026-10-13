@@ -14,6 +14,9 @@ Phase 1 research for an interactive constitutional design for a democratic socia
 | [06-positive-models.md](06-positive-models.md) | Paris Commune, soviets, Yugoslav self-management, Cybersyn, Kerala, Rojava, Cuba 2019, Mondragon, Porto Alegre, citizens' assemblies, sortition |
 | [07-irish-lineage.md](07-irish-lineage.md) | The 1919 Democratic Programme, Limerick and the soviets of 1919–23, Connolly, William Thompson, Ralahine |
 | [08-ireland-today.md](08-ireland-today.md) | Bunreacht na hÉireann, local government, FDI and corporation tax, housing, health, the herd, data centres, energy, the Irish language, neutrality, the EU, the North |
+| [09-ecology-and-growth.md](09-ecology-and-growth.md) | Degrowth (Hickel, Saito) vs eco-modernist socialism (Huber) vs Half-Earth (Vettese & Pendergrass); the Soviet record; Ireland sector by sector |
+| [10-legitimacy-and-everyday-life.md](10-legitimacy-and-everyday-life.md) | "Grey socialism": Yurchak, the GDR's consumer goods and Intershop, the Kitchen Debate, Poland's price revolts, Kern & Hainmueller; Morris and Fisher |
+| [11-social-reproduction.md](11-social-reproduction.md) | The double burden: Lenin and Kollontai's promise, the 1936 reversal, the GDR; Ghodsee, Wages for Housework; Ireland's Art. 41.2, carers and childcare |
 | [SYNTHESIS.md](SYNTHESIS.md) | **The backbone.** Each failure mode with its historical cases, root causes and what the literature suggests would prevent it |
 
 ## Method and honesty notes
