@@ -76,6 +76,12 @@
   background-image: radial-gradient(var(--rule) 1px, transparent 1px);
   background-size: 22px 22px;
 }
+@media (max-width: 700px) {
+  .map-svg {
+    aspect-ratio: 3 / 4;
+    max-height: 70vh;
+  }
+}
 .map-svg:active {
   cursor: grabbing;
 }

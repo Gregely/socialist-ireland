@@ -491,7 +491,7 @@ export default function map(main, { params }) {
   if (state.selected || narrow) {
     const { x, y } = state.selected ? NODES[state.selected].pos : NODES.people.pos;
     const w = narrow ? 720 : 1300;
-    const h = (w * VIEW.h) / VIEW.w;
+    const h = narrow ? (w * 4) / 3 : (w * VIEW.h) / VIEW.w; // portrait pane on phones
     state.view = { x: Math.max(0, x - (narrow ? w / 2 : w * 0.28)), y: Math.max(0, y - h / 3), w, h };
     setView();
   }
