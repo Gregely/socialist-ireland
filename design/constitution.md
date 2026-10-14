@@ -63,7 +63,7 @@ Do hereby adopt, enact and give to ourselves this Constitution, amending the Con
 3. Every person born on the island of Ireland is entitled to be part of the Irish nation and to hold Irish citizenship, and has the right to identify as Irish, British or both.
 4. Nothing in this Constitution asserts any jurisdiction over Northern Ireland.
 
-> **Why.** Owner's answer to Q3: the 26 counties first, no unity by imposition, and the constitution states the offer and the principle of consent, not the outcome. Clause 1 adapts the existing Article 3, approved by referendum in 1998. Clause 3 carries over the Good Friday Agreement's protection of identity. **Guards against:** FM-14 (socialism subordinated to the national question, or the national question turned into a weapon), FM-13. **Residual risk:** a socialist South next to a capitalist North means two economic systems across an open border. **Sources:** [08 §11](research/08-ireland-today.md); [Arts. 2 and 3](https://en.wikipedia.org/wiki/Articles_2_and_3_of_the_Constitution_of_Ireland).
+> **Why.** Owner's answer to Q3: the 26 counties first, no unity by imposition, and the constitution states the offer and the principle of consent, not the outcome. Clause 1 adapts the existing Article 3, approved by referendum in 1998. Clause 3 carries over the Good Friday Agreement's protection of identity. **Guards against:** FM-14 (socialism subordinated to the national question, or the national question turned into a weapon), FM-13. **Residual risk:** a socialist South next to a capitalist North means two economic systems across one border, and since the republic is outside the EU (Art. 104) that border is also the EU's external frontier for goods (Art. 107). Clause 2 lets a convention propose any constitution, including one for an island inside the EU; the republic's own choice does not bind it. See [13 §4.7](research/13-leaving-the-eu.md). **Sources:** [08 §11](research/08-ireland-today.md); [Arts. 2 and 3](https://en.wikipedia.org/wiki/Articles_2_and_3_of_the_Constitution_of_Ireland).
 
 ### Article 4 — Languages {standard}
 
@@ -291,7 +291,7 @@ Do hereby adopt, enact and give to ourselves this Constitution, amending the Con
 2. The party holds no reserved seat, veto, power of appointment, or right of command over any organ of State, council, enterprise or union. Its leading role is political and must be won at each election against independent candidates.
 3. Any citizen may join or leave the party freely. Membership confers no advantage in public employment, housing, education or any public service, and to give or seek such advantage is an offence.
 
-> **Why.** The owner's answer to Q1: a leading socialist party with guaranteed internal democracy; not open multi-party competition; pro-capitalist parties are not part of the political order after the transition. **This is the riskiest choice in the design** against FM-02 and FM-17, and this Article is where political association is restricted. Clause 2 means the party's leading role is never a matter of law; clause 3 abolishes the nomenklatura's career ladder. **Guards against (partially):** FM-01, FM-02, FM-13. **Thinnest points:** an organised party competing against unorganised individuals wins most contests, so this can become a monopoly in practice; and a pro-market minority with speech but no electoral vehicle may lose faith in the system or go underground. See the Choices page.
+> **Why.** The owner's answer to Q1: a leading socialist party with guaranteed internal democracy; not open multi-party competition; pro-capitalist parties are not part of the political order after the transition. **This is the riskiest choice in the design** against FM-02 and FM-17, and this Article is where political association is restricted. Clause 2 means the party's leading role is never a matter of law; clause 3 abolishes the nomenklatura's career ladder. **Guards against (partially):** FM-01, FM-02, FM-13. **Thinnest points:** an organised party competing against unorganised individuals wins most contests, so this can become a monopoly in practice; and a pro-market minority with speech but no electoral vehicle may lose faith in the system or go underground. See the Choices page. **This Article is also the main reason the republic is outside the European Union** (Art. 104): it cannot be reconciled with the pluralism required by Article 2 TEU, and it is likely to fail the European Court of Human Rights' test for restrictions on parties (Art. 105).
 
 ### Article 31 — Democracy within the party {core}
 
@@ -573,13 +573,20 @@ Do hereby adopt, enact and give to ourselves this Constitution, amending the Con
 ### Article 60 — The Social Wealth Fund {standard}
 
 1. The Social Wealth Fund (Ciste an Rachmais Shóisialta) holds the State's investments for the long term. It receives every public revenue that law classes as windfall, including corporation tax above its trend.
-2. The Fund finances the transition (Part XVI), the Co-operative Development Fund and long-term public investment. It may not finance current spending, except as law provides in an emergency declared under Part X.
+2. The Fund finances the transition (Part XV), the Co-operative Development Fund and long-term public investment. It may not finance current spending, except as law provides in an emergency declared under Part X.
 
 > **Why.** Windfall corporation tax depends on a handful of US firms. It must be ring-fenced *before* any change, so that its loss is survivable. **Guards against:** FM-11. **Source:** [08 §3](research/08-ireland-today.md); [Fiscal Council](https://fiscalcouncil.substack.com/p/more-than-corporation-tax-irelands).
 
-### Article 61 — Public banking {standard}
+### Article 61 — Money, the Central Bank and public banking {core}
 
-1. The State maintains a public bank with branches in every county, and a network of credit unions and co-operative banks. Credit for socially owned enterprises, co-operatives, housing and the ecological transition is provided chiefly through them.
+1. The currency of the State is issued by the Central Bank (An Banc Ceannais). Its name is fixed by law.
+2. The Central Bank shall pursue stable prices, full employment and a sound financial system, within a mandate and a target for inflation fixed by the National Assembly by law for periods of not less than five years. Within that mandate it decides interest rates and supervises banks and credit unions, and no member of the Executive Council may direct it in any rate decision or individual case.
+3. The Central Bank is governed by a board of seven, appointed by the National Assembly from candidates nominated by the Executive Council after open competition, for single terms of seven years, staggered. A member may be removed only by a two-thirds vote of the Assembly for misconduct or incapacity. The Governor shall answer to a committee of the Assembly every quarter. The minutes of the board and the votes of its members are published within four weeks.
+4. The Central Bank may lend to the State, or buy its debt when newly issued, only within a ceiling voted each year by the National Assembly as part of the budget and published with it.
+5. Law may regulate the movement of capital into and out of the State. Every such rule shall be published before it takes effect, shall be administered by the Central Bank, shall lapse after six months unless renewed by the Assembly, and shall not restrict payments for ordinary imports, travel, remittances to family, or the transfer of personal savings below a threshold fixed by law.
+6. The State maintains a public bank with branches in every county, and a network of credit unions and co-operative banks. Credit for socially owned enterprises, co-operatives, housing and the ecological transition is provided chiefly through them.
+
+> **Why.** Outside the euro (Art. 104) the republic needs its own money and a central bank. Clause 2 splits the difference that the literature argues over: the Assembly sets the *goal* in public, and the Bank is insulated in *operation*, so neither the Executive nor an unelected board decides alone (Tucker's test for legitimate delegated power; before 1997, rate changes at the Bank of England *"had to be approved by the Chancellor"*). Clause 4 makes any monetary financing of the State a visible, voted decision with a number on it, not a quiet habit. Clause 5 makes capital controls lawful but temporary by default: Iceland's "temporary" controls lasted more than eight years. Leaving out ordinary payments protects everyday life from the controls. The currency's working name in this design is **the punt (IR£)**, after the Irish pound of 1928–2001; the owner may choose another. **Guards against:** FM-11, FM-06, FM-15, FM-01. **Residual risk:** a new currency has no record to draw on, and the six-monthly renewal of controls will usually pass. **Sources:** [13 §2–3](research/13-leaving-the-eu.md).
 
 ### Article 62 — Compensation {core}
 
@@ -877,52 +884,37 @@ Do hereby adopt, enact and give to ourselves this Constitution, amending the Con
 
 *Cuid XIII — Caidreamh Seachtrach*
 
-:::variant Q4=B
-### Article 104 — The European Union {standard}
+### Article 104 — Outside the European Union {core}
 
-1. Ireland is a member of the European Union.
-2. The Executive Council shall seek, by negotiation, exemptions from the law of the Union in respect of state aid to co-operatives and socially owned enterprises, public procurement, and the public ownership and operation of utilities.
-3. Before such negotiations open, the Executive Council shall lay before the National Assembly a **Fallback Schedule**, naming precisely the rules of the Union with which the State would decline to comply if the negotiations fail, and the conditions under which it would do so. The Schedule takes effect only if approved by the Assembly and, if the Citizens' Chamber so requires, by referendum. It is published.
-4. The State shall not decline to comply with any rule of the Union except as an approved Fallback Schedule provides.
-5. Article 345 of the Treaty on the Functioning of the European Union, which leaves the system of property ownership to the Member States, shall be relied on to the full.
+1. The State is not a member of the European Union. On the adoption of this Constitution, the Executive Council shall give notice of withdrawal under Article 50 of the Treaty on European Union, and the State shall leave the euro on the day its withdrawal takes effect.
+2. On that day every sum of money expressed in euro in any contract, obligation or enactment governed by the law of the State is converted into the currency of the State at par, one for one. Law shall provide for contracts governed by other law.
+3. The Executive Council shall seek agreements with the European Union and with the United Kingdom on trade, on the rights of citizens, on the land border and on co-operation in every field of common interest. Every agreement shall be negotiated in public, published in draft, and laid before the National Assembly for approval.
+4. No agreement may commit the State to restrict the social ownership in Article 5, the forms of ownership and planning in Part V, or the regulation of capital under Article 61, unless approved by the procedure of Article 109.
+5. Every citizen of a member state of the European Union lawfully resident in the State on the day withdrawal takes effect keeps, for life, the right to live, work, study and receive public services in the State on the same terms as before. The State shall seek the same protection for its own citizens living in the Union.
 
-> **Why.** The owner's answer to Q4. Irish support for EU membership is consistently very high (82% in 2025 and 2026), so leaving would wreck the transition's legitimacy and invite isolation and capital flight. The Republic stays and negotiates. Publishing the Fallback Schedule in advance means any defiance is transparent and democratically mandated, never improvised. **Guards against:** FM-11, FM-02 (no improvised lawbreaking), FM-17. **Residual risk:** treaty change needs unanimity, so leverage is small; and the default Q1 restriction on parties may be challenged as a breach of Article 2 TEU. **Sources:** [08 §10](research/08-ireland-today.md); [TFEU Art. 345](https://www.legislation.gov.uk/eut/teec/article/345/data.htm?view=plain).
-:::
-
-:::variant Q4=C
-### Article 104 — Withdrawal from the European Union {standard}
-
-1. The State shall withdraw from the European Union under Article 50 of the Treaty on European Union, following a referendum approving withdrawal.
-2. The Executive Council shall negotiate agreements on trade, the movement of people, and the position of Northern Ireland, which shall be laid before the National Assembly.
-3. The State shall issue its own currency under the Central Bank, which shall be accountable to the National Assembly.
-
-> **Why (alternative).** This regains the full toolkit (capital controls, state aid, procurement). **Costs:** the largest economic shock available; it goes against more than 80% public support; it hardens the border question, since Northern Ireland sits inside the EU goods market under the Windsor Framework; and it removes an outside check against our own drift. **Guards against:** FM-05. **Worsens:** FM-11, FM-14, FM-02, FM-17.
-:::
-
-:::variant Q4=D
-### Article 104 — The European Union {standard}
-
-1. Ireland is a member of the European Union.
-2. Where a rule of the Union prevents the implementation of Part V or Part VI, the Executive Council may, with the approval of the National Assembly, decline to comply with it and shall defend that position in any proceedings.
-
-> **Why (alternative).** This keeps market access while acting at once. **Costs:** fines and legal attrition, and investor flight driven by uncertainty. It also normalises a state obeying law selectively, a precedent that cuts against this Constitution. The recent precedents (Hungary and Poland) come from the authoritarian right. **Worsens:** FM-11, FM-02.
-:::
+> **Why.** The owner's revised answer to Q4 (DECISIONS D-43). The party settlement of Article 30 cannot meet the values of Article 2 TEU, which the Court of Justice says *"cannot be … disregard[ed] after accession"*, and the design's economic instruments (capital controls, state support for co-operatives, procurement) collide with Articles 63 and 107 TFEU. The EU cannot expel a member, so the republic leaves by its own decision rather than live in permanent breach. Clause 2 uses *lex monetae*: the State can convert contracts under its own law, not others. Clause 4 stops a trade deal from quietly undoing Part V: the EU's price for tariff-free access is likely to be subsidy-control rules, and accepting them must clear the same bar as amending the core. Clause 5 protects people who built lives here. **Guards against:** FM-05, FM-02 (no permanent selective legality). **Worsens:** FM-11 (a new currency, tariffs, capital flight) and FM-17 (support for EU membership was 82% in 2025 and 2026). **Residual risk:** the largest economic shock in the design, and a hard external frontier on the land border (Art. 107). **Sources:** [13](research/13-leaving-the-eu.md); [CJEU press release 28/22](https://curia.europa.eu/jcms/upload/docs/application/pdf/2022-02/cp220028en.pdf); [TEU Art. 50](https://www.legislation.gov.uk/eut/teu/article/50).
 
 ### Article 105 — International law and human rights {standard}
 
 1. Ireland accepts the generally recognised principles of international law, and remains a party to the European Convention on Human Rights. The rights it protects are a floor beneath the rights in this Constitution.
 
-> **Why.** ECHR membership comes through the Council of Europe and is independent of the EU. It is a second outside check. Note the tension with the default Q1 answer: Convention case law on freedom of association may be engaged by Article 30 (legal sourcing still needed). **Guards against:** FM-02, FM-04.
+> **Why.** ECHR membership comes through the Council of Europe and is independent of the EU, so it survives withdrawal (Art. 104). Outside the EU it is the republic's main outside check. **Unresolved tension with the default Q1 answer:** the Strasbourg court holds that *"there can be no democracy without pluralism"* and that *"only convincing and compelling reasons can justify restrictions on"* parties' freedom of association (*United Communist Party of Turkey v. Turkey*, 1998). Article 30 is likely to fail that test. The design keeps the Convention anyway, and says so. **Guards against:** FM-02, FM-04. **Source:** [13 §1.4](research/13-leaving-the-eu.md).
 
 ### Article 106 — Trade and solidarity {standard}
 
 1. The State shall diversify its trade and supply, secure its food and energy, and pursue solidarity with peoples struggling for democracy, independence and social justice. It shall not export arms.
+2. The Executive Council shall keep, and publish each year, a schedule of essential imports (fuel, food, medicines and the inputs to make them) and the means of paying for them, including reserves of foreign currency and stocks held in the State.
 
 > **Why.** A small, open economy must assume pressure from outside. Cuba and Nicaragua show what blockade does. **Guards against:** FM-11. **Source:** [05 §5](research/05-counter-revolution-and-external-pressure.md).
 
-### Article 107 — All-island co-operation {standard}
+### Article 107 — All-island co-operation and the land border {core}
 
 1. The State shall take part in the North/South bodies established by the 1998 Agreement and shall seek co-operation across the island in every field where both jurisdictions consent.
+2. The State shall keep the Common Travel Area with the United Kingdom. No check on persons shall be made at the land border.
+3. The State shall build no customs post, checkpoint or other border infrastructure on its side of the land border, and shall seek, by agreement with the United Kingdom, to charge no tariff on goods made in Northern Ireland. It shall seek with the European Union and the United Kingdom whatever arrangements keep checks on goods away from the border and as few as possible.
+4. Every person born in Northern Ireland keeps the full rights of Irish citizenship under Article 3, including access to every public service in the State on the same terms as its residents.
+
+> **Why.** Leaving the EU (Art. 104) turns the land border into the EU's external frontier for goods, because Northern Ireland applies the Union Customs Code under the Windsor Framework. The republic cannot stop checks on the northern side. It can refuse to build anything on its own side, keep people moving freely under the Common Travel Area (which its two governments say is *"not dependent on, EU citizenship or EU membership"*), and keep the North's Irish citizens inside the State's public life when they lose EU citizenship. **Guards against:** FM-14. **Residual risk:** checks on the northern side would still happen, at some of the 208 or more crossing points, and border infrastructure on this island has been a target before. This is one of the heaviest costs of Q4, and it falls on people in the North who have no vote in the State's referendum. **Sources:** [13 §4.4–4.7](research/13-leaving-the-eu.md).
 
 ## Part XIV — Amendment
 
@@ -952,8 +944,9 @@ Do hereby adopt, enact and give to ourselves this Constitution, amending the Con
 ### Article 111 — Adoption {standard}
 
 1. This Constitution is adopted as an amendment of the Constitution of 1937 under its Article 46: passed by the Dáil, passed again unchanged by the Dáil elected at the next general election, and approved by the people in a referendum.
+2. The ballot paper for that referendum shall state, in words approved by the Electoral Commission, that adopting this Constitution means leaving the European Union and the euro.
 
-> **Why.** The transition is lawful from end to end, using Article 46 and the 1937 precedent of adoption by plebiscite. The double passage is not required by Article 46, which needs only a single passage and a referendum. It is chosen voluntarily, so that the transition clears the same bar that reversal will need. Legality is itself a defence against counter-revolution. **Guards against:** FM-10, FM-17. **Source:** [08 §1](research/08-ireland-today.md).
+> **Why.** The transition is lawful from end to end, using Article 46 and the 1937 precedent of adoption by plebiscite. The double passage is not required by Article 46, which needs only a single passage and a referendum. It is chosen voluntarily, so that the transition clears the same bar that reversal will need. Legality is itself a defence against counter-revolution. Clause 2 exists because support for EU membership was 82% in 2025 and 2026: a vote for this Constitution must not be mistaken, then or later, for anything other than a vote to leave. **Guards against:** FM-10, FM-17. **Sources:** [08 §1](research/08-ireland-today.md); [13 §1.6](research/13-leaving-the-eu.md).
 
 ### Article 112 — Continuity {standard}
 
@@ -969,11 +962,12 @@ Do hereby adopt, enact and give to ourselves this Constitution, amending the Con
 
 ### Article 114 — Sequence of the transition {standard}
 
-1. In the first two years the State shall: ring-fence windfall revenues in the Social Wealth Fund; begin the public housing, single-tier health and National Care Service programmes; establish the local assemblies, the Citizens' Chamber and the integrity bodies; and open negotiations on foreign enterprise charters and on European Union exemptions.
-2. The first designation of sectors under Article 65 shall include data centres, aviation, advertising and the national herd, each to be planned with those who work in it, and the herd under Article 67.
-3. No national public enterprise shall be created by expropriation before the Social Wealth Fund and the Job Guarantee Service are in operation.
+1. In the first two years the State shall: ring-fence windfall revenues in the Social Wealth Fund; begin the public housing, single-tier health and National Care Service programmes; establish the local assemblies, the Citizens' Chamber and the integrity bodies; and open negotiations on foreign enterprise charters.
+2. Before withdrawal from the European Union takes effect (Art. 104), the State shall have: established the Central Bank's board and published the law on capital movements (Art. 61); prepared the new currency for issue on the day of withdrawal; built reserves of foreign currency and stocks of fuel, food and medicines, and published the schedule of essential imports (Art. 106); sought agreements on trade, citizens' rights and the land border; and published, before any payment system changes, how wages, prices, rents, debts and deposits convert.
+3. The first designation of sectors under Article 65 shall include data centres, aviation, advertising and the national herd, each to be planned with those who work in it, and the herd under Article 67.
+4. No national public enterprise shall be created by expropriation before the Social Wealth Fund and the Job Guarantee Service are in operation.
 
-> **Why.** Public goods come first, because that is where the case is strongest and opposition weakest. The safety nets come before any expropriation. Named sectors follow the owner's answer to Q9. **Guards against:** FM-11, FM-17, FM-14. **Source:** [08 §12](research/08-ireland-today.md).
+> **Why.** Public goods come first, because that is where the case is strongest and opposition weakest. The safety nets come before any expropriation. Clause 2 orders the exit so that the most dangerous moment, the day the currency changes, comes with reserves, stocks and published rules already in place: the Czech and Slovak separation of 1993 was a *"non-event"* for most people because it was prepared, while Argentina's in 2002 was not. Named sectors follow the owner's answer to Q9. **Guards against:** FM-11, FM-17, FM-14. **Sources:** [08 §12](research/08-ireland-today.md); [13 §2.3](research/13-leaving-the-eu.md).
 
 :::variant Q1=A
 ### Article 115 — The party in transition {standard}

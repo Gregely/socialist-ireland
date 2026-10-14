@@ -24,7 +24,7 @@ const ROUTES = (process.env.ROUTES || [
   '', 'map', 'map?node=citizens-chamber', 'map?fm=FM-04&overlay=accountability', 'threats', 'threats/FM-02',
   'stress', 'stress/capital-flight', 'stress/capital-flight?path=s1.s2.s3', 'day', 'constitution', 'choices',
   'open', 'sources', 'research/SYNTHESIS',
-  'stress/eu-challenge?path=s1.s2.s3.s4b', 'stress/term-limits?path=s1.s2.s3.s4b', 'stress/harvest-energy-shock?path=s1.s2.s3.s4a',
+  'stress/leaving-the-eu?path=s1.s2.s3a.s4.s5.s6.s7b', 'stress/leaving-the-eu?path=s1.s2.s3b', 'stress/capital-flight?path=s1.s2.s3.s4b', 'stress/term-limits?path=s1.s2.s3.s4b', 'stress/harvest-energy-shock?path=s1.s2.s3.s4a',
   'stress/security-scandal?path=s1.s2.s3.s4a', 'stress/general-strike?path=s1.s2.s3.s4a', 'stress/sabotage?path=s1.s2.s3.s4b.end',
   'day/01-nurse-cork', 'day/02-farmer-leitrim', 'day/03-delegate-tallaght', 'day/04-journalist-galway', 'day/05-carer-limerick',
 ].join(',')).split(',');

@@ -171,6 +171,8 @@ The scores are **reasoned judgements from the research**, not measurements. Ever
 
 ## Q4 · The EU
 
+> **Superseded (October 2026).** The owner changed this answer: the republic is outside the EU and the euro. See `DECISIONS.md` D-43 and `research/13-leaving-the-eu.md`. The comparison below is kept as the record of the original choice.
+
 *How does a socialist Ireland relate to the Union and its law?* ([08 §10](../research/08-ireland-today.md))
 
 | | **A. Work within** | **B. Negotiated derogations** | **C. Exit** | **D. Selective non-compliance** |

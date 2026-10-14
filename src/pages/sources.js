@@ -20,6 +20,9 @@ const TOPIC_TITLES = {
   '09-ecology-and-growth': 'Ecology: degrowth, eco-modernism, Half-Earth',
   '10-legitimacy-and-everyday-life': 'Legitimacy and everyday life',
   '11-social-reproduction': 'Social reproduction and care',
+  '12-economy': 'The economy: baseline, constraints and financing',
+  '13-leaving-the-eu': 'Leaving the EU and the euro',
+  '14-geography-sources': 'Geographic data sources (for the map)',
   SYNTHESIS: 'Synthesis',
 };
 

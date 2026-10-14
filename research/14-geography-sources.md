@@ -1,4 +1,4 @@
-# 12 — Geographic data: what can actually be sourced (for "The Map")
+# 14 — Geographic data: what can actually be sourced (for "The Map")
 
 A sourcing pass for the geographic map page, carried out in October 2026 before building it. Each candidate layer was checked for an official, openly licensed source with **complete county or local-authority coverage**. Where none exists, the layer is marked as excluded, with the reason. Nothing here is estimated.
 

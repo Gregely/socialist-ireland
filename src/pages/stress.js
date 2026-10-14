@@ -3,7 +3,7 @@ import { matchesCondition, optionLabel, getVariants, matches } from '../lib/stat
 import { renderMarkdown } from '../lib/markdown.js';
 import { esc, bi, fmChip, announce } from '../lib/ui.js';
 
-const ORDER = ['capital-flight', 'eu-challenge', 'term-limits', 'harvest-energy-shock', 'security-scandal', 'general-strike', 'sabotage'];
+const ORDER = ['leaving-the-eu', 'capital-flight', 'term-limits', 'harvest-energy-shock', 'security-scandal', 'general-strike', 'sabotage'];
 const rank = (id) => (ORDER.includes(id) ? ORDER.indexOf(id) : ORDER.length);
 const sorted = () => Object.entries(scenarios).sort(([a], [b]) => rank(a) - rank(b));
 

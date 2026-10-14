@@ -1,0 +1,103 @@
+{
+  "title_en": "Leaving the EU and the euro",
+  "title_ga": "An tAontas Eorpach agus an euro a fhágáil",
+  "summary": "The Constitution is adopted, and with it the decision to leave the European Union and the euro. Two years of notice, a run on deposits, a new currency, a frontier across the island, and a trade deal that asks the republic to give up part of what it left for.",
+  "fms": ["FM-11", "FM-17", "FM-14", "FM-15", "FM-05", "FM-10"],
+  "start": "s1",
+  "steps": {
+    "s1": {
+      "title": "The vote",
+      "when": "Day 0",
+      "text_md": "The referendum adopting the Constitution passes by 53% to 47%. The ballot paper said, in words approved by the [[electoral-commission|Electoral Commission]], that adopting it means leaving the European Union and the euro (Art. 111.2). Polling the same week shows that most voters would still rather stay in the EU if they could keep the new Constitution. They cannot: the party settlement of Article 30 cannot meet the Union's Article 2 values ([13 §1](research/13-leaving-the-eu.md)). The next morning the [[executive-council|Executive Council]] gives notice under Article 50 (Art. 104.1).",
+      "institutions": ["people", "referendum", "electoral-commission", "executive-council"],
+      "safeguards": ["FM-17", "FM-02"],
+      "risk_md": "Support for EU membership was 82% in 2025 and 2026 ([08 §10](research/08-ireland-today.md)). **The republic begins with a mandate for its Constitution and against its majority's view of the EU.** In the North, 614,300 holders of Irish passports will lose EU citizenship without having voted ([13 §4.6](research/13-leaving-the-eu.md)).",
+      "next": "s2"
+    },
+    "s2": {
+      "title": "The run begins",
+      "when": "Week 1",
+      "choice_prompt": "The State is still inside the euro, and euro deposits are leaving Irish banks at €3 billion a day. What does the State do?",
+      "text_md": "Every saver now knows that euro deposits in an Irish bank will become punts in two years, and that the punt is expected to fall. Moving money to a bank abroad keeps it in euro. In five days €14 billion leaves. This is the trap of a pre-announced currency exit: the Czech and Slovak separation of 1993 was planned for six months and cut to five weeks once money began to move ([13 §2.3](research/13-leaving-the-eu.md)). While Ireland is in the euro, the European Central Bank, not Dublin, decides how much emergency liquidity Irish banks get.",
+      "institutions": ["executive-council", "national-assembly", "public-bank"],
+      "safeguards": ["FM-11"],
+      "choices": [
+        { "label": "Impose capital controls now, inside the euro, as Cyprus (2013) and Greece (2015) did", "to": "s3a", "note": "Stops the run; long queues and a long tail." },
+        { "label": "No controls: guarantee that every deposit converts at par, and rely on confidence", "to": "s3b", "note": "Keeps money free; bets everything on trust." }
+      ]
+    },
+    "s3a": {
+      "title": "Controls inside the euro",
+      "when": "Weeks 1–8",
+      "text_md": "Banks close for four days. When they reopen, cash withdrawals are limited to €100 a day and transfers abroad above €2,000 a month need approval. Wages, card payments in the State, and payments for imports are untouched. The [[national-assembly|National Assembly]] passes the rules in a single sitting and publishes them in full; they lapse after six months unless renewed, the rule Article 61 will make permanent. The European Commission reserves its position but does not challenge the controls, as it did not in Cyprus or Greece. Whether it would accept them indefinitely from a state that is leaving is untested.",
+      "institutions": ["national-assembly", "executive-council", "public-bank", "courts"],
+      "safeguards": ["FM-11", "FM-15", "FM-17"],
+      "risk_md": "Queues at cash machines are the image of the transition's first month, and opponents use it for years. **Every recent \"temporary\" control lasted years**: Greece's from 2015 to 2019, Iceland's from 2008 to 2017 ([13 §3](research/13-leaving-the-eu.md)). These will outlive the notice period.",
+      "next": "s4"
+    },
+    "s3b": {
+      "title": "Confidence alone",
+      "when": "Weeks 1–6",
+      "text_md": "The State guarantees that every deposit will convert at par, and the [[public-bank|public bank]] opens accounts for anyone leaving the private banks. It is not enough: converting at par into a currency that will fall is exactly what savers fear. Outflows pass €40 billion. In week six the ECB limits emergency liquidity to two Irish banks, as it capped emergency lending to Greek banks in 2015, and the State has to close the banks anyway.",
+      "institutions": ["public-bank", "executive-council", "national-assembly"],
+      "safeguards": ["FM-11", "FM-10"],
+      "risk_md": "**This path ends where the other began, under worse conditions:** more money gone, controls imposed in a panic rather than by plan, and an outside institution, not the Assembly, setting the timetable. Inside the euro, the State does not control its own lender of last resort.",
+      "next": "s4"
+    },
+    "s4": {
+      "title": "Exit day",
+      "when": "Month 24",
+      "text_md": "At midnight the punt (IR£) becomes the currency of the State. Every sum in euro under Irish law (wages, prices, rents, mortgages, deposits in Irish banks, Irish-law government bonds) converts one for one (Art. 104.2). Card payments switch over the night; euro cash is exchanged over four weeks, up to a limit per person, as Czechoslovakia did with stamped banknotes in 1993. The new [[central-bank|Central Bank]] lets the punt float. In the first week it falls 18% against the euro. The schedule of essential imports (Art. 106.2), foreign-currency reserves and stocks of fuel and medicines, all built during the notice period (Art. 114.2), carry the first months.",
+      "institutions": ["central-bank", "public-bank", "executive-council", "open-data"],
+      "safeguards": ["FM-11", "FM-17"],
+      "risk_md": "Energy is 78% imported, so fuel prices rise within weeks; food and medicines follow. Price formulas pass the rises on by published rule, with compensation for low-income households (Art. 58.2), and the free household energy allowance (Art. 24) absorbs part. **Bondholders under foreign law sue for payment in euro**, and rating agencies treat the conversion of Irish-law bonds as a default ([13 §2.1](research/13-leaving-the-eu.md)).",
+      "next": "s5"
+    },
+    "s5": {
+      "title": "The frontier",
+      "when": "Months 24–30",
+      "text_md": "Goods crossing from the republic into Northern Ireland are now entering the EU's goods area from outside it, because Northern Ireland applies the Union Customs Code under the Windsor Framework. UK authorities begin checks on food and animal consignments at the main crossings, on the northern side. The republic builds nothing on its side and charges no tariff on goods from the North (Art. 107.3). People cross freely under the Common Travel Area, which both governments have said does not depend on EU membership (Art. 107.2). The Executive Council opens talks with the EU and the UK on moving checks away from the border.",
+      "institutions": ["uk", "eu", "executive-council", "garda"],
+      "safeguards": ["FM-14"],
+      "risk_md": "There are at least 208 crossing points ([13 §4.5](research/13-leaving-the-eu.md)). Protests are held at two of them, and a group demanding \"no border\" damages equipment at a third. **The peace process was built around the absence of this frontier, and the republic's choice has brought it back.** Both nationalisms gain a grievance (FM-14). The design can refuse to build the frontier; only an agreement can remove it.",
+      "next": "s6"
+    },
+    "s6": {
+      "title": "The price of access",
+      "when": "Year 3",
+      "choice_prompt": "The EU offers zero tariffs on all goods, including beef and dairy, in exchange for a subsidy-control chapter that covers the Co-operative Development Fund and public-bank lending. What does the republic do?",
+      "text_md": "Without a deal, Irish beef entering the EU pays 12.8% plus €303.4 per 100 kg, and cheddar €167.1 per 100 kg ([13 §4.2](research/13-leaving-the-eu.md)). The EU's offer follows the UK–EU agreement: subsidies are allowed only to remedy *\"an identified market failure\"* or for *\"an equity rationale\"*, and the EU may answer divergence with \"rebalancing\" tariffs. Article 104.4 says no agreement may restrict Part V unless it passes the procedure for amending the core: two Assemblies with an election between them, then a referendum (Art. 109).",
+      "institutions": ["executive-council", "eu", "national-assembly", "land-farm-board", "cooperatives"],
+      "safeguards": ["FM-05", "FM-11", "FM-14"],
+      "choices": [
+        { "label": "Accept the deal and put it through the Article 109 procedure", "to": "s7a", "note": "Market access for farmers; limits on the co-operative sector." },
+        { "label": "Refuse, trade on WTO terms, and redirect food exports", "to": "s7b", "note": "Keeps Part V whole; the farm sector takes the shock." }
+      ]
+    },
+    "s7a": {
+      "title": "Access, at a price",
+      "when": "Years 3–5",
+      "text_md": "The Assembly approves the agreement; after the next general election the new Assembly approves it again, and the people approve it by referendum. That takes two years, during which tariffs apply. Support for co-operatives is rebuilt around published equity and public-service objectives (community energy, rural shops, care co-operatives). About a fifth of the co-operatives that relied on the Fund no longer qualify, and the [[public-bank|public bank]] lends to them on ordinary terms.",
+      "institutions": ["national-assembly", "referendum", "cooperatives", "public-bank"],
+      "safeguards": ["FM-05", "FM-06"],
+      "risk_md": "Critics on the left say the republic left the EU only to sign up to a smaller version of its rules. They are partly right. The subsidy rules also impose a hard budget constraint that Kornai would recognise as healthy (FM-06).",
+      "outcome_md": "Beef and dairy exports to the EU recover to about four-fifths of their pre-exit level. The co-operative sector grows more slowly than planned but is legally secure. The Article 109 procedure did what it was meant to: the trade-off was made by the people, in the open, not by negotiators.",
+      "next": "end"
+    },
+    "s7b": {
+      "title": "Outside, on WTO terms",
+      "when": "Years 3–6",
+      "text_md": "The republic refuses. Exports of beef and dairy to the EU fall by more than a third. The [[land-farm-board|Land and Farm Transition Board]] is suddenly negotiating a faster herd transition than anyone planned, under pressure of tariffs rather than by agreement, and the income guarantee of Article 67 costs far more than budgeted. Food exports are redirected to Britain, under a separate UK agreement, and to markets outside Europe.",
+      "institutions": ["land-farm-board", "executive-council", "social-wealth-fund", "cooperatives"],
+      "safeguards": ["FM-05", "FM-14", "FM-16"],
+      "risk_md": "The herd falls, which the ecological plan wanted, but in the way the design most wanted to avoid: imposed by an outside shock, on farmers who did not agree to it (FM-14). **The rural vote, already the hardest constituency, turns against the republic.**",
+      "outcome_md": "Part V survives intact. The farm sector shrinks faster than planned, and Article 67's guarantee becomes the largest single item in the transition budget. Five years on, rural counties vote heavily against the party in the first renewal referendum.",
+      "next": "end"
+    },
+    "end": {
+      "title": "What this test shows",
+      "text_md": "**Leaving was decided by the party settlement, and paid for by everyone.** The hardest moments came before the currency changed: a two-year notice period invites a run, and inside the euro the State does not control its own lender of last resort. The preparations in Article 114.2 (reserves, stocks, published conversion rules) mattered most on exit day. The trade deal showed that leaving the EU does not escape the question of state aid. It only moves the argument to a negotiating table where the republic is much weaker.",
+      "risk_md": "This scenario assumes no hostile foreign campaign (FM-10) and no simultaneous flight of the multinationals. The [capital flight](#/stress/capital-flight) test takes up the second. The economy section models how large a fall in the currency, and how large a departure of multinationals, the republic's external accounts can absorb."
+    }
+  }
+}

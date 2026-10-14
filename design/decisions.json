@@ -1,5 +1,5 @@
 {
-  "_note": "Owner's answers to the Phase 2 open questions. rationale_md is rendered on the site's Choices page. Q1 and Q4 are switchable; 'default' is the owner's choice. Scores: ++ strongly resists, + resists, 0 neutral, − worsens, −− strongly worsens, ? unclear.",
+  "_note": "Owner's answers to the Phase 2 open questions. rationale_md is rendered on the site's Choices page. Q1 is switchable (Q4 was until D-43); 'default' is the owner's choice. Scores: ++ strongly resists, + resists, 0 neutral, − worsens, −− strongly worsens, ? unclear.",
   "questions": [
     {
       "id": "Q1",
@@ -24,18 +24,45 @@
             "**The renewal referendum is the backstop**, but a party that has governed for ten years will campaign with every advantage of incumbency."
           ],
           "scores": {
-            "FM-01": ["−", "Even with wage caps and rotation, a party that dominates elections still controls careers (Michels, Voslensky)."],
-            "FM-02": ["−", "Better than a classic vanguard because of the safeguards, but still the weakest of the three options: one party, one ballot label."],
-            "FM-03": ["0", "Collective leadership, rotation and party–state separation offset the single-party tendency to produce cults."],
-            "FM-04": ["+", "An explicit constitutional bar on party command over security, courts and audit."],
-            "FM-10": ["+", "Cohesion and organisation in a crisis."],
-            "FM-12": ["−", "The 1991 restoration was carried out by a party elite. Wage caps and asset declarations reduce the incentive but do not remove it."],
-            "FM-13": ["+", "Legal factions mean disagreement need not become a split or a purge."],
-            "FM-14": ["0", "No regional party branches with autonomous power over state organs."],
-            "FM-17": ["−", "Choice at the ballot is narrow. The renewal referendum and winnable independent seats are what keep this from scoring −−."]
+            "FM-01": [
+              "−",
+              "Even with wage caps and rotation, a party that dominates elections still controls careers (Michels, Voslensky)."
+            ],
+            "FM-02": [
+              "−",
+              "Better than a classic vanguard because of the safeguards, but still the weakest of the three options: one party, one ballot label."
+            ],
+            "FM-03": [
+              "0",
+              "Collective leadership, rotation and party–state separation offset the single-party tendency to produce cults."
+            ],
+            "FM-04": [
+              "+",
+              "An explicit constitutional bar on party command over security, courts and audit."
+            ],
+            "FM-10": [
+              "+",
+              "Cohesion and organisation in a crisis."
+            ],
+            "FM-12": [
+              "−",
+              "The 1991 restoration was carried out by a party elite. Wage caps and asset declarations reduce the incentive but do not remove it."
+            ],
+            "FM-13": [
+              "+",
+              "Legal factions mean disagreement need not become a split or a purge."
+            ],
+            "FM-14": [
+              "0",
+              "No regional party branches with autonomous power over state organs."
+            ],
+            "FM-17": [
+              "−",
+              "Choice at the ballot is narrow. The renewal referendum and winnable independent seats are what keep this from scoring −−."
+            ]
           },
           "costs": [
-            "Restricts freedom of political association. This is likely incompatible with the ECHR's guarantees (legal sourcing still needed) and with EU Article 2 values, which creates tension with the Q4 answer.",
+            "Restricts freedom of political association. It cannot be reconciled with the EU's Article 2 values, which is why the republic is outside the EU (Q4), and it is likely to fail the European Court of Human Rights' test for restrictions on parties, which the republic still accepts (Art. 105).",
             "Hard to win by referendum in today's Ireland.",
             "Puts the burden of legitimacy on the party's conduct, year after year."
           ]
@@ -52,15 +79,42 @@
             "Pro-capitalist politics can return under socialist labels."
           ],
           "scores": {
-            "FM-01": ["+", "Rival parties expose privilege."],
-            "FM-02": ["+", "Real plurality, though the boundary can be used to exclude."],
-            "FM-03": ["+", "Rival parties check personalisation."],
-            "FM-04": ["+", "Opposition parties sit on oversight bodies."],
-            "FM-10": ["+", "Parties of open restoration are excluded."],
-            "FM-12": ["+", "Rival socialist parties watch for asset-stripping."],
-            "FM-13": ["++", "Splits become new parties."],
-            "FM-14": ["0", "No specific effect."],
-            "FM-17": ["+", "Real choice, though excluded voters resent the line."]
+            "FM-01": [
+              "+",
+              "Rival parties expose privilege."
+            ],
+            "FM-02": [
+              "+",
+              "Real plurality, though the boundary can be used to exclude."
+            ],
+            "FM-03": [
+              "+",
+              "Rival parties check personalisation."
+            ],
+            "FM-04": [
+              "+",
+              "Opposition parties sit on oversight bodies."
+            ],
+            "FM-10": [
+              "+",
+              "Parties of open restoration are excluded."
+            ],
+            "FM-12": [
+              "+",
+              "Rival socialist parties watch for asset-stripping."
+            ],
+            "FM-13": [
+              "++",
+              "Splits become new parties."
+            ],
+            "FM-14": [
+              "0",
+              "No specific effect."
+            ],
+            "FM-17": [
+              "+",
+              "Real choice, though excluded voters resent the line."
+            ]
           },
           "costs": [
             "Every current major Irish party would have to re-found itself or stay out.",
@@ -79,14 +133,38 @@
             "The best-organised existing network (unions, church, or a party under another name) gains."
           ],
           "scores": {
-            "FM-01": ["+", "No party controls nominations, though Michels predicts informal machines will appear."],
-            "FM-02": ["−", "Uganda and Rojava show a hidden dominant party taking over."],
-            "FM-03": ["0", "Personalist politics replaces party politics."],
-            "FM-04": ["0", "No specific effect."],
-            "FM-08": ["−", "Higher information costs for voters."],
-            "FM-10": ["−", "Slow to coordinate under attack."],
-            "FM-13": ["+", "No parties to split."],
-            "FM-17": ["?", "Little evidence either way."]
+            "FM-01": [
+              "+",
+              "No party controls nominations, though Michels predicts informal machines will appear."
+            ],
+            "FM-02": [
+              "−",
+              "Uganda and Rojava show a hidden dominant party taking over."
+            ],
+            "FM-03": [
+              "0",
+              "Personalist politics replaces party politics."
+            ],
+            "FM-04": [
+              "0",
+              "No specific effect."
+            ],
+            "FM-08": [
+              "−",
+              "Higher information costs for voters."
+            ],
+            "FM-10": [
+              "−",
+              "Slow to coordinate under attack."
+            ],
+            "FM-13": [
+              "+",
+              "No parties to split."
+            ],
+            "FM-17": [
+              "?",
+              "Little evidence either way."
+            ]
           },
           "costs": [
             "Needs strong sortition powers.",
@@ -115,82 +193,88 @@
       "id": "Q4",
       "title_en": "The European Union",
       "title_ga": "An tAontas Eorpach",
-      "switchable": true,
-      "default": "B",
-      "options": [
+      "switchable": false,
+      "answer": "Outside the European Union and the euro, with its own currency.",
+      "rationale_md": "**The republic is outside the EU because its constitution cannot meet the EU's founding values.** Article 2 of the Treaty on European Union founds the Union on democracy and on *\"a society in which pluralism … prevail[s]\"*; Article 49 admits only states that respect those values; and the Copenhagen criteria require *\"stability of institutions guaranteeing democracy\"*. The default party settlement (Q1, Article 30), under which one socialist party alone may put a label on a ballot, is a restriction of political pluralism by design. The Court of Justice has held that respect for these values *\"cannot be … disregard[ed] after accession\"*. So membership is not possible on these terms, and re-entry would be closed for as long as the settlement stands.\n\n**The economic settlement points the same way.** The Treaties are neutral on *who owns* things (Art. 345 TFEU), but the design's tools are not compatible with the internal market: capital controls (Art. 63 TFEU prohibits restrictions on capital movements), state support for co-operatives and the public bank (Art. 107 TFEU, state aid), and procurement that favours them.\n\n**The EU cannot expel a member.** It can only suspend rights under Article 7, and in practice that procedure has never gone beyond its first stage. So the choice was never between staying and being thrown out. It was between leaving lawfully under Article 50 and staying in permanent breach of obligations the State had accepted. The owner rejected permanent breach because it normalises a state obeying law selectively. The republic therefore **gives notice under Article 50 when the Constitution is adopted, and leaves the euro on the day withdrawal takes effect** (Art. 104).\n\nThe full reasoning and sources are in the [research note](research/13-leaving-the-eu.md).",
+      "honesty_md": "**This is one of the most costly choices in the design, and it is driven by the party settlement.** Support for EU membership in the State was 82% in 2025 and 2026. A majority for this Constitution is not a majority for leaving, which is why the ballot must say so (Art. 111.2). Leaving also ends EU citizenship for every Irish citizen, including 614,300 Irish passport-holders in Northern Ireland, who have no vote in the State's referendum.\n\n**Under the Q1 alternatives the political reason weakens.** With several socialist parties (Q1-B) or councils without parties (Q1-D), the Article 2 objection largely falls away, and the case for leaving rests on the economic tools alone. The owner's answer applies under every Q1 setting, but a reader viewing those alternatives should know the argument is then weaker.\n\n**Leaving the EU does not settle the human-rights question.** The republic stays in the European Convention on Human Rights (Art. 105), and the Strasbourg court holds that *\"there can be no democracy without pluralism\"*. The default party settlement is likely to fail that test too. That tension is unresolved (see Open Questions).",
+      "thin_points": [
+        "**The currency.** A new currency with no track record will fall. Estimates for a peripheral euro exit range from about 30% to far more, and none is current for Ireland. Energy is 78% imported, so a fall reaches every household quickly.",
+        "**The notice period.** Article 50 gives up to two years' public notice before the euro can be replaced. Every euro deposit in an Irish bank has a reason to leave first. Capital controls during the notice period are close to unavoidable, and every recent \"temporary\" control lasted years (Iceland 2008–2017, Greece 2015–2019).",
+        "**The land border.** Northern Ireland applies the EU's customs code and rules on goods under the Windsor Framework, so the border becomes the EU's external frontier for goods. The republic can refuse to build anything on its side (Art. 107); it cannot stop checks on the northern side.",
+        "**Food exports.** 37% of food and drink exports went to the EU in 2025. Without a deal they face tariffs such as 12.8% plus €303.4 per 100 kg on boneless beef. Every model of tariff-free access asks for state-aid or subsidy-control rules that cut against Part V."
+      ],
+      "scores": {
+        "FM-05": [
+          "+",
+          "The full toolkit: capital controls, state support, procurement, own monetary policy."
+        ],
+        "FM-11": [
+          "−−",
+          "A new currency, a deposit run during the notice period, tariffs on food, and multinationals losing their reason to be here."
+        ],
+        "FM-17": [
+          "−−",
+          "Against roughly four in five voters; living standards fall in the transition."
+        ],
+        "FM-14": [
+          "−",
+          "The land border becomes an external frontier, a gift to both nationalisms."
+        ],
+        "FM-02": [
+          "−",
+          "The EU's rule-of-law check is gone; the ECHR remains."
+        ],
+        "FM-06": [
+          "?",
+          "No EU fiscal or state-aid discipline; the domestic rules (Arts. 54, 59, 61.4) must do the work."
+        ],
+        "FM-15": [
+          "−",
+          "Capital controls become a standing temptation; Art. 61 makes them lapse unless renewed."
+        ],
+        "FM-16": [
+          "?",
+          "No EU climate-law floor; depends on the Ecological Authority."
+        ]
+      },
+      "costs": [
+        "A sharp fall in living standards in the first years, through a falling currency and dearer imports.",
+        "Tariffs or non-tariff barriers on Irish-owned exports, above all beef and dairy.",
+        "EU citizenship lost by every Irish citizen, North and South, and by about 91,000 Irish citizens living in other EU states.",
+        "Nearly €7.5 billion of EU farm support over 2023–27 to be replaced from the State's own budget.",
+        "An external frontier for goods across the island."
+      ],
+      "gains": [
+        "Its own currency, interest rate and lender of last resort (Art. 61).",
+        "Capital controls as ordinary, published law.",
+        "Freedom from state-aid and procurement rules, except what a trade agreement trades away (Art. 104.4).",
+        "No EU fiscal rules or budget contribution (Ireland has been a net contributor since 2013).",
+        "Control of access to roughly 450,000 km² of fishing waters."
+      ],
+      "contrast": {
+        "title": "Why staying in, the earlier default, is not open to this design",
+        "text_md": "Until October 2026 the default was to **stay in the EU, negotiate exemptions** on state aid, procurement and public utilities, and **publish in advance** where the State would refuse to comply if talks failed. It had real strengths: 82% public support, market access, and the EU's rule-of-law framework as an outside check on the republic's own drift.\n\n**It does not work with the default party settlement.** A member state that restricts party competition is in breach of Article 2 from the day the rule takes effect. No exemption can be negotiated from the Union's founding values, and the Court of Justice has said those values cannot be set aside after accession. Staying would mean Article 7 proceedings, budget sanctions of the kind applied to Hungary (€6.3 billion of cohesion funds withheld in 2022), and permanent conflict with institutions the State had signed up to.\n\nIf the owner were to choose Q1-B or Q1-D as the design's answer, this contrast would need to be re-examined: the economic conflict could in principle be negotiated, the political one could not."
+      },
+      "links": [
         {
-          "id": "B",
-          "label": "Stay in, negotiate exemptions, and publish fallback plans in advance",
-          "short": "Stay & negotiate",
-          "summary": "Remain a member. Negotiate specific exemptions on state aid, public procurement and public ownership of utilities. Publish in advance where the state would refuse to comply if talks fail.",
-          "rationale_md": "Irish support for EU membership is consistently very high: 82% in 2025 and 2026, and 88% in 2022. Leaving would wreck the transition's legitimacy and invite the isolation and capital flight that FM-11 describes.\n\nThe Republic therefore **stays and negotiates specific exemptions** on state aid, public procurement and the public ownership of utilities. Article 345 TFEU already leaves ownership to member states.\n\n**It also publishes, in advance, the areas where it would refuse to comply if negotiations fail.** That way any defiance is transparent and has a democratic mandate, rather than being improvised under pressure.",
-          "honesty_md": "Treaty change needs unanimity, so Ireland's leverage is small. The published fallback is a credible threat only if the public would back it, and it could be called. If talks fail, this option turns into Option D on a published timetable.",
-          "thin_points": [
-            "Exemptions may never come.",
-            "A published fallback plan can be priced in by markets in advance (FM-11).",
-            "Some EU institutions may treat the restrictions on parties in the default Q1 answer as a breach of Article 2 TEU values."
-          ],
-          "scores": {
-            "FM-11": ["+", "Single-market and euro membership protect against isolation."],
-            "FM-05": ["0", "Planning tools are constrained, partly offset by negotiated exemptions."],
-            "FM-06": ["+", "State-aid rules harden budget constraints."],
-            "FM-02": ["+", "The EU's rule-of-law framework is an outside check on our own drift."],
-            "FM-14": ["+", "Keeps an outward-looking frame against nationalist capture."],
-            "FM-16": ["+", "EU climate law sets a floor."],
-            "FM-17": ["+", "Matches public opinion."]
-          },
-          "costs": [
-            "The transition is slower and constrained.",
-            "Capital controls are largely unavailable."
-          ]
+          "text": "Research note: leaving the EU and the euro",
+          "href": "#/research/13-leaving-the-eu"
         },
         {
-          "id": "C",
-          "label": "Leave the EU",
-          "short": "Leave",
-          "summary": "Exit the Union and the euro to regain the full toolkit: capital controls, state aid and procurement.",
-          "rationale_md": "It removes every legal constraint on planning and public ownership at once.",
-          "honesty_md": "It is the largest economic shock available. It goes against more than 80% public support. It hardens the border question and removes an outside check against our own authoritarian drift.",
-          "thin_points": [
-            "New-currency capital flight.",
-            "Multinationals leave.",
-            "The North sits inside the EU goods market under the Windsor Framework."
-          ],
-          "scores": {
-            "FM-11": ["−−", "Loss of market access and capital flight."],
-            "FM-05": ["+", "The full planning toolkit."],
-            "FM-06": ["−", "No outside discipline on budgets."],
-            "FM-02": ["−", "The outside check is gone."],
-            "FM-14": ["−", "Exit politics tends toward nationalism."],
-            "FM-16": ["?", "No EU floor; depends entirely on domestic law."],
-            "FM-17": ["−", "Living standards fall in the transition, against majority opinion."]
-          },
-          "costs": [
-            "A sharp fall in living standards during the transition.",
-            "A new currency."
-          ]
+          "text": "Article 104",
+          "href": "#/constitution?a=104"
         },
         {
-          "id": "D",
-          "label": "Stay, but defy specific rules",
-          "short": "Stay & defy",
-          "summary": "Remain a member, but openly refuse specific rules and accept infringement proceedings.",
-          "rationale_md": "Keeps market access while acting immediately.",
-          "honesty_md": "It brings fines and legal attrition, and it normalises a state obeying law selectively, a precedent that cuts against our own constitution. The recent precedents (Hungary, Poland) come from the authoritarian right.",
-          "thin_points": [
-            "Investor flight driven by uncertainty.",
-            "Hands domestic opponents an argument about lawlessness."
-          ],
-          "scores": {
-            "FM-11": ["−", "Fines and uncertainty."],
-            "FM-05": ["+", "More planning tools."],
-            "FM-02": ["−", "Normalises selective legality."],
-            "FM-17": ["?", "Little evidence either way."]
-          },
-          "costs": [
-            "Fines.",
-            "Isolation inside the Council."
-          ]
+          "text": "Article 61: money and the Central Bank",
+          "href": "#/constitution?a=61"
+        },
+        {
+          "text": "Article 107: the land border",
+          "href": "#/constitution?a=107"
+        },
+        {
+          "text": "Stress test: leaving the EU and the euro",
+          "href": "#/stress/leaving-the-eu"
         }
       ]
     },

@@ -10,7 +10,8 @@ An interactive, static website setting out a complete governmental and economic 
 npm install
 npm run dev        # local dev server with live reload
 npm run build      # static build in dist/
-npm test           # after a build: smoke + accessibility (axe), variant switching, keyboard tests
+npm run validate   # checks every cross-reference in the content (no build needed)
+npm test           # after a build: validate, smoke + accessibility (axe), variant switching, keyboard tests
 ```
 
 The build is plain static files with relative paths and hash routing. Upload `dist/` to any static host (GitHub Pages, Netlify, a web server), or open it from a local web server. There is no backend.
@@ -27,7 +28,7 @@ All content lives in Markdown and JSON. Change a file, then rebuild (or keep `np
 | **The constitution** | `design/constitution.md` | See the conventions below |
 | **Institutions on the map** | `design/institutions.json` | Nodes (text, `pos` coordinates, safeguards) and edges (`kind` drives the overlays) |
 | Failure modes (summaries) | `design/failure-modes.json` | Full text in `research/SYNTHESIS.md` |
-| Design choices and the switchable alternatives | `design/decisions.json` | `default` is the chosen option for Q1 and Q4 |
+| Design choices and the switchable alternatives | `design/decisions.json` | `default` is the chosen option for Q1 (the only switchable question); fixed answers can carry `contrast`, `costs`, `gains` and `links` |
 | Stress tests | `content/scenarios/*.json` | One file per scenario; steps with `next` or `choices` |
 | A day in the republic | `content/vignettes/*.md` | Front matter: `title`, `title_ga`, `who`, `place`, `fms`, `order` |
 | Key works and how they were read | `content/bibliography.json` | `access`: `primary`, `secondary`, `abstract` or `reviews` |
@@ -40,7 +41,7 @@ All content lives in Markdown and JSON. Change a file, then rebuild (or keep `np
 - **Research links.** `[note](research/09-ecology-and-growth.md)` opens the research note inside the site.
 - **Constitution annotations.** A blockquote starting with `> **Why.**` renders as a margin note.
 - **Entrenchment tier.** Add `{eternal}`, `{core}` or `{standard}` at the end of an article heading.
-- **Switchable text.** Wrap text in `:::variant Q1=A` … `:::` (or `Q1=B,D`, `Q4=C`). It shows only when the reader has that option selected. In JSON, the same idea is `"variants": {"Q1": ["A"]}` on map nodes and edges, and `"alt_notes": {"Q4=C": "…"}` on scenario steps.
+- **Switchable text.** Wrap text in `:::variant Q1=A` … `:::` (or `Q1=B,D`). It shows only when the reader has that option selected. In JSON, the same idea is `"variants": {"Q1": ["A"]}` on map nodes and edges, and `"alt_notes": {"Q1=A": "…"}` on scenario steps. Only switchable questions may be used; `npm run validate` checks.
 
 ## Project structure
 
