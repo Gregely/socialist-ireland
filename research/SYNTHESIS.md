@@ -394,7 +394,7 @@ For each failure mode:
 
 ### FM-15 · Entrenchment of emergency powers (cross-cutting)
 
-**Cases.** Almost every case above: the Cheka, the 1918 one-man management decree, the 1921 ban on factions "temporarily", the Brezhnev Doctrine's "defence of socialism".
+**Cases.** Almost every case above: the Cheka, the 1918 one-man management decree, the 1921 ban on factions "temporarily", the Brezhnev Doctrine's "defence of socialism". Outside the socialist tradition, **Weimar's Article 48** is the canonical case. The framers expected it to be used rarely. From 1930 it became the routine way to govern without a parliamentary majority (one count gives 66 decrees against five laws in 1932). The Reichstag could revoke decrees on paper, but in practice doing so triggered dissolution. It was used to depose the Prussian government in 1932, and the Reichstag Fire Decree of February 1933 completed the legal path to dictatorship ([Wikipedia](https://en.wikipedia.org/wiki/Article_48_of_the_Weimar_Constitution); [Rempel, johndclare.net](https://johndclare.net/Rempel_Weimar23.htm)). The lesson: an emergency power whose *revocation* carries a penalty is not checked at all.
 
 **Root causes.** Emergencies are real. Emergency powers have no automatic end. Those who hold them define when the emergency is over.
 

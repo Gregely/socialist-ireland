@@ -90,6 +90,8 @@ Paths (a)–(c) all depend on winning majorities repeatedly. That is a *feature*
 - **Fiscal rules.** The reformed EU framework (2024) sets a multi-year **net expenditure path** that the Council must endorse. The Irish Fiscal Advisory Council's remit now covers compliance with EU rules ([Council of the EU](https://www.consilium.europa.eu/en/policies/economic-governance-framework); [IFAC Box F 2024](https://fiscalcouncil.ie/wp-content/uploads/2024/06/Box-F-Substantial-EU-reforms-come-into-place.pdf)).
 - **Free movement of capital** (Art. 63) limits capital controls. Treaty-level exceptions exist (e.g. Arts. 65–66) but are narrow. Not yet sourced beyond Essent.
 
+- **Public support for EU membership** is high and stable. It was 82% in the European Movement Ireland poll (Amárach, March 2026; 76% in Northern Ireland), the same as 2025 and down from 88% (Red C) in 2022. Only 45% think the EU is heading in the right direction, down from 58% in 2023 ([RTÉ, May 2026](https://rte.ie/news/ireland/2026/0506/1571883-eu-attitudes-ireland/); [gov.ie](https://www.gov.ie/en/department-of-foreign-affairs/press-releases/strong-public-support-for-eu-membership-ahead-of-irelands-eu-presidency/)).
+
 **The options**, to be stated, not resolved:
 
 1. **Socialism within the EU**, using the room Art. 345, SGEI and public procurement allow. The constraint is most acute on capital controls, state aid to cooperatives and fiscal rules.

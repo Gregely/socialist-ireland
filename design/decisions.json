@@ -1,0 +1,238 @@
+{
+  "_note": "Owner's answers to the Phase 2 open questions. rationale_md is rendered on the site's Choices page. Q1 and Q4 are switchable; 'default' is the owner's choice. Scores: ++ strongly resists, + resists, 0 neutral, − worsens, −− strongly worsens, ? unclear.",
+  "questions": [
+    {
+      "id": "Q1",
+      "title_en": "The party question",
+      "title_ga": "An cheist pháirtí",
+      "switchable": true,
+      "default": "A",
+      "options": [
+        {
+          "id": "A",
+          "label": "A leading socialist party, with guaranteed internal democracy",
+          "short": "Leading party",
+          "summary": "One socialist party may contest elections under a party label. Anyone may stand as an individual. The party has no reserved seats, no veto and no command over any organ of state. Factions inside it are protected by law.",
+          "rationale_md": "Pro-capitalist parties are not part of the political order after the transition. The design problem is to have a leading party **without repeating 1918–21** (FM-02) or the ban on factions (FM-13). So the party is bound by rules that its Bolshevik predecessor abolished or never had:\n\n- **Factions and platforms are protected by law inside the party.** This directly reverses the 1921 ban, so disagreement stays visible and organised instead of going underground.\n- **Councils elect delegates as individuals.** Non-party candidates can stand and win at every level, so the party has to earn its leading role in practice. The law does not guarantee it.\n- **No one may hold senior party office and senior state office at the same time.**\n- **Party officials are paid a skilled worker's wage**, with term limits and rotation (FM-01).\n- **The party has no command over the security services, courts or audit office** (FM-04).\n- **A body chosen by lot audits the party's internal elections and finances.**\n\nThe party's authority should come from having been tested in struggle and trusted, not from a constitutional clause.\n\n*Drafter's addition:* a renewal referendum every ten years on whether the party keeps its status (Art. 33). If the vote is lost, the system moves to the rules of Option B.",
+          "honesty_md": "**This is the riskiest choice in the whole design** against FM-02 (monopoly of power) and FM-17 (legitimacy decay). Every historical leading party began with promises of internal democracy, and none kept them over a generation. The safeguards are real, but they are thinnest exactly where the danger is greatest. See *Where the safeguards are thinnest* below.",
+          "thin_points": [
+            "**Who audits the auditors?** The sortition panel that audits the party depends on staff and access. A party that controls the flow of information can steer it (secretariat capture, FM-08).",
+            "**Factions protected on paper are not the same as factions safe in practice.** Careers inside a leading party still depend on the leadership's favour. Michels predicts quiet conformity even where factions are legal (FM-01, FM-13).",
+            "**Independents can win, but the party has the organisation.** In practice a single organised party competing against unorganised individuals wins most contests. That is a monopoly in effect, if not in law (FM-02). Uganda's 'no-party' system and Rojava show how this plays out.",
+            "**Pro-market citizens have speech but no electoral vehicle.** Their only legal route is to win as individuals, or to win the ten-year renewal referendum. If a large minority feels permanently shut out, legitimacy erodes (FM-17), and the risk grows that opposition goes underground or looks abroad (FM-10).",
+            "**Party–state separation can be evaded** by appointing loyal non-office-holders to state posts. The audit body has to look at networks, not just formal posts.",
+            "**The renewal referendum is the backstop**, but a party that has governed for ten years will campaign with every advantage of incumbency."
+          ],
+          "scores": {
+            "FM-01": ["−", "Even with wage caps and rotation, a party that dominates elections still controls careers (Michels, Voslensky)."],
+            "FM-02": ["−", "Better than a classic vanguard because of the safeguards, but still the weakest of the three options: one party, one ballot label."],
+            "FM-03": ["0", "Collective leadership, rotation and party–state separation offset the single-party tendency to produce cults."],
+            "FM-04": ["+", "An explicit constitutional bar on party command over security, courts and audit."],
+            "FM-10": ["+", "Cohesion and organisation in a crisis."],
+            "FM-12": ["−", "The 1991 restoration was carried out by a party elite. Wage caps and asset declarations reduce the incentive but do not remove it."],
+            "FM-13": ["+", "Legal factions mean disagreement need not become a split or a purge."],
+            "FM-14": ["0", "No regional party branches with autonomous power over state organs."],
+            "FM-17": ["−", "Choice at the ballot is narrow. The renewal referendum and winnable independent seats are what keep this from scoring −−."]
+          },
+          "costs": [
+            "Restricts freedom of political association. This is likely incompatible with the ECHR's guarantees (legal sourcing still needed) and with EU Article 2 values, which creates tension with the Q4 answer.",
+            "Hard to win by referendum in today's Ireland.",
+            "Puts the burden of legitimacy on the party's conduct, year after year."
+          ]
+        },
+        {
+          "id": "B",
+          "label": "Several socialist parties",
+          "short": "Socialist pluralism",
+          "summary": "Any number of parties may contest elections if they accept the constitution's democratic and social-ownership core. The Constitutional Court rules on that line, and only on narrow grounds.",
+          "rationale_md": "This follows the Kronstadt demand for freedom for 'left socialist parties and anarchists' (1921) and the multi-party soviets of 1917. A split becomes a new party, not a crisis (FM-13). The line excluding pro-capitalist parties is drawn by an independent court, not by the governing party, using narrow, published criteria.",
+          "honesty_md": "The line can be abused. The June 1918 expulsions of the Mensheviks and SRs were justified as defence against counter-revolution. Whoever controls the court controls what counts as 'socialist'.",
+          "thin_points": [
+            "The court that polices the line becomes a powerful political actor (FM-01, FM-04).",
+            "Pro-capitalist politics can return under socialist labels."
+          ],
+          "scores": {
+            "FM-01": ["+", "Rival parties expose privilege."],
+            "FM-02": ["+", "Real plurality, though the boundary can be used to exclude."],
+            "FM-03": ["+", "Rival parties check personalisation."],
+            "FM-04": ["+", "Opposition parties sit on oversight bodies."],
+            "FM-10": ["+", "Parties of open restoration are excluded."],
+            "FM-12": ["+", "Rival socialist parties watch for asset-stripping."],
+            "FM-13": ["++", "Splits become new parties."],
+            "FM-14": ["0", "No specific effect."],
+            "FM-17": ["+", "Real choice, though excluded voters resent the line."]
+          },
+          "costs": [
+            "Every current major Irish party would have to re-found itself or stay out.",
+            "Likely conflicts with ECHR case law on banning parties (legal sourcing still needed)."
+          ]
+        },
+        {
+          "id": "D",
+          "label": "Councils with no parties",
+          "short": "No-party councils",
+          "summary": "Candidates stand as individuals or as mandated delegates. Associations may campaign but get no ballot labels and no public funding. Sortition bodies carry more weight.",
+          "rationale_md": "This removes the party machine that Michels and Voslensky identify as the engine of the new class. It relies on recall, rotation and sortition instead.",
+          "honesty_md": "History suggests 'no parties' means one hidden party. Uganda's Movement system (1986–2005) became one-party rule in practice, and Rojava's councils sit alongside a dominant PYD. Voters also lose the shortcut that party programmes provide.",
+          "thin_points": [
+            "Informal slates form with less transparency than parties have.",
+            "The best-organised existing network (unions, church, or a party under another name) gains."
+          ],
+          "scores": {
+            "FM-01": ["+", "No party controls nominations, though Michels predicts informal machines will appear."],
+            "FM-02": ["−", "Uganda and Rojava show a hidden dominant party taking over."],
+            "FM-03": ["0", "Personalist politics replaces party politics."],
+            "FM-04": ["0", "No specific effect."],
+            "FM-08": ["−", "Higher information costs for voters."],
+            "FM-10": ["−", "Slow to coordinate under attack."],
+            "FM-13": ["+", "No parties to split."],
+            "FM-17": ["?", "Little evidence either way."]
+          },
+          "costs": [
+            "Needs strong sortition powers.",
+            "Informal parties re-form anyway."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q2",
+      "title_en": "Undoing social ownership",
+      "title_ga": "Úinéireacht shóisialta a aisiompú",
+      "switchable": false,
+      "answer": "Hard, but not impossible. An eternity clause protects democratic rights only.",
+      "rationale_md": "**Core public ownership** (the housing stock, the energy grid, water, health and rail) and **core social rights** can be changed only by **passage in two successive National Assemblies with a general election in between, followed by a referendum**.\n\nThere is **no eternity clause for economic arrangements**. Making them unchangeable would contradict the commitment to revisability and undermine legitimacy (FM-17).\n\nAn **eternity clause applies only to democratic rights themselves**: elections, recall, a free press, independent courts and the sunset on emergency powers. Those are the conditions under which the people can change their minds.\n\n**Entrenchment is a secondary defence.** Weimar shows that constitutional gains last only as long as the balance of forces that won them. Its emergency article was turned into the instrument of the republic's destruction (FM-15). The real guarantee of social ownership is organised popular strength: unions, councils, co-ops and tenants who would resist its removal. No clause can substitute for that."
+    },
+    {
+      "id": "Q3",
+      "title_en": "The North",
+      "title_ga": "An Tuaisceart",
+      "switchable": false,
+      "answer": "The 26 counties first, with a standing offer of an all-island constitutional convention.",
+      "rationale_md": "**No unity by imposition.** Socialism has to be rooted in the conditions of the place where it is built. Connolly's warning cuts both ways. A green flag over Dublin Castle changes nothing if the social order underneath is unchanged. And subordinating class politics to the national question has repeatedly sunk the Irish left (FM-14).\n\nThe constitution therefore states two things only: **the principle of consent** (as in Article 3 of Bunreacht na hÉireann and the Good Friday Agreement), and **a standing offer of an all-island constitutional convention** whenever consent exists. It does not state the outcome. People in the North keep every right the Agreement gives them, including the right to be British, Irish or both."
+    },
+    {
+      "id": "Q4",
+      "title_en": "The European Union",
+      "title_ga": "An tAontas Eorpach",
+      "switchable": true,
+      "default": "B",
+      "options": [
+        {
+          "id": "B",
+          "label": "Stay in, negotiate exemptions, and publish fallback plans in advance",
+          "short": "Stay & negotiate",
+          "summary": "Remain a member. Negotiate specific exemptions on state aid, public procurement and public ownership of utilities. Publish in advance where the state would refuse to comply if talks fail.",
+          "rationale_md": "Irish support for EU membership is consistently very high: 82% in 2025 and 2026, and 88% in 2022. Leaving would wreck the transition's legitimacy and invite the isolation and capital flight that FM-11 describes.\n\nThe Republic therefore **stays and negotiates specific exemptions** on state aid, public procurement and the public ownership of utilities. Article 345 TFEU already leaves ownership to member states.\n\n**It also publishes, in advance, the areas where it would refuse to comply if negotiations fail.** That way any defiance is transparent and has a democratic mandate, rather than being improvised under pressure.",
+          "honesty_md": "Treaty change needs unanimity, so Ireland's leverage is small. The published fallback is a credible threat only if the public would back it, and it could be called. If talks fail, this option turns into Option D on a published timetable.",
+          "thin_points": [
+            "Exemptions may never come.",
+            "A published fallback plan can be priced in by markets in advance (FM-11).",
+            "Some EU institutions may treat the restrictions on parties in the default Q1 answer as a breach of Article 2 TEU values."
+          ],
+          "scores": {
+            "FM-11": ["+", "Single-market and euro membership protect against isolation."],
+            "FM-05": ["0", "Planning tools are constrained, partly offset by negotiated exemptions."],
+            "FM-06": ["+", "State-aid rules harden budget constraints."],
+            "FM-02": ["+", "The EU's rule-of-law framework is an outside check on our own drift."],
+            "FM-14": ["+", "Keeps an outward-looking frame against nationalist capture."],
+            "FM-16": ["+", "EU climate law sets a floor."],
+            "FM-17": ["+", "Matches public opinion."]
+          },
+          "costs": [
+            "The transition is slower and constrained.",
+            "Capital controls are largely unavailable."
+          ]
+        },
+        {
+          "id": "C",
+          "label": "Leave the EU",
+          "short": "Leave",
+          "summary": "Exit the Union and the euro to regain the full toolkit: capital controls, state aid and procurement.",
+          "rationale_md": "It removes every legal constraint on planning and public ownership at once.",
+          "honesty_md": "It is the largest economic shock available. It goes against more than 80% public support. It hardens the border question and removes an outside check against our own authoritarian drift.",
+          "thin_points": [
+            "New-currency capital flight.",
+            "Multinationals leave.",
+            "The North sits inside the EU goods market under the Windsor Framework."
+          ],
+          "scores": {
+            "FM-11": ["−−", "Loss of market access and capital flight."],
+            "FM-05": ["+", "The full planning toolkit."],
+            "FM-06": ["−", "No outside discipline on budgets."],
+            "FM-02": ["−", "The outside check is gone."],
+            "FM-14": ["−", "Exit politics tends toward nationalism."],
+            "FM-16": ["?", "No EU floor; depends entirely on domestic law."],
+            "FM-17": ["−", "Living standards fall in the transition, against majority opinion."]
+          },
+          "costs": [
+            "A sharp fall in living standards during the transition.",
+            "A new currency."
+          ]
+        },
+        {
+          "id": "D",
+          "label": "Stay, but defy specific rules",
+          "short": "Stay & defy",
+          "summary": "Remain a member, but openly refuse specific rules and accept infringement proceedings.",
+          "rationale_md": "Keeps market access while acting immediately.",
+          "honesty_md": "It brings fines and legal attrition, and it normalises a state obeying law selectively, a precedent that cuts against our own constitution. The recent precedents (Hungary, Poland) come from the authoritarian right.",
+          "thin_points": [
+            "Investor flight driven by uncertainty.",
+            "Hands domestic opponents an argument about lawlessness."
+          ],
+          "scores": {
+            "FM-11": ["−", "Fines and uncertainty."],
+            "FM-05": ["+", "More planning tools."],
+            "FM-02": ["−", "Normalises selective legality."],
+            "FM-17": ["?", "Little evidence either way."]
+          },
+          "costs": [
+            "Fines.",
+            "Isolation inside the Council."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q5",
+      "title_en": "Sortition",
+      "title_ga": "Crannchur",
+      "switchable": false,
+      "answer": "Binding, but in bounded areas.",
+      "rationale_md": "FM-08 shows that advisory assemblies fade, including Ireland's own. So bodies chosen by lot have **binding power where elected politicians have a conflict of interest**:\n\n- **auditing officials' pay and privileges** (FM-01);\n- **approving any extension of emergency powers** (FM-15);\n- **oversight of the security services** (FM-04);\n- **the right to force a referendum**.\n\nOrdinary law-making stays with elected, recallable delegates."
+    },
+    {
+      "id": "Q6",
+      "title_en": "Separation of powers",
+      "title_ga": "Deighilt na gcumhachtaí",
+      "switchable": false,
+      "answer": "Keep separation for the bodies that check power; Commune-style accountability for the rest.",
+      "rationale_md": "The **executive is elected by the National Assembly and can be recalled by it at any time**. Its members are paid a skilled worker's wage (FM-01).\n\nBut the **courts, the audit office, the ecological authority and the public-media regulator stay independent**. Fusing the judiciary into the governing body is how emergency powers became permanent (FM-04, FM-15). The Paris Commune was 'executive and legislative at the same time', and that part is adopted. Its judges were elected and revocable by the same majority, and that part is not."
+    },
+    {
+      "id": "Q7",
+      "title_en": "Markets and planning",
+      "title_ga": "Margaí agus pleanáil",
+      "switchable": false,
+      "answer": "A layered economy.",
+      "rationale_md": "- **Markets, mostly co-ops and small private firms, for most consumer goods and everyday services.** FM-05 shows what happens otherwise, and so does the consumer evidence under FM-17: thirteen-year Trabant waits, hard-currency Intershops and Poland's price revolts.\n- **Democratically negotiated planning for investment and the major sectors.**\n- **Free or near-free public provision** of housing, health, care, childcare, education, transport and basic energy: *public luxury, private sufficiency*.\n- **A rule against co-op insiders (FM-09).** Membership opens after a probation period, and the use of non-member staff is capped. This avoids Mondragon's two-tier workforce."
+    },
+    {
+      "id": "Q8",
+      "title_en": "The name",
+      "title_ga": "An t-ainm",
+      "switchable": false,
+      "answer": "The state stays 'Éire / Ireland' (Article 4).",
+      "rationale_md": "'Workers' Republic' shuts out the farmers, carers and unwaged people whom this design counts as part of the working class (FM-18). A rename would also look like the ritual politics that FM-17 warns about. **Continuity is part of the legitimacy argument for a legal transition.** The state is still Éire, or in English, Ireland."
+    },
+    {
+      "id": "Q9",
+      "title_en": "Ecology",
+      "title_ga": "Éiceolaíocht",
+      "switchable": false,
+      "answer": "Binding physical limits, a planned fall in named wasteful sectors, and no austerity.",
+      "rationale_md": "- **Binding physical limits** (carbon, nitrogen, land and electricity), enforced by an **independent ecological authority with a veto over the plan**.\n- **A planned fall in material use in named wasteful sectors**: data centres, aviation, advertising and the herd. There is **no growth target either way** for the rest of the economy.\n- **Degrowth never means austerity for working people.**\n- **The herd transition is planned and paid for**, with income guarantees, a land-use plan and alternative production. It is **negotiated with farmers, not imposed**, because they are the hardest constituency and the one whose loss would feed nationalist capture (FM-14)."
+    }
+  ]
+}
