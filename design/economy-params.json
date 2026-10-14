@@ -1,0 +1,788 @@
+{
+  "_note": "Every assumption of the economy model. Edit any 'value' to change the model; no code changes are needed. 'kind' is 'data' (from a cited source), 'derived' (arithmetic on cited data, method stated) or 'assumption' (the drafter's judgement, to be revisited). Sources point to research/12-economy.md and research/13-leaving-the-eu.md, where the full citations are. Units: € (= IR£ after exit, at par) billions at current prices; people in thousands; shares as fractions.",
+  "baseline": {
+    "_about": "Ireland in 2025 (the model's year 0). These figures reproduce the real economy at the start; the model is calibrated so that year 0 matches them.",
+    "gni_star": {
+      "value": 333.97,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "GNI*",
+      "source": "CSO NA001, 2025 (research 12 §1)"
+    },
+    "household_consumption": {
+      "value": 125.02,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Household consumption, excluding VAT and excise",
+      "source": "CSO ISQ01 individual consumption €154.42bn (2025) less VAT €22.94bn and excise €6.47bn (EFO Table 11); research 12 §2.3, §3.1"
+    },
+    "household_energy_imports": {
+      "value": 2.25,
+      "unit": "€ bn",
+      "kind": "assumption",
+      "label": "Imported energy bought directly by households",
+      "source": "About 30% of the €7.49bn energy import bill (CSO TSA06 2025): residential oil, gas and coal plus private road fuel, from the shares of final consumption in SEAI's 2024 energy balance (research 12 §6.1). The 30% split is the drafter's estimate"
+    },
+    "energy_imports": {
+      "value": 7.49,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Energy imports (SITC 3)",
+      "source": "CSO TSA06, 2025 (research 12 §4.1)"
+    },
+    "food_imports": {
+      "value": 12.85,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Food, drink and tobacco imports (SITC 0, 1)",
+      "source": "CSO TSA06, 2025 (research 12 §4.2)"
+    },
+    "medicine_imports": {
+      "value": 3.0,
+      "unit": "€ bn",
+      "kind": "assumption",
+      "label": "Medicines for domestic use paid in foreign currency",
+      "source": "The State's medicines bill, 'almost €3 billion' (Department of Health projection for 2024, research 12 §4.3). Treating all of it as imported is an assumption"
+    },
+    "gov_consumption": {
+      "value": 57.48,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Public services: pay plus goods and services",
+      "source": "CSO GFA01 2025: compensation of employees €36.14bn + use of goods and services €21.34bn"
+    },
+    "public_investment": {
+      "value": 17.28,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Public investment (gross)",
+      "source": "CSO GFA01 2025: net acquisition of non-financial assets €9.52bn + depreciation €7.76bn"
+    },
+    "private_investment": {
+      "value": 55.92,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Private investment (modified)",
+      "source": "Modified GFCF €73.20bn (CSO NAQ05, 2025) less public investment €17.28bn"
+    },
+    "transfers": {
+      "value": 55.31,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Social and other transfers, subsidies",
+      "source": "CSO GFA01 2025: social benefits €43.39bn + other current transfers €4.11bn + subsidies €3.55bn + capital transfers €5.06bn, less the net EU contribution below"
+    },
+    "eu_net_contribution": {
+      "value": 0.8,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Net contribution to the EU budget",
+      "source": "About €800m in 2024 (MEP's estimate; no official figure found; research 13 §5)"
+    },
+    "interest": {
+      "value": 2.97,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Interest on public debt",
+      "source": "CSO GFA01 2025"
+    },
+    "other_revenue": {
+      "value": 21.53,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Other revenue (capital taxes, property, fees, sales, investment income, one-offs)",
+      "source": "General government revenue €145.05bn (CSO GFA01 2025) less labour taxes, consumption taxes and corporation tax as defined here"
+    },
+    "domestic_exports": {
+      "value": 45.86,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Exports of Irish-owned firms",
+      "source": "Enterprise Ireland client exports €38.86bn (2025) + tourism receipts €7.0bn (CSO BPA19); research 12 §2.4. The CSO's wider figure for domestic firms' services exports (€73bn, 2023) is not used; see the economy-model spec"
+    },
+    "agrifood_exports": {
+      "value": 19.0,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Food, drink and horticulture exports",
+      "source": "Bord Bia, 2025 (research 13 §4.1)"
+    },
+    "mne_wages": {
+      "value": 26.0,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Multinationals' payroll in Ireland",
+      "source": "ABSEI 2024 (research 12 §7.3)"
+    },
+    "mne_purchases": {
+      "value": 17.3,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Multinationals' purchases of Irish services and materials",
+      "source": "ABSEI 2024: services €12.2bn + materials €5.1bn"
+    },
+    "mne_taxes": {
+      "value": 28.8,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Corporation tax paid by foreign-owned multinationals",
+      "source": "Revenue, CT 2025 (research 12 §3.2)"
+    },
+    "mne_employment": {
+      "value": 325.3,
+      "unit": "thousand",
+      "kind": "data",
+      "label": "Employment in foreign-owned agency client firms",
+      "source": "Annual Employment Survey 2025 (research 12 §2.2)"
+    },
+    "domestic_wages": {
+      "value": 139.16,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Wages in the domestic economy",
+      "source": "Compensation of employees €165.16bn (CSO NAQ08 2025) less multinationals' payroll €26.0bn"
+    },
+    "domestic_va": {
+      "value": 249.77,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Value added of the domestic economy",
+      "source": "GNI* less multinationals' payroll and corporation tax, less VAT and excise (which the model records as household taxes): 333.97 − 26.0 − 28.8 − 29.41"
+    },
+    "gni_other": {
+      "value": 0,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "Other items in GNI* not modelled",
+      "source": "Zero by construction: domestic value added is defined as the remainder"
+    },
+    "employment": {
+      "value": 2817.6,
+      "unit": "thousand",
+      "kind": "data",
+      "label": "Employment",
+      "source": "CSO QLF03, 2025 average"
+    },
+    "labour_force": {
+      "value": 2965.9,
+      "unit": "thousand",
+      "kind": "derived",
+      "label": "Labour force",
+      "source": "Employment ÷ (1 − 5.0% unemployment; CSO ALF03 2025)"
+    },
+    "hours_per_worker": {
+      "value": 1,
+      "unit": "index",
+      "kind": "assumption",
+      "label": "Average hours per worker (index, today = 1)",
+      "source": "An index, so no figure is needed"
+    },
+    "public_debt": {
+      "value": 209.9,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Gross general government debt",
+      "source": "CSO, end-2025 (research 12 §3.4)"
+    },
+    "state_funds": {
+      "value": 32.9,
+      "unit": "€ bn",
+      "kind": "derived",
+      "label": "State funds: Future Ireland Fund, ICNF, ISIF",
+      "source": "NTMA, end-2025: €12.7bn + €4.1bn + €16.1bn (research 12 §3.3)"
+    },
+    "fx_reserves": {
+      "value": 0,
+      "unit": "€ bn",
+      "kind": "assumption",
+      "label": "Existing official reserves usable on exit day",
+      "source": "Not sourced (the ECB data portal could not be reached). Set to zero so that only the TARGET settlement counts: a deliberately cautious assumption"
+    },
+    "target_claim": {
+      "value": 81.8,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Central Bank's TARGET claim on the Eurosystem",
+      "source": "ECB data, end-August 2026 (research 13 §2.1)"
+    },
+    "household_deposits": {
+      "value": 160,
+      "unit": "€ bn",
+      "kind": "assumption",
+      "label": "Household deposits in Irish banks",
+      "source": "Not sourced in this pass; an order-of-magnitude figure used only to size capital flight. Owner should replace with the Central Bank's money and banking statistics"
+    },
+    "farm_income": {
+      "value": 7.26,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Value added of agriculture, forestry and fishing",
+      "source": "CSO NA016, 2025 (research 12 §2.1); used as the farm income the Art. 67 guarantee protects"
+    },
+    "cap_eu_funding": {
+      "value": 1.5,
+      "unit": "€ bn a year",
+      "kind": "derived",
+      "label": "EU-funded CAP payments",
+      "source": "Nearly €7.5bn from the EU budget over 2023–27 (European Commission; research 13 §5) ÷ 5"
+    },
+    "household_disposable_income": {
+      "value": 188.69,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Household gross disposable income",
+      "source": "CSO ISQ01, 2025 (research 12 §2.3); used to calibrate the share of the domestic surplus households receive"
+    },
+    "ca_star": {
+      "value": 24.3,
+      "unit": "€ bn",
+      "kind": "data",
+      "label": "Modified current account (CA*)",
+      "source": "CSO BPA39, 2025 (research 12 §2.4); the model is calibrated to it"
+    }
+  },
+  "design": {
+    "_about": "How the republic is run, and how the economy is assumed to respond. Policy choices follow the constitution; behavioural parameters cite evidence where it exists.",
+    "horizon": {
+      "value": 20,
+      "unit": "years",
+      "kind": "assumption",
+      "label": "Years modelled",
+      "source": "Transition (years 0–10) plus ten years to a long-run position"
+    },
+    "exit_year": {
+      "value": 2,
+      "unit": "year",
+      "kind": "data",
+      "label": "Year the republic leaves the EU and the euro",
+      "source": "Article 50's two-year default (Art. 104.1; research 13 §1.5)"
+    },
+    "transition_years": {
+      "value": 10,
+      "unit": "years",
+      "kind": "assumption",
+      "label": "Years over which the transition is phased",
+      "source": "The owner's brief (transition years 0–10)"
+    },
+    "provision_years": {
+      "value": 5,
+      "unit": "years",
+      "kind": "assumption",
+      "label": "Years to build up public provision",
+      "source": "Drafter's assumption"
+    },
+    "trend_growth": {
+      "value": 0.015,
+      "unit": "per year",
+      "kind": "assumption",
+      "label": "Underlying real growth of the domestic economy",
+      "source": "Drafter's assumption, below the 2.2% real growth of non-multinational sectors in 2025 (research 12 §2.1) to allow for the shocks of the transition"
+    },
+    "labour_force_growth": {
+      "value": 0.005,
+      "unit": "per year",
+      "kind": "assumption",
+      "label": "Growth of the labour force",
+      "source": "Drafter's assumption (ageing slows labour-force growth; research 12 §3.5)"
+    },
+    "productivity_growth": {
+      "value": 0.01,
+      "unit": "per year",
+      "kind": "derived",
+      "label": "Underlying productivity growth",
+      "source": "Trend growth less labour-force growth, so that unemployment is stable with no shocks"
+    },
+    "inflation_target": {
+      "value": 0.02,
+      "unit": "per year",
+      "kind": "assumption",
+      "label": "Central Bank inflation target",
+      "source": "Set by the Assembly under Art. 61.2; 2% is the drafter's placeholder"
+    },
+    "foreign_inflation": {
+      "value": 0.02,
+      "unit": "per year",
+      "kind": "assumption",
+      "label": "Inflation abroad",
+      "source": "Drafter's assumption"
+    },
+    "indexation": {
+      "value": 0.6,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of last year's inflation passed into this year's wages and domestic prices",
+      "source": "Drafter's assumption: partial indexation, so a currency shock raises prices for several years without spiralling"
+    },
+    "export_elasticity": {
+      "value": 0.5,
+      "unit": "elasticity",
+      "kind": "assumption",
+      "label": "Response of export volumes to a cheaper currency",
+      "source": "Drafter's assumption, at the low end of trade-elasticity estimates; Irish-owned exports are heavily food, whose markets are constrained by tariffs and quotas"
+    },
+    "wto_loss_agrifood": {
+      "value": 0.27,
+      "unit": "share",
+      "kind": "derived",
+      "label": "Fall in agri-food exports on WTO terms with both the EU and the UK",
+      "source": "Copenhagen Economics' WTO scenario: beef exports −35%, dairy −40% (research 13 §4.2), applied to the 72% of agri-food exports sold to the EU and UK"
+    },
+    "wto_loss_other": {
+      "value": 0.077,
+      "unit": "share",
+      "kind": "data",
+      "label": "Fall in other Irish-owned exports on WTO terms",
+      "source": "Copenhagen Economics: exports 7.7% below baseline by 2030 in the WTO scenario (research 13 §4.2). An analogy from Brexit, not a forecast"
+    },
+    "herd_export_share": {
+      "value": 0.56,
+      "unit": "share",
+      "kind": "derived",
+      "label": "Beef and dairy share of agri-food exports",
+      "source": "(€3.4bn beef + €7.3bn dairy) ÷ €19bn, Bord Bia 2025 (research 13 §4.1). Exports are assumed to fall in proportion to the herd"
+    },
+    "farm_guarantee_share": {
+      "value": 1.0,
+      "unit": "share",
+      "kind": "data",
+      "label": "Share of lost farm income replaced",
+      "source": "Art. 67.2: income no lower than the previous five-year average"
+    },
+    "cap_replacement": {
+      "value": 1.0,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of EU farm payments the State replaces after exit",
+      "source": "Drafter's assumption: the republic keeps farm support whole"
+    },
+    "provision_expansion": {
+      "value": 0.03,
+      "unit": "share of GNI*",
+      "kind": "assumption",
+      "label": "Extra public provision: childcare, the Care Service, transport, the energy allowance",
+      "source": "Drafter's assumption for Arts. 21, 24, 68, 71; to be costed item by item"
+    },
+    "public_investment_push": {
+      "value": 0.02,
+      "unit": "share of GNI*",
+      "kind": "assumption",
+      "label": "Extra public investment: housing, retrofits, grid, rail",
+      "source": "Drafter's assumption"
+    },
+    "private_investment_fall": {
+      "value": 0.3,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Fall in private investment over the transition",
+      "source": "Drafter's assumption: conversion to social ownership (Art. 47.2) and uncertainty; Przeworski and Wallerstein find investment falls while redistribution is anticipated (research 12 §8.1)"
+    },
+    "public_capital_return": {
+      "value": 0.1,
+      "unit": "elasticity",
+      "kind": "assumption",
+      "label": "Productivity gain from extra productive public investment",
+      "source": "Drafter's assumption, in the range commonly reported for the output elasticity of public capital; not separately sourced in this pass"
+    },
+    "investment_waste_max": {
+      "value": 0.3,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of public investment wasted when no one takes part in planning",
+      "source": "Drafter's assumption representing Kornai's 'investment hunger' (research 12 §8.4). Waste falls in proportion to participation. The weakest-evidenced link in the model"
+    },
+    "hours_offset": {
+      "value": 0.5,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of an hours cut recovered by higher output per hour",
+      "source": "Drafter's assumption; four-day-week trials report output largely maintained, but they are small and self-selected"
+    },
+    "energy_import_cut": {
+      "value": 0.4,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of imported energy replaced by domestic renewables by year 10",
+      "source": "Drafter's assumption; 64.9% of indigenous energy was already renewable in 2025 and imports are 92.8% fossil (research 12 §4.1)"
+    },
+    "jg_wage": {
+      "value": 0.03,
+      "unit": "€ bn per thousand people a year",
+      "kind": "assumption",
+      "label": "Job Guarantee wage (about €30,000 a year)",
+      "source": "Drafter's assumption, near a full-time living wage"
+    },
+    "jg_capacity": {
+      "value": 0.06,
+      "unit": "share of labour force",
+      "kind": "assumption",
+      "label": "Most the Job Guarantee can absorb",
+      "source": "Drafter's assumption: organisational capacity, built up over the first years"
+    },
+    "jg_build_years": {
+      "value": 3,
+      "unit": "years",
+      "kind": "assumption",
+      "label": "Years to build the Job Guarantee to capacity",
+      "source": "Drafter's assumption"
+    },
+    "frictional_unemployment": {
+      "value": 0.03,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Unemployment between jobs",
+      "source": "Drafter's assumption"
+    },
+    "t_w": {
+      "value": 0.3705,
+      "unit": "rate",
+      "kind": "derived",
+      "label": "Tax and PRSI on labour income",
+      "source": "(Income tax incl. USC €36.58bn + social contributions €24.61bn) ÷ compensation of employees €165.16bn, 2025"
+    },
+    "t_c": {
+      "value": 0.2352,
+      "unit": "rate",
+      "kind": "derived",
+      "label": "VAT and excise on consumption",
+      "source": "(VAT €22.94bn + excise €6.47bn) ÷ consumption excluding them €125.02bn"
+    },
+    "t_s": {
+      "value": 0.0371,
+      "unit": "rate",
+      "kind": "derived",
+      "label": "Tax on the domestic surplus",
+      "source": "Domestic corporation tax (€32.9bn underlying less €28.8bn paid by foreign multinationals) ÷ domestic operating surplus (€249.77bn − €139.16bn)"
+    },
+    "m_g": {
+      "value": 0.1,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Import content of public services",
+      "source": "Drafter's assumption: mostly wages"
+    },
+    "m_i": {
+      "value": 0.35,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Import content of investment",
+      "source": "Drafter's assumption: machinery (€17.1bn of modified investment) is mostly imported, construction (€43bn) mostly domestic (research 12 §2.5)"
+    },
+    "m_x": {
+      "value": 0.3,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Import content of Irish-owned exports",
+      "source": "Drafter's assumption: feed, fertiliser and fuel in food exports (research 12 §4.2)"
+    },
+    "social_ownership_share": {
+      "value": 0.5,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of the domestic surplus earned by socially owned enterprise by year 10",
+      "source": "Drafter's assumption for Art. 47 (public, municipal and co-operative)"
+    },
+    "public_dividend_share": {
+      "value": 0.2,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of socially owned enterprises' after-tax surplus paid to the State",
+      "source": "Drafter's assumption; co-operative reserves are indivisible (Art. 50.3), so most surplus is reinvested"
+    },
+    "interest_rate": {
+      "value": 0.0142,
+      "unit": "rate",
+      "kind": "derived",
+      "label": "Effective interest rate on public debt today",
+      "source": "Interest €2.97bn ÷ debt €209.9bn, 2025 (CSO); the EFO gives 1.4%"
+    },
+    "foreign_law_debt_share": {
+      "value": 0.2,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of public debt under foreign law, which stays in euro",
+      "source": "Unverified: new bonds are under Irish law, some older programmes under English law (research 13 §2.1). 20% is the drafter's placeholder"
+    },
+    "domestic_debt_held_at_home": {
+      "value": 0.5,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of domestic-law debt held by residents",
+      "source": "Drafter's assumption; interest on the rest is paid abroad"
+    },
+    "domestic_absorption": {
+      "value": 0.8,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of private net saving that savers will lend to the State",
+      "source": "Drafter's assumption; under capital controls Iceland's trapped savings financed the budget (research 12 §7.4)"
+    },
+    "cb_ceiling": {
+      "value": 0.03,
+      "unit": "share of GNI*",
+      "kind": "assumption",
+      "label": "Ceiling on Central Bank lending to the State",
+      "source": "Voted each year under Art. 61.4; 3% is the drafter's placeholder"
+    },
+    "credibility_premium": {
+      "value": 0.5,
+      "unit": "inflation points per point of GNI*",
+      "kind": "assumption",
+      "label": "Extra inflation from Central Bank financing",
+      "source": "Drafter's assumption representing the critics' expectations channel (Mankiw, Blanchard, IMF staff; research 12 §8.3). Set to 0 for the pure MMT view"
+    },
+    "demand_pull": {
+      "value": 0.5,
+      "unit": "coefficient",
+      "kind": "assumption",
+      "label": "Inflation from demand beyond capacity",
+      "source": "Drafter's assumption"
+    },
+    "swf_return": {
+      "value": 0.04,
+      "unit": "rate",
+      "kind": "assumption",
+      "label": "Return on the Social Wealth Fund",
+      "source": "Drafter's assumption, close to Norway's 3% expected real return plus inflation (research 12 §8.2)"
+    },
+    "swf_draw_rule": {
+      "value": 0.04,
+      "unit": "share a year",
+      "kind": "assumption",
+      "label": "Most of the Fund that may be spent on investment in a year",
+      "source": "Drafter's assumption, after the Future Ireland Fund's 3% cap (research 12 §3.3)"
+    },
+    "windfall_share": {
+      "value": 0.58,
+      "unit": "share",
+      "kind": "derived",
+      "label": "Share of multinational corporation tax that is windfall",
+      "source": "€16.8bn 'potentially transitory' ÷ €28.8bn (Department of Finance; research 12 §3.2). Ring-fenced in the Fund before exit (Art. 60)"
+    },
+    "target_settled": {
+      "value": 0.5,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Share of the TARGET claim settled in foreign currency on exit",
+      "source": "No precedent; drafter's placeholder (research 13 §2.1)"
+    },
+    "mne_departure_start": {
+      "value": 1,
+      "unit": "year",
+      "kind": "assumption",
+      "label": "Year multinationals start to leave",
+      "source": "Drafter's assumption: once notice is given"
+    },
+    "mne_departure_years": {
+      "value": 3,
+      "unit": "years",
+      "kind": "assumption",
+      "label": "Years over which they leave",
+      "source": "Drafter's assumption"
+    },
+    "deposit_rate": {
+      "value": 0,
+      "unit": "rate",
+      "kind": "assumption",
+      "label": "Interest on household deposits (not modelled)",
+      "source": "Interest reaches households through domestic holdings of public debt instead"
+    },
+    "interest_rate_rise": {
+      "value": 0.015,
+      "unit": "rate",
+      "kind": "assumption",
+      "label": "Rise in the effective interest rate over the transition",
+      "source": "The Department of Finance projects 2.7% by 2030 inside the euro (EFO); a new currency and capital controls are assumed to add a little more. Drafter's assumption"
+    },
+    "foreign_rate_premium": {
+      "value": 0.01,
+      "unit": "rate",
+      "kind": "assumption",
+      "label": "Extra interest on debt that stays in euro",
+      "source": "Drafter's assumption: a risk premium once the State has redenominated its own-law debt"
+    },
+    "tax_increase": {
+      "value": 0.05,
+      "unit": "share of GNI*",
+      "kind": "assumption",
+      "label": "Extra progressive income and wealth tax, phased in over five years",
+      "source": "Drafter's assumption. Tax is already about 39% of GNI* (research 12 §8.1); this takes it towards Danish levels. Set to 0 to see the design without new taxes"
+    },
+    "import_elasticity": {
+      "value": 0.5,
+      "unit": "elasticity",
+      "kind": "assumption",
+      "label": "Response of import volumes to dearer imports",
+      "source": "Drafter's assumption at the low end of usual estimates: Ireland's essential imports (energy, food inputs, medicines) are hard to substitute in the short run"
+    }
+  },
+  "breaks": {
+    "_about": "Where the model says the economy breaks. Each threshold is a judgement, stated openly.",
+    "budget_gap": {
+      "value": 0.005,
+      "unit": "share of GNI*",
+      "kind": "assumption",
+      "label": "Unfinanced deficit that counts as a break",
+      "source": "Any gap above 0.5% of GNI* after savers and the Central Bank ceiling"
+    },
+    "reserve_months": {
+      "value": 3,
+      "unit": "months",
+      "kind": "assumption",
+      "label": "Reserves below this many months of essential imports",
+      "source": "The traditional three-months-of-imports rule of thumb for reserve adequacy, applied here to essential imports only (energy, food, medicines)"
+    },
+    "inflation": {
+      "value": 0.1,
+      "unit": "per year",
+      "kind": "assumption",
+      "label": "Inflation counted as a break",
+      "source": "Drafter's threshold; Chile's inflation passed 260% in 1972 (research 12 §7.4), Iceland's peaked at 18.6%"
+    },
+    "unemployment": {
+      "value": 0.08,
+      "unit": "share",
+      "kind": "assumption",
+      "label": "Unemployment counted as a break",
+      "source": "Drafter's threshold, above the 5.0% of 2025"
+    },
+    "interest_share": {
+      "value": 0.15,
+      "unit": "share of revenue",
+      "kind": "assumption",
+      "label": "Interest taking more than this share of revenue",
+      "source": "Drafter's threshold; interest was 2.0% of revenue in 2025 (NTMA)"
+    }
+  },
+  "sliders": {
+    "mne_exit": {
+      "label": "Share of multinationals that leave",
+      "unit": "share",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.5,
+      "fms": [
+        "FM-11"
+      ],
+      "stress": [
+        "capital-flight"
+      ],
+      "range_source": "No forecast exists. Leaving the EU removes their main reason to be here; the charter regime (Art. 52) is meant to keep some. Full range shown (research 12 §7.3)"
+    },
+    "capital_flight": {
+      "label": "Deposits that leave during the notice period",
+      "unit": "share",
+      "min": 0,
+      "max": 0.3,
+      "step": 0.01,
+      "default": 0.1,
+      "fms": [
+        "FM-11",
+        "FM-10"
+      ],
+      "stress": [
+        "leaving-the-eu",
+        "capital-flight"
+      ],
+      "range_source": "Greek deposits fell about 23% in a few months of 2015 (research 12 §7.4)"
+    },
+    "devaluation": {
+      "label": "Fall of the punt on exit day",
+      "unit": "share",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.01,
+      "default": 0.25,
+      "fms": [
+        "FM-11",
+        "FM-17"
+      ],
+      "stress": [
+        "leaving-the-eu",
+        "capital-flight"
+      ],
+      "range_source": "Sterling −15% (1992); Nomura's Irish break-up estimate about −30% (2011); Iceland's króna −50% or more (2008) (research 13 §2.3)"
+    },
+    "trade_terms": {
+      "label": "Trade terms with the EU and UK (0 = tariff-free deals, 1 = WTO terms with both)",
+      "unit": "index",
+      "min": 0,
+      "max": 1,
+      "step": 0.05,
+      "default": 0.5,
+      "fms": [
+        "FM-11",
+        "FM-14"
+      ],
+      "stress": [
+        "leaving-the-eu"
+      ],
+      "range_source": "The UK–EU agreement (zero tariffs) at one end; EU and UK most-favoured-nation tariffs at the other (research 13 §4.2–4.3)"
+    },
+    "herd_reduction": {
+      "label": "Reduction in the herd by year 10",
+      "unit": "share",
+      "min": 0,
+      "max": 0.6,
+      "step": 0.05,
+      "default": 0.3,
+      "fms": [
+        "FM-16",
+        "FM-14"
+      ],
+      "stress": [
+        "harvest-energy-shock",
+        "leaving-the-eu"
+      ],
+      "range_source": "From no change to a 60% reduction; agriculture is 38.7% of emissions with 6.9 million cattle (research 12 §4.2, §6.2)"
+    },
+    "hours_reduction": {
+      "label": "Cut in average working hours by year 10",
+      "unit": "share",
+      "min": 0,
+      "max": 0.2,
+      "step": 0.01,
+      "default": 0.1,
+      "fms": [
+        "FM-17",
+        "FM-18"
+      ],
+      "stress": [],
+      "range_source": "From no change to a four-day week (−20%)"
+    },
+    "energy_price": {
+      "label": "Change in world energy prices",
+      "unit": "share",
+      "min": -0.3,
+      "max": 1.1,
+      "step": 0.05,
+      "default": 0,
+      "fms": [
+        "FM-11",
+        "FM-16"
+      ],
+      "stress": [
+        "harvest-energy-shock"
+      ],
+      "range_source": "Ireland's energy import bill rose from €6.2bn in 2021 to €13.1bn in 2022 (CSO TSA06), +111%"
+    },
+    "participation": {
+      "label": "Share of residents who take part in local assemblies and planning",
+      "unit": "share",
+      "min": 0.05,
+      "max": 0.6,
+      "step": 0.05,
+      "default": 0.2,
+      "fms": [
+        "FM-08",
+        "FM-06",
+        "FM-01"
+      ],
+      "stress": [
+        "general-strike"
+      ],
+      "range_source": "From marginal involvement to mass participation. Kerala devolved 35–40% of its plan budget to village assemblies; Porto Alegre's budget was later starved (research 06 §5, §9). The effect on investment waste is the drafter's assumption",
+      "better_when_higher": true
+    }
+  }
+}

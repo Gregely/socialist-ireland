@@ -9,8 +9,8 @@
 //      the Fund, savers, the Central Bank and any unfinanced gap (or, in surplus, by repayment and
 //      saving into the Fund).
 //   4. The debt stock moves by exactly the borrowing plus the revaluation of euro debt.
-//   5. The balance of payments closes: the change in reserves equals the current account, minus
-//      capital flight, plus Fund assets sold, minus windfall and surpluses invested abroad.
+//   5. The balance of payments closes: the current account equals the net acquisition of foreign
+//      assets by the Central Bank (reserves), the private sector and the Social Wealth Fund.
 //   6. The baseline year reproduces the baseline data it was calibrated on.
 import { readFile } from 'node:fs/promises';
 import { run, calibrate, values } from '../src/lib/economy-model.js';
@@ -21,9 +21,9 @@ const ids = Object.keys(params.sliders);
 let checks = 0;
 const failures = [];
 
-function near(a, b, scale, what, ctx) {
+function near(a, b, scale, what, ctx, rel = 1e-7) {
   checks++;
-  const tol = 1e-7 * Math.max(1, Math.abs(scale));
+  const tol = rel * Math.max(1, Math.abs(scale));
   if (!(Math.abs(a - b) <= tol) || !Number.isFinite(a) || !Number.isFinite(b)) {
     failures.push(`${what}: ${a} ≠ ${b} (diff ${a - b}) at ${ctx}`);
   }
@@ -63,9 +63,13 @@ function checkRun(sl, label) {
     if (prev) {
       const borrowed = f.fromSavers + f.fromCB + f.gap - f.repay;
       near(st.debt, prev.state.debt + borrowed + st.revaluation, scale, 'debt: stock = previous + borrowing + revaluation', ctx);
-      // 5. reserves
-      const flow = y.external.currentAccount - y.external.flight + f.fundDraw - st.revenue.windfall - f.toFund;
-      near(y.external.reserves, y.external.reservesBefore * (p.e / prev.prices.e) + flow, scale, 'balance of payments: Δreserves = CA − flight + Fund sales − Fund purchases', ctx);
+      // 5. balance of payments: the current account equals the net acquisition of foreign assets by the
+      //    Central Bank (reserves), the private sector and the Fund (all at this year's exchange rate)
+      const x = y.external;
+      const k = p.e / prev.prices.e;
+      const dRes = x.reserves - x.reservesBefore * k;
+      const dPriv = x.privateForeign - x.privateBefore * k;
+      near(dRes + dPriv + x.fundFlow, x.currentAccount, scale, 'balance of payments: Δreserves + Δprivate foreign assets + Δfund = CA', ctx);
     }
     prev = y;
   }
@@ -73,6 +77,9 @@ function checkRun(sl, label) {
   const y0 = r.years[0];
   near(y0.producers.valueAdded, B.domestic_va, B.domestic_va, 'calibration: domestic value added', label);
   near(y0.households.consumption, B.household_consumption, B.household_consumption, 'calibration: household consumption', label);
+  near(y0.external.currentAccount, B.ca_star, B.gni_star, 'calibration: current account = CA*', label, 1e-4);
+  near(y0.output.gniStar, B.gni_star, B.gni_star, 'calibration: GNI*', label, 1e-4);
+  near(y0.households.disposable, B.household_disposable_income, B.gni_star, 'calibration: household disposable income', label, 1e-4);
   return r;
 }
 
