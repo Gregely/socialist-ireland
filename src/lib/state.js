@@ -1,4 +1,4 @@
-// Reader's choice of design variant for the switchable questions (Q1, Q4).
+// Reader's choice of design variant for the switchable questions (Q1; Q4 was switchable until D-43).
 // Defaults come from design/decisions.json; the choice is remembered per browser.
 import { decisions } from './data.js';
 

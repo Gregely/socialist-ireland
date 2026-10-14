@@ -1,5 +1,5 @@
 {
-  "_note": "Rendered by the site's institution map. Edit text freely. pos = map coordinates. variants = only shown when the reader's Q1/Q4 setting matches. Edge kinds feed the overlays: accountability (elects, delegates, appoints, removes, vetoes, checks, barred), money (funds), information (informs, audits, oversees, refers). directs and negotiates show in the structure view.",
+  "_note": "Rendered by the site's institution map. Edit text freely. pos = map coordinates. variants = only shown when the reader's Q1 setting matches. Edge kinds feed the overlays: accountability (elects, delegates, appoints, removes, vetoes, checks, barred), money (funds), information (informs, audits, oversees, refers). directs and negotiates show in the structure view.",
   "groups": {
     "people": {
       "en": "The people",
@@ -596,7 +596,7 @@
           ],
           "residual_risk": "Privilege moves into informal networks: access, favours, family connections. The Standards Commission has to follow it there.",
           "strongest_critique": {
-            "liberal": "Capping pay for judges, doctors-in-office and top managers will drive talent abroad in an open EU labour market.",
+            "liberal": "Capping pay for judges, doctors-in-office and top managers will drive talent abroad, above all to Britain, where Irish citizens keep the right to work under the Common Travel Area.",
             "market": "Pay caps will produce under-the-table compensation, as Soviet experience shows.",
             "left": "Equalising officials' pay doesn't touch the deeper source of bureaucratic power: control of information and appointments."
           }
@@ -1251,7 +1251,7 @@
         "Direct the public service and departments",
         "Lawfully direct police and Defence Forces (as a body only)",
         "Declare an emergency (72 hours unless the Assembly approves)",
-        "Negotiate foreign charters and EU exemptions"
+        "Negotiate foreign charters, the withdrawal from the EU and new trade agreements"
       ],
       "composition": "7 members",
       "selection": "Elected by the Assembly by PR",
@@ -1399,27 +1399,24 @@
     },
     {
       "id": "eu",
-      "name_en": "European Union",
-      "name_ga": "An tAontas Eorpach",
+      "name_en": "European Union (outside)",
+      "name_ga": "An tAontas Eorpach (lasmuigh)",
       "group": "external",
       "kind": "external",
       "articles": [
         104,
-        105
+        106,
+        107
       ],
       "pos": {
         "x": 1240,
         "y": 530
       },
-      "summary": "Default (Q4-B): Ireland stays a member and negotiates exemptions, with a published Fallback Schedule. Switch Q4 to see the 'leave' and 'defy' paths.",
-      "summary_variants": {
-        "Q4=C": "Under Q4-C Ireland leaves the Union under Article 50. The EU becomes a trading partner, and Northern Ireland stays inside its goods market.",
-        "Q4=D": "Under Q4-D Ireland stays a member but openly declines to comply with specific rules, accepting infringement proceedings."
-      },
+      "summary": "The republic is not a member. Its settlement, above all the party settlement of Article 30, cannot meet the values of Article 2 TEU, so it leaves under Article 50 when the Constitution is adopted. The EU becomes its largest neighbouring market, and its external frontier now runs along the land border, because Northern Ireland applies EU rules on goods.",
       "powers": [
-        "Single market, competition and state-aid law",
-        "Euro and ECB monetary policy",
-        "Rule-of-law oversight (Art. 7 TEU)"
+        "Sets the terms on which the republic's goods and services enter the single market: tariffs, quotas and level-playing-field conditions",
+        "Enforces its external frontier for goods, including, under the Windsor Framework, goods entering Northern Ireland",
+        "Decides the residence and work rights of the republic's citizens living in EU states"
       ],
       "composition": "27 member states",
       "selection": "—",
@@ -1430,21 +1427,21 @@
         {
           "failure_modes": [
             "FM-11",
-            "FM-02",
-            "FM-06"
+            "FM-14",
+            "FM-05"
           ],
-          "mechanism": "Membership keeps market access (82% public support), an outside rule-of-law check, and state-aid rules that harden budget constraints. Exemptions are sought openly. Any refusal to comply follows a Fallback Schedule published and approved in advance.",
+          "mechanism": "Every trade or co-operation agreement is negotiated in the open and laid before the National Assembly. Any term that would restrict social ownership (Art. 5) or Part V (for example, EU-style state-aid or 'level playing field' rules) can be accepted only by the procedure for amending the core (Art. 109). Rights of EU citizens already living in the republic are protected for life, and reciprocity is sought.",
           "precedent": [
             {
-              "text": "Art. 345 TFEU; Essent (2013); EMI polling 2025–26",
-              "source": "research/08-ireland-today.md"
+              "text": "Art. 50 TEU and the UK's withdrawal, 2016–2020; the UK–EU Trade and Cooperation Agreement",
+              "source": "research/13-leaving-the-eu.md"
             }
           ],
-          "residual_risk": "Treaty change needs unanimity, so exemptions may never come. A published fallback can be priced in by markets. The Q1 default (one party label) may be challenged under Art. 2 TEU.",
+          "residual_risk": "The EU holds most of the leverage. Tariff-free access is likely to be offered only in exchange for subsidy-control rules that cut against Part V, so the republic must choose between market access and its own economic constitution, sector by sector. And the land border becomes the EU's external frontier, which the republic cannot open on its own.",
           "strongest_critique": {
-            "liberal": "A state that pre-announces where it would break the law has already undermined legal certainty.",
-            "market": "Staying in the single market leaves most planning tools out of reach.",
-            "left": "The EU's economic constitution is neoliberal by design. Negotiating exemptions from it is reformism."
+            "liberal": "Leaving the EU to protect a restriction on party competition gets the order of values backwards: the EU's Article 2 is the outside check on exactly the drift this design fears.",
+            "market": "A small economy that leaves its largest market and its currency union pays a permanent price in trade costs, risk premiums and lost investment.",
+            "left": "Membership was never the obstacle the right made it out to be: Article 345 TFEU leaves ownership to member states, and leaving swaps an imperfect union for dependence on worse terms from outside."
           }
         }
       ]
@@ -2698,6 +2695,105 @@
           }
         }
       ]
+    },
+    {
+      "id": "uk",
+      "name_en": "United Kingdom",
+      "name_ga": "An Ríocht Aontaithe",
+      "group": "external",
+      "kind": "external",
+      "articles": [
+        3,
+        104,
+        107
+      ],
+      "pos": {
+        "x": 1020,
+        "y": 680
+      },
+      "summary": "The republic's neighbour and co-guarantor of the 1998 Agreement. The Common Travel Area, which predates EU membership, is kept by agreement. Trade with Britain is negotiated separately from trade with the EU, and Northern Ireland's position under the Windsor Framework shapes both.",
+      "powers": [
+        "Party to the Common Travel Area arrangements",
+        "Sets the terms of access to the British market",
+        "Administers Northern Ireland, including checks on goods entering it"
+      ],
+      "composition": "—",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-14",
+            "FM-11"
+          ],
+          "mechanism": "The Common Travel Area is kept by agreement, so no check on people is needed at the land border. Trade with Britain is negotiated as its own agreement. The republic builds no border posts on its side (Art. 107).",
+          "precedent": [
+            {
+              "text": "Common Travel Area; UK–Ireland Memorandum of Understanding (2019)",
+              "source": "research/13-leaving-the-eu.md"
+            }
+          ],
+          "residual_risk": "The UK's own agreements with the EU (the Windsor Framework) mean goods crossing from the republic into Northern Ireland enter EU rules, so checks may be imposed on the far side of the border whatever the republic does.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Britain's market is smaller than the EU's and its tariffs on food remain high.",
+            "left": "Swapping dependence on Brussels for dependence on London is no kind of independence."
+          }
+        }
+      ]
+    },
+    {
+      "id": "central-bank",
+      "name_en": "Central Bank",
+      "name_ga": "An Banc Ceannais",
+      "group": "economy",
+      "kind": "body",
+      "articles": [
+        61,
+        114
+      ],
+      "pos": {
+        "x": 140,
+        "y": 1130
+      },
+      "summary": "Issues the republic's own currency after it leaves the euro. Sets interest rates and supervises banks within a mandate set by the National Assembly: stable prices, full employment and a sound financial system. Administers capital controls under published law. May lend to the State only within an annual limit the Assembly votes.",
+      "powers": [
+        "Issue the currency",
+        "Set interest rates within the mandate",
+        "Supervise banks and credit unions",
+        "Administer capital controls under law (Art. 61)",
+        "Lend to the State within the annual limit voted by the Assembly"
+      ],
+      "composition": "Board of seven",
+      "selection": "Appointed by the National Assembly from candidates nominated by the Executive Council after open competition",
+      "term": "Seven years, staggered, not renewable",
+      "recall": "Only by a two-thirds vote of the National Assembly, for misconduct or incapacity",
+      "pay": "Set by the Pay and Privileges Panel",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-11",
+            "FM-06",
+            "FM-01",
+            "FM-05"
+          ],
+          "mechanism": "Operational independence inside a mandate the Assembly sets in public: day-to-day rate decisions are insulated from the Executive, but the targets are not. Minutes and votes are published; the Governor answers to an Assembly committee every quarter. Lending to the State has a published annual ceiling, so monetary financing is a visible decision, never a quiet habit. Capital controls exist only as published law, reviewed every six months.",
+          "precedent": [
+            {
+              "text": "Iceland's capital controls 2008–2017; the Bank of England before and after 1997",
+              "source": "research/13-leaving-the-eu.md"
+            }
+          ],
+          "residual_risk": "A new currency with a short record has no credibility to draw on. In the first years the Bank may face a choice between defending the exchange rate (dear money, unemployment) and letting it fall (dearer imports). The ceiling on lending to the State is only as strong as the Assembly that votes it.",
+          "strongest_critique": {
+            "liberal": "Only a fully independent central bank, with no duty to the plan, can make a new currency credible; any political mandate will be read by markets as a licence to print.",
+            "market": "Capital controls stop leaks for a while but drive investment away for years; the Icelandic controls lasted over eight years.",
+            "left": "An 'independent' central bank is a way of taking the most important economic decisions out of democratic hands; the mandate should be the plan's."
+          }
+        }
+      ]
     }
   ],
   "edges": [
@@ -3412,57 +3508,73 @@
       "from": "executive-council",
       "to": "eu",
       "kind": "negotiates",
-      "note": "Negotiates exemptions; Fallback Schedule published in advance",
-      "variants": {
-        "Q4": [
-          "B"
-        ]
-      }
+      "note": "Negotiates trade, citizens' rights and border arrangements in the open (Art. 104)"
     },
     {
       "from": "national-assembly",
       "to": "eu",
       "kind": "vetoes",
-      "note": "Approves the Fallback Schedule",
-      "variants": {
-        "Q4": [
-          "B"
-        ]
-      }
+      "note": "Approves or rejects every agreement; terms that limit Part V need the Art. 109 procedure"
     },
     {
       "from": "eu",
       "to": "executive-council",
       "kind": "checks",
-      "note": "State-aid and rule-of-law constraints",
-      "variants": {
-        "Q4": [
-          "B",
-          "D"
-        ]
-      }
+      "note": "Sets tariff and level-playing-field terms for access to its market"
     },
     {
       "from": "executive-council",
-      "to": "eu",
+      "to": "uk",
       "kind": "negotiates",
-      "note": "Negotiates withdrawal and trade terms",
-      "variants": {
-        "Q4": [
-          "C"
-        ]
-      }
+      "note": "Common Travel Area, trade and the land border (Arts. 104, 107)"
+    },
+    {
+      "from": "national-assembly",
+      "to": "uk",
+      "kind": "vetoes",
+      "note": "Approves agreements"
+    },
+    {
+      "from": "national-assembly",
+      "to": "central-bank",
+      "kind": "appoints",
+      "note": "Appoints the board; sets the mandate and the annual ceiling on lending to the State"
+    },
+    {
+      "from": "national-assembly",
+      "to": "central-bank",
+      "kind": "removes",
+      "note": "Two-thirds vote, for misconduct or incapacity only"
+    },
+    {
+      "from": "central-bank",
+      "to": "national-assembly",
+      "kind": "informs",
+      "note": "Quarterly hearings; minutes and votes published"
+    },
+    {
+      "from": "audit-office",
+      "to": "central-bank",
+      "kind": "audits",
+      "note": "Annual audit"
+    },
+    {
+      "from": "central-bank",
+      "to": "public-bank",
+      "kind": "oversees",
+      "note": "Supervises banks and credit unions"
+    },
+    {
+      "from": "central-bank",
+      "to": "public-bank",
+      "kind": "funds",
+      "note": "Lender of last resort"
     },
     {
       "from": "executive-council",
-      "to": "eu",
-      "kind": "checks",
-      "note": "Declines to comply with specific rules",
-      "variants": {
-        "Q4": [
-          "D"
-        ]
-      }
+      "to": "central-bank",
+      "kind": "barred",
+      "note": "Cannot direct rate decisions or individual supervisory cases"
     }
   ]
 }

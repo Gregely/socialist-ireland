@@ -35,9 +35,9 @@ let failures = 0;
 const RUNS = [
   ['desktop', { width: 1366, height: 900 }, null],
   ['mobile', { width: 390, height: 844 }, null],
-  // the switchable alternatives (Q1 and Q4) must render too
-  ['alt-B-C', { width: 1366, height: 900 }, { Q1: 'B', Q4: 'C' }],
-  ['alt-D-D', { width: 1366, height: 900 }, { Q1: 'D', Q4: 'D' }],
+  // the switchable Q1 alternatives must render too; a stale Q4 setting saved before D-43 is ignored
+  ['alt-Q1B', { width: 1366, height: 900 }, { Q1: 'B', Q4: 'B' }],
+  ['alt-Q1D', { width: 1366, height: 900 }, { Q1: 'D', Q4: 'D' }],
 ];
 for (const [label, viewport, variants] of RUNS) {
   const context = await browser.newContext({ viewport });

@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node tests/smoke.mjs && node tests/variants.mjs && node tests/keyboard.mjs"
+    "validate": "node tests/validate.mjs",
+    "test": "node tests/validate.mjs && node tests/smoke.mjs && node tests/variants.mjs && node tests/keyboard.mjs"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "5.2.6",

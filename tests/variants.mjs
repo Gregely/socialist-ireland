@@ -1,4 +1,5 @@
-// Checks that switching Q1/Q4 really changes the constitution, map and banner.
+// Checks that switching Q1 really changes the constitution, map and banner, and that Q4 (no longer
+// switchable, D-43) stays fixed at 'outside the EU' even if an old setting is saved.
 import { chromium } from 'playwright';
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
@@ -26,10 +27,10 @@ async function probe(v) {
   return { a30: a30.trim(), a104: a104.trim(), banner, hasLeadingParty: party.includes('The party (leading'), hasParties: party.includes('Socialist parties') };
 }
 const def = await probe(null);
-const alt = await probe({ Q1: 'B', Q4: 'C' });
+const alt = await probe({ Q1: 'B', Q4: 'B' });
 console.log('default', def);
 console.log('alt    ', alt);
-const ok = def.a30.includes('The party') && alt.a30.includes('Political parties') && def.a104.includes('European Union') && alt.a104.includes('Withdrawal')
+const ok = def.a30.includes('The party') && alt.a30.includes('Political parties') && def.a104.includes('Outside the European Union') && alt.a104 === def.a104
   && !def.banner && alt.banner && def.hasLeadingParty && !def.hasParties && alt.hasParties && !alt.hasLeadingParty;
 console.log(ok ? 'variants OK' : 'variants FAILED');
 await browser.close(); server.close(); process.exit(ok ? 0 : 1);

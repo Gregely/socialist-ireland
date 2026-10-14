@@ -17,6 +17,36 @@ function scores(opt) {
       .join('')}</tbody></table>`;
 }
 
+/** Thin points, scores and costs: shared by switchable options and fixed answers. */
+function details(o) {
+  return `${
+    o.thin_points?.length
+      ? `<h4>Where the safeguards are thinnest</h4><ul class="thin">${o.thin_points.map((t) => `<li>${renderMarkdown(t).replace(/^<p>|<\/p>\s*$/g, '')}</li>`).join('')}</ul>`
+      : ''
+  }
+      ${scores(o)}
+      ${o.costs?.length ? `<h4>What it costs</h4><ul>${o.costs.map((c) => `<li>${renderMarkdown(c).replace(/^<p>|<\/p>\s*$/g, '')}</li>`).join('')}</ul>` : ''}
+      ${o.gains?.length ? `<h4>What it gains</h4><ul>${o.gains.map((c) => `<li>${renderMarkdown(c).replace(/^<p>|<\/p>\s*$/g, '')}</li>`).join('')}</ul>` : ''}`;
+}
+
+/** A fixed answer (not switchable): the answer, its reasons, and an optional contrast with a rejected option. */
+function fixed(q) {
+  return `<p class="answer">${esc(q.answer)}</p>
+    <div class="prose">${renderMarkdown(q.rationale_md)}</div>
+    ${q.honesty_md ? `<div class="honesty">${renderMarkdown(q.honesty_md)}</div>` : ''}
+    ${details(q)}
+    ${
+      q.contrast
+        ? `<aside class="contrast" aria-labelledby="${q.id}-contrast">
+        <p class="eyebrow">Contrast, not an option</p>
+        <h3 id="${q.id}-contrast">${esc(q.contrast.title)}</h3>
+        <div class="prose">${renderMarkdown(q.contrast.text_md)}</div>
+      </aside>`
+        : ''
+    }
+    ${q.links?.length ? `<p class="small">See also: ${q.links.map((l) => `<a href="${esc(l.href)}">${esc(l.text)}</a>`).join(' · ')}</p>` : ''}`;
+}
+
 function switchable(q, selected) {
   const opt = q.options.find((o) => o.id === selected) || q.options[0];
   return `
@@ -34,13 +64,7 @@ function switchable(q, selected) {
       <p class="option-summary">${esc(opt.summary)}</p>
       <div class="prose">${renderMarkdown(opt.rationale_md)}</div>
       ${opt.honesty_md ? `<div class="honesty">${renderMarkdown(opt.honesty_md)}</div>` : ''}
-      ${
-        opt.thin_points?.length
-          ? `<h4>Where the safeguards are thinnest</h4><ul class="thin">${opt.thin_points.map((t) => `<li>${renderMarkdown(t).replace(/^<p>|<\/p>\s*$/g, '')}</li>`).join('')}</ul>`
-          : ''
-      }
-      ${scores(opt)}
-      ${opt.costs?.length ? `<h4>What it costs</h4><ul>${opt.costs.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
+      ${details(opt)}
     </div>`;
 }
 
@@ -49,7 +73,7 @@ export default function choices(main) {
   main.innerHTML = `
     <div class="page-head">
       ${bi('Na Roghanna', 'Design choices')}
-      <p class="lede">The contested decisions behind the design, with the reasons for each. Two of them, the party question and the EU, are the most contested, so you can switch the whole site to an alternative and see what changes in the map, the constitution and the stress tests.</p>
+      <p class="lede">The contested decisions behind the design, with the reasons for each. The most contested of them, the party question, can be switched: you can move the whole site to an alternative and see what changes in the map, the constitution and the stress tests.</p>
     </div>
     <ol class="choice-list">
       ${decisions.questions
@@ -60,7 +84,7 @@ export default function choices(main) {
           ${
             q.switchable
               ? switchable(q, v[q.id])
-              : `<p class="answer">${esc(q.answer)}</p><div class="prose">${renderMarkdown(q.rationale_md)}</div>`
+              : fixed(q)
           }
         </li>`
         )

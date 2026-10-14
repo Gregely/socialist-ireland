@@ -1,17 +1,17 @@
 {
   "title_en": "Capital flight",
   "title_ga": "Teitheadh caipitil",
-  "summary": "A year into the transition, three of the ten largest corporation-tax payers announce they will move their booked profits, and some real operations, out of Ireland. Deposits start to leave the banks.",
+  "summary": "In the third year, after the republic has left the EU and the euro, three of the ten largest corporation-tax payers announce they will move their booked profits, and some real operations, out of Ireland. Money starts to leave and the new currency falls.",
   "fms": ["FM-11", "FM-10", "FM-17", "FM-15"],
   "start": "s1",
   "steps": {
     "s1": {
       "title": "The announcement",
-      "when": "Month 14 of the transition",
-      "text_md": "Two US technology firms and a pharmaceutical company announce that from next year their European profits will be booked in the Netherlands and Switzerland, and that about 6,000 jobs will move over three years. In 2025 the ten largest payers accounted for **56%** of corporation tax ([Revenue](https://www.revenue.ie/en/corporate/documents/research/ct-analysis-2026.pdf)). Commentators predict a fiscal hole of several billion euro. Within a week, €4 billion of deposits move to banks abroad.",
-      "institutions": ["charter-enterprises", "executive-council", "social-wealth-fund"],
+      "when": "Month 30 of the transition, six months after leaving the EU",
+      "text_md": "Two US technology firms and a pharmaceutical company announce that from next year their European profits will be booked in the Netherlands and Switzerland, and that about 6,000 jobs will move over three years. In 2025 the ten largest payers accounted for **56%** of corporation tax ([Revenue](https://www.revenue.ie/en/corporate/documents/research/ct-analysis-2026.pdf)). Outside the EU, their reason is plain: an Irish base no longer gives them tariff-free access to the single market. Within a week the punt (IR£) falls 9% against the euro.",
+      "institutions": ["charter-enterprises", "executive-council", "social-wealth-fund", "central-bank"],
       "safeguards": ["FM-11"],
-      "risk_md": "The move was the most predictable shock of the transition, and markets will test whether the State's plan for it is real.",
+      "risk_md": "This was the most predictable shock of the transition, and the economy section's pressure explorer treats it as the largest single uncertainty. Markets will test whether the State's plan for it is real.",
       "next": "s2"
     },
     "s2": {
@@ -20,49 +20,45 @@
       "text_md": "Because windfall corporation tax was ring-fenced in the [[social-wealth-fund|Social Wealth Fund]] from the first year of the transition (Art. 114), the loss falls on the Fund's investment programme, not on wages, pensions or the health service. No current spending depended on it (Art. 60). The [[audit-office|Audit Office]] publishes the exposure the same week, and the [[open-data|Open Data Office]] publishes the charter terms each firm had agreed.",
       "institutions": ["social-wealth-fund", "audit-office", "open-data"],
       "safeguards": ["FM-11", "FM-17"],
-      "risk_md": "The Fund's planned investments (co-op development, retrofits) are delayed, so the damage is real, just slower and less visible.",
+      "risk_md": "The Fund's planned investments (co-op development, retrofits) are delayed, so the damage is real, just slower and less visible. The lost exports are a second, separate problem: fewer foreign earnings to pay for imports.",
       "next": "s3"
     },
     "s3": {
-      "title": "Deposits keep leaving",
+      "title": "The punt keeps falling",
       "when": "Week 5",
-      "choice_prompt": "Deposit outflows reach €11 billion. Ministers propose capital controls. What happens?",
-      "text_md": "Free movement of capital is a core EU rule (Art. 63 TFEU), and capital controls are among the hardest things to do as a member state. The [[executive-council|Executive Council]] can declare an emergency for 72 hours, but needs the [[national-assembly|National Assembly]] to continue it, and the [[citizens-chamber|Citizens' Chamber]] to extend it beyond 30 days.",
-      "institutions": ["executive-council", "national-assembly", "citizens-chamber", "eu"],
-      "safeguards": ["FM-15", "FM-11"],
-      "alt_notes": {
-        "Q4=C": "**Under the 'leave' alternative**, Ireland has its own currency and can impose capital controls at once. But the outflow is larger and faster, because devaluation is now a live risk, and controls on a new currency are harder to make credible.",
-        "Q4=D": "**Under the 'stay but defy' alternative**, the Executive can simply impose controls in breach of EU law. The Commission opens proceedings, and the defiance itself accelerates outflows."
-      },
+      "choice_prompt": "Transfers abroad reach IR£11 billion and the punt is down 15%. The Executive proposes tighter capital controls. What happens?",
+      "text_md": "Outside the EU there is no Article 63 TFEU to stop the State. Capital controls are **ordinary published law under Art. 61**, administered by the [[central-bank|Central Bank]], not emergency powers: any change needs a vote of the [[national-assembly|National Assembly]], and every rule is reviewed every six months. The constraint now is credibility, not Brussels. Tighter controls on a young currency can read as panic and push more money towards the exits that remain.",
+      "institutions": ["executive-council", "national-assembly", "central-bank"],
+      "safeguards": ["FM-11", "FM-15"],
       "choices": [
-        { "label": "Declare an emergency and impose temporary capital controls", "to": "s4a", "note": "Fast, but uses emergency powers and collides with EU law." },
-        { "label": "No controls: deposit guarantee, public bank backstop and a published plan", "to": "s4b", "note": "Slower, legally safe, and relies on confidence." }
+        { "label": "Tighten controls on large corporate and personal transfers", "to": "s4a", "note": "Stops the leak quickly, but controls tend to outlive their purpose." },
+        { "label": "No new controls: let the punt fall, raise interest rates, publish a plan", "to": "s4b", "note": "Keeps the door open to investors; makes every import dearer." }
       ]
     },
     "s4a": {
-      "title": "Emergency controls",
-      "when": "Weeks 5–9",
-      "text_md": "The Executive declares an emergency limited to capital movements. The Assembly approves it within 72 hours. At day 30 the Citizens' Chamber is asked to extend it. After hearing the Central Bank, the Fiscal Council and two dissenting economists, it extends by 30 days and refuses a second extension. Under the default design, the State notifies the Commission that this falls under the published **Fallback Schedule**, which named capital movements in a crisis as an area where the State would decline to comply.",
-      "institutions": ["executive-council", "national-assembly", "citizens-chamber", "courts", "eu"],
-      "safeguards": ["FM-15", "FM-02"],
-      "risk_md": "Controls buy time but signal fear. If the Chamber had refused the first extension, the State would have had to lift controls mid-crisis. **The 90-day cap is a real constraint, not a formality.**",
-      "outcome_md": "Outflows slow. The Commission opens infringement proceedings, which run for two years. The emergency ends on day 60, as the constitution requires. In polling, trust in the government falls, but trust in the *system* holds, because the limits were visibly kept.",
+      "title": "Tighter controls",
+      "when": "Weeks 5–30",
+      "text_md": "The Assembly passes the tightened rules within 48 hours: transfers abroad above IR£50,000 a year need Central Bank approval, and corporate transfers are limited to dividends declared on audited Irish profits. Ordinary payments for imports, travel and remittances are untouched. No emergency is declared, so the 90-day limit on emergencies (Art. 90) does not apply. Instead the six-monthly review in Art. 61 does the work: at the first review the Assembly keeps the corporate limits and lifts the personal threshold.",
+      "institutions": ["national-assembly", "central-bank", "public-bank", "courts"],
+      "safeguards": ["FM-11", "FM-15"],
+      "risk_md": "Because capital controls are ordinary law, nothing *forces* them to end. Iceland's controls, imposed in 2008 as temporary, lasted more than eight years ([13 §3](research/13-leaving-the-eu.md)). **The six-monthly review is only as strong as the Assembly's willingness to let them lapse.**",
+      "outcome_md": "Outflows slow within a fortnight and the punt steadies about 13% below its pre-announcement level. Two smaller foreign firms cite the controls when they decide not to expand. The controls on corporate transfers are still in force in year six, to growing criticism from the co-operative sector, which wants to buy foreign machinery more freely.",
       "next": "end"
     },
     "s4b": {
-      "title": "Confidence without controls",
-      "when": "Weeks 5–12",
-      "text_md": "The State extends the deposit guarantee and the [[public-bank|public bank]] opens accounts for anyone moving money out of the private banks. The Executive publishes, in full, a three-year plan for the lost revenue, drawn from the Fund, from progressive tax and from a slower investment programme.",
-      "institutions": ["public-bank", "executive-council", "open-data"],
+      "title": "Let it fall",
+      "when": "Weeks 5–20",
+      "text_md": "The [[central-bank|Central Bank]] raises its rate by two points and the punt falls a further 8% before steadying. The Executive publishes, in full, a three-year plan for the lost revenue, drawn from the Fund, from progressive tax and from a slower investment programme. Fuel, medicines and imported food rise in price; under Art. 58.2 the price formulas pass the rise on by published rule, with compensation for low-income households built in, and the free household energy allowance (Art. 24) absorbs part of the shock.",
+      "institutions": ["central-bank", "executive-council", "open-data", "public-bank"],
       "safeguards": ["FM-11", "FM-17"],
-      "risk_md": "This depends on confidence, which is the thing under attack. If outflows had continued past €20 billion, this path would have run out of road and the emergency route would have been back on the table under worse conditions.",
-      "outcome_md": "Outflows peak at €17 billion and partly reverse within a year. The public-bank network gains 300,000 accounts. Investment is delayed by about eighteen months. Nobody's wages or services are cut.",
+      "risk_md": "Dearer imports hit everyone, and the rate rise slows the investment programme. If the fall had become a spiral (a weaker currency feeding inflation feeding a weaker currency), this path would have run out of road, and controls would have come anyway under worse conditions.",
+      "outcome_md": "The punt ends about 22% below its pre-announcement level against the euro. Inflation peaks at 9% the following year and falls back. Exports of food and of services priced in punts become cheaper abroad and partly recover. Nobody's wages are cut by decree, but real wages fall for a year.",
       "next": "end"
     },
     "end": {
       "title": "What this test shows",
-      "text_md": "**The safeguard that mattered most was the one set up before the crisis:** ring-fencing windfall revenue in year one. The Fallback Schedule made the emergency path lawful in domestic terms and transparent, but not costless. The emergency sunset forced the Executive to plan to *end* controls from the start.",
-      "risk_md": "This scenario assumes the firms announced and moved gradually. A sudden, coordinated move by several firms at once, combined with a hostile campaign by a foreign government (FM-10), would test the 90-day cap much harder."
+      "text_md": "**The safeguard that mattered most was the one set up before the crisis:** ring-fencing windfall revenue in year one, so that the State's budget did not depend on the firms that left. Leaving the EU removed the legal bar on capital controls but not their cost: either the currency falls and imports cost more, or controls hold the line and tend to outlive the crisis.",
+      "risk_md": "This scenario assumes the firms left gradually. A sudden, coordinated move by several firms at once, together with a hostile campaign by a foreign government (FM-10), would hit the currency much harder. The economy section models how large a departure the external accounts can absorb."
     }
   }
 }

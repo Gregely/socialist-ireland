@@ -772,6 +772,16 @@ a.fm-ref {
 .thin li {
   margin-bottom: 0.5rem;
 }
+.contrast {
+  border: 2px dashed var(--ink-2);
+  border-radius: var(--radius);
+  padding: 0.6rem 1.1rem 0.4rem;
+  margin: 1.2rem 0;
+  background: var(--paper-2);
+}
+.contrast h3 {
+  margin-top: 0.1rem;
+}
 .score-table {
   margin: 1rem 0;
   font-size: 0.92rem;

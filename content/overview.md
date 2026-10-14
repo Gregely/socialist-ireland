@@ -19,7 +19,9 @@ This design treats that lineage as a source, not as scripture. Some of those sov
 
 ## The choices behind it
 
-The hardest questions (whether to have a leading party, how to relate to the EU, what to do about the North, how hard to make it to undo social ownership) are set out on the [design choices](#/choices) page with the reasons for each decision. Two of them, **the party question** and **the EU**, are so contested that you can **switch the whole site** to an alternative and see what changes.
+The hardest questions (whether to have a leading party, how to relate to the EU, what to do about the North, how hard to make it to undo social ownership) are set out on the [design choices](#/choices) page with the reasons for each decision. **The party question** is so contested that you can **switch the whole site** to an alternative and see what changes.
+
+The republic is **outside the European Union** and has its own currency. Its party settlement cannot meet the EU's founding values, so it leaves; the [design choices](#/choices) page says why, and what leaving costs: a new currency, tariffs, and an external frontier on the land border.
 
 The default design makes one choice that is, by its own account, **the riskiest in the whole design**: a single leading socialist party, bound by strict rules, in place of open multi-party competition. The site says so wherever it matters, and shows [where the safeguards are thinnest](#/choices).
 
