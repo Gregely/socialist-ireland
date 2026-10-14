@@ -1,0 +1,14 @@
+{
+  "_note": "The economy-model settings of the best case (Aisling). Every value must lie inside the slider's researched range in design/economy-params.json, on its favourable side of the central setting ('low' = at or below it, 'high' = at or above it, 'design' = a design target, anywhere in range). tests/aisling.mjs checks this, runs the model and fails if anything breaks or any account fails to close. The reasons for each value are in conditions.md.",
+  "years": 25,
+  "sliders": {
+    "mne_exit": { "value": 0.25, "favourable": "low" },
+    "capital_flight": { "value": 0.05, "favourable": "low" },
+    "devaluation": { "value": 0.15, "favourable": "low" },
+    "trade_terms": { "value": 0.1, "favourable": "low" },
+    "herd_reduction": { "value": 0.35, "favourable": "design" },
+    "hours_reduction": { "value": 0.2, "favourable": "high" },
+    "energy_price": { "value": -0.15, "favourable": "low" },
+    "participation": { "value": 0.45, "favourable": "high" }
+  }
+}

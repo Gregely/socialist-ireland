@@ -35,3 +35,10 @@ All from the CSO PxStat API under **CC BY 4.0**, unless stated otherwise.
 - **Wind farms in Ireland** (SEAI; CC BY 4.0; SHP/CSV) and offshore wind applications (Department of Housing; WMS) for the existing base of the energy layer.
 - **Rail lines** from the NTA/Transport for Ireland GTFS feeds (licence to be confirmed) for the transport layer.
 - Bord na Móna rehabilitation areas: only national totals were found (EAP13). No open polygons have been confirmed yet.
+
+## Rail proposals (for the design-mode transport layer and the best case)
+
+The All-Island Strategic Rail Review was published in draft in 2023 and in final form in July 2024, jointly by the Department of Transport and Northern Ireland's Department for Infrastructure. Reporting on the final report says it *"outlines 32 recommendations"* costing an estimated €35–37 billion by 2050 ([Agriland](https://www.agriland.ie/farming-news/finalised-rail-review-confirms-recommendations-for-rural-areas/); [Irish Examiner/Echo](https://www.echolive.ie/nationalnews/arid-41447158.html)). The report itself was not opened in this pass, so the list below rests on press coverage of the draft and the final report:
+
+- **Reinstating the Western Rail Corridor between Claremorris and Athenry**, serving Tuam: in the draft (*"Reinstate the Western Rail Corridor between Claremorris and Athenry"*, [Railway Gazette](https://railwaygazette.com/infrastructure/all-island-strategic-rail-review-makes-30-proposals-to-develop-railways-in-ireland/64592.article)) and confirmed in the final report ([Connaught Telegraph](https://www.con-telegraph.ie/2024/07/31/restoration-of-western-rail-corridor-included-in-all-island-strategic-rail-review/)).
+- **Portadown–Armagh–Cavan–Mullingar** (the draft also named Athlone), **Derry–Letterkenny** (part of a Portadown–Derry–Letterkenny reinstatement), **the South Wexford railway**, and **rail links to Dublin and Shannon airports** (Railway Gazette, above; final-report coverage as above).

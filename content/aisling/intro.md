@@ -1,0 +1,5 @@
+*Aisling* is the old Irish vision-poem: the poet sleeps, and dreams of Ireland delivered. William Morris wrote the English cousin, *News from Nowhere*, in which a man wakes in a London where work has become a pleasure and the Houses of Parliament store manure.
+
+This section is a dream in that tradition, with one rule the poets did not keep: **nothing happens here that the research and the economy model say could not.** Every good thing below sits inside the ranges already set out on this site, at their favourable end, and the model's accounts still balance. Each good outcome carries a tag saying what had to be true for it: which settings, which safeguards held, which failure modes did not happen, and which lucky breaks it needed.
+
+**It is the best case, not the expected one.** The [pressure explorer](#/economy/pressure) shows that on central settings the republic's accounts break in year 5, and [How it fails](#/threats) and the [stress tests](#/stress) show the many other ways it could go wrong. Read this alongside them. The point of a best case is to show what all the safeguards are *for*: what life could be if they work.
