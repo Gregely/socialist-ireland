@@ -1,0 +1,475 @@
+{
+  "_note": "Summaries of research/SYNTHESIS.md for the site. The full text lives in SYNTHESIS.md. Irish names are provisional.",
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "name_en": "Bureaucratic caste / the 'new class'",
+      "name_ga": "Aicme mhaorlathach",
+      "short": "Officials who control social property without owning it become a privileged, self-perpetuating stratum.",
+      "cases": [
+        {
+          "text": "Trotsky: the bureaucracy as 'policeman' over scarcity (1936)",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        },
+        {
+          "text": "Djilas, The New Class (1957)",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        },
+        {
+          "text": "Voslensky: the nomenklatura's lists and privileges in kind",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        },
+        {
+          "text": "Michels: the German SPD's 'iron law of oligarchy' (1911)",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        }
+      ],
+      "roots": [
+        "Scarcity gives distributors discretionary power",
+        "Control rights concentrated while ownership is nominally collective",
+        "Appointment from above; loyalty upward",
+        "Invisible privileges in kind",
+        "Expertise, information and members' limited time favour full-timers"
+      ],
+      "residual": "Rotation and lot cost expertise; capped pay may drive skilled people abroad; privilege moves into informal networks."
+    },
+    {
+      "id": "FM-02",
+      "name_en": "Monopoly of power and suppression of pluralism",
+      "name_ga": "Monaplacht ar chumhacht",
+      "short": "Each 'temporary' restriction removes a channel through which the rulers could be corrected, until only the leadership can check the leadership.",
+      "cases": [
+        {
+          "text": "Constituent Assembly dissolved, Jan 1918",
+          "ref": "research/02-suppression-of-pluralism.md"
+        },
+        {
+          "text": "Mensheviks and SRs expelled from the soviets, June 1918",
+          "ref": "research/02-suppression-of-pluralism.md"
+        },
+        {
+          "text": "Kronstadt crushed, March 1921",
+          "ref": "research/02-suppression-of-pluralism.md"
+        },
+        {
+          "text": "Ban on factions, March 1921",
+          "ref": "research/02-suppression-of-pluralism.md"
+        },
+        {
+          "text": "Luxemburg's critique (1918)",
+          "ref": "research/02-suppression-of-pluralism.md"
+        }
+      ],
+      "roots": [
+        "Real emergencies make suppression seem reasonable",
+        "The party claims to embody the class",
+        "Each restriction removes the means to resist the next",
+        "No expiry dates"
+      ],
+      "residual": "Real pluralism includes parties that want to restore capitalism. This design's default answer (a leading party) is its riskiest choice against this failure mode."
+    },
+    {
+      "id": "FM-03",
+      "name_en": "Personality cult and executive concentration",
+      "name_ga": "Cultas pearsantachta",
+      "short": "A single executive office plus the absence of rival authorities produces a cult, which is a product of the system rather than its cause.",
+      "cases": [
+        {
+          "text": "Khrushchev's 1956 report on the cult of personality",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        }
+      ],
+      "roots": [
+        "A single executive office",
+        "No rival centres of authority",
+        "Propaganda resources aimed at one person",
+        "Term limits changeable by those they bind"
+      ],
+      "residual": "Collective leadership can be slow in a crisis; charisma outside office can't be legislated away."
+    },
+    {
+      "id": "FM-04",
+      "name_en": "Security-state capture",
+      "name_ga": "Gabháil an stáit slándála",
+      "short": "A security service created for an emergency acquires powers to punish and answers only to the leadership. It becomes a state within the state.",
+      "cases": [
+        {
+          "text": "The Cheka: from investigation to extrajudicial punishment, 1917–18",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        },
+        {
+          "text": "NKVD quotas, Great Terror 1937–38",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        },
+        {
+          "text": "Stasi: 91,015 staff and 173,081 informants (1989)",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        },
+        {
+          "text": "Rojava's Asayish: arbitrary detentions (Amnesty 2015)",
+          "ref": "research/06-positive-models.md"
+        }
+      ],
+      "roots": [
+        "Emergency origins and mission creep",
+        "Extrajudicial powers",
+        "Secrecy that keeps out overseers",
+        "Accountability to the leadership only",
+        "Files on the overseers themselves"
+      ],
+      "residual": "Real hostile intelligence activity exists; a service too weak to counter it is also a danger."
+    },
+    {
+      "id": "FM-05",
+      "name_en": "Planning breakdown (the knowledge problem)",
+      "name_ga": "Cliseadh pleanála",
+      "short": "No central planner can gather the local, tacit and fast-changing knowledge an economy runs on (Hayek), or price producer goods (Mises).",
+      "cases": [
+        {
+          "text": "The calculation debate: Mises, Hayek, Lange",
+          "ref": "research/03-planning-and-calculation.md"
+        },
+        {
+          "text": "Soviet supply–demand mismatch",
+          "ref": "research/04-stagnation-and-work.md"
+        },
+        {
+          "text": "Aral Sea irrigation (ecological example)",
+          "ref": "research/09-ecology-and-growth.md"
+        }
+      ],
+      "roots": [
+        "Knowledge is local and tacit",
+        "No prices for producer goods",
+        "Falsified feedback when targets drive rewards",
+        "One centre is a single point of failure"
+      ],
+      "residual": "Markets bring back inequality. The argument about democratic, layered coordination is open, not won."
+    },
+    {
+      "id": "FM-06",
+      "name_en": "Soft budget constraints and shortage",
+      "name_ga": "Srianta boga buiséid",
+      "short": "Loss-making units are always rescued, so their demand for inputs is 'almost insatiable' and shortage becomes chronic (Kornai).",
+      "cases": [
+        {
+          "text": "Kornai, Economics of Shortage (1980)",
+          "ref": "research/03-planning-and-calculation.md"
+        },
+        {
+          "text": "Mondragon refuses a further rescue of Fagor (2013)",
+          "ref": "research/06-positive-models.md"
+        }
+      ],
+      "roots": [
+        "Automatic rescue",
+        "Local democratic pressure to protect jobs"
+      ],
+      "residual": "Hard budgets mean real closures; one-employer towns will resist."
+    },
+    {
+      "id": "FM-07",
+      "name_en": "Stagnation and disengagement from work",
+      "name_ga": "Marbhántacht",
+      "short": "When wages buy little and workers have no voice, effort is withdrawn. The two failed responses are coercion (Stakhanovism) and tacit tolerance.",
+      "cases": [
+        {
+          "text": "Brezhnev-era slowdown; 'they pretend to pay us…' (origin unverified)",
+          "ref": "research/04-stagnation-and-work.md"
+        },
+        {
+          "text": "Stakhanovism, 1935–36",
+          "ref": "research/04-stagnation-and-work.md"
+        }
+      ],
+      "roots": [
+        "Wages buy little",
+        "No voice at work",
+        "Recognition used to raise norms",
+        "Promotion by loyalty",
+        "No channel for innovation"
+      ],
+      "residual": "Some people will work less without fear of destitution; the design accepts that as a legitimate choice."
+    },
+    {
+      "id": "FM-08",
+      "name_en": "Participation fatigue and hollowed-out institutions",
+      "name_ga": "Tuirse rannpháirtíochta",
+      "short": "Participatory bodies without money or binding power fade into ritual, and full-timers take over.",
+      "cases": [
+        {
+          "text": "Porto Alegre after 2004",
+          "ref": "research/06-positive-models.md"
+        },
+        {
+          "text": "Kerala after 2001",
+          "ref": "research/06-positive-models.md"
+        },
+        {
+          "text": "Ireland's advisory citizens' assemblies",
+          "ref": "research/06-positive-models.md"
+        },
+        {
+          "text": "Parecon's 'too many meetings' critique",
+          "ref": "research/03-planning-and-calculation.md"
+        }
+      ],
+      "roots": [
+        "Participation costs time, unevenly",
+        "Non-binding bodies lose credibility",
+        "Budgets cut quietly",
+        "Professionals control the agenda"
+      ],
+      "residual": "Entrenching participatory budgets limits future majorities; some people don't want to take part, and must not be punished for it."
+    },
+    {
+      "id": "FM-09",
+      "name_en": "Insider capture of self-management",
+      "name_ga": "Gabháil ag lucht istigh",
+      "short": "Enterprise democracy serves the people inside and shuts out those outside: unemployment, regional divergence, two-tier workforces.",
+      "cases": [
+        {
+          "text": "Yugoslavia: about 15% unemployment by 1985; Slovenia 2.5% vs Kosovo 21% (1965)",
+          "ref": "research/04-stagnation-and-work.md"
+        },
+        {
+          "text": "Mondragon: about 40% member-owners; Fagor subsidiaries unprotected",
+          "ref": "research/06-positive-models.md"
+        }
+      ],
+      "roots": [
+        "Income-per-member maximisation",
+        "Distribution rules rewarding small membership",
+        "Demutualisation windfalls"
+      ],
+      "residual": "Social title plus enterprise use-rights repeats the Djilas problem one level down."
+    },
+    {
+      "id": "FM-10",
+      "name_en": "Counter-revolution from outside or the right",
+      "name_ga": "Frith-réabhlóid",
+      "short": "Domestic capital and foreign powers use funding, media, strikes by owners and, ultimately, the military.",
+      "cases": [
+        {
+          "text": "Chile 1970–73: 'make the economy scream'; the truck-owners' strike; the coup",
+          "ref": "research/05-counter-revolution-and-external-pressure.md"
+        },
+        {
+          "text": "Irish soviets suppressed by both sides, 1920–23",
+          "ref": "research/07-irish-lineage.md"
+        }
+      ],
+      "roots": [
+        "Strong motives and means",
+        "Uncertain military loyalty",
+        "Crisis erodes middle-class support",
+        "Popular organisation and government strategy split"
+      ],
+      "residual": "Every defence against counter-revolution can become FM-02 or FM-04. 'Counter-revolution' must never be a legal charge against peaceful activity."
+    },
+    {
+      "id": "FM-11",
+      "name_en": "Blockade, sanctions and capital flight",
+      "name_ga": "Imshuí agus teitheadh caipitil",
+      "short": "A small open economy depends on outside capital and markets. Ireland's corporation tax depends on a handful of US firms.",
+      "cases": [
+        {
+          "text": "Cuba embargo (UN vote 187–2, 2024)",
+          "ref": "research/05-counter-revolution-and-external-pressure.md"
+        },
+        {
+          "text": "Ireland: foreign MNCs paid 87% of corporation tax, top 10 paid 56% (2025)",
+          "ref": "research/08-ireland-today.md"
+        }
+      ],
+      "roots": [
+        "Dependence on outside capital and inputs",
+        "Mobile booked profits",
+        "EU legal constraints"
+      ],
+      "residual": "The transition will probably make Ireland poorer in GDP terms for a time. The design says so."
+    },
+    {
+      "id": "FM-12",
+      "name_en": "Restoration from inside",
+      "name_ga": "Athbhunú ón taobh istigh",
+      "short": "Those who control but do not own turn control into ownership when they get the chance.",
+      "cases": [
+        {
+          "text": "USSR 1989–91 (Kotz & Weir)",
+          "ref": "research/05-counter-revolution-and-external-pressure.md"
+        },
+        {
+          "text": "Trotsky's 1936 prediction",
+          "ref": "research/01-bureaucratic-degeneration.md"
+        }
+      ],
+      "roots": [
+        "Control without ownership",
+        "Opaque control rights"
+      ],
+      "residual": "Entrenching social ownership also entrenches it against legitimate democratic change."
+    },
+    {
+      "id": "FM-13",
+      "name_en": "Factional splits",
+      "name_ga": "Scoilteanna faicsin",
+      "short": "Strategic disagreement becomes identity; with no legitimate way to disagree, it ends in a split or a purge.",
+      "cases": [
+        {
+          "text": "Ban on factions, 1921",
+          "ref": "research/02-suppression-of-pluralism.md"
+        },
+        {
+          "text": "Sino-Soviet split; 1969 border clashes",
+          "ref": "research/SYNTHESIS.md"
+        },
+        {
+          "text": "Irish left splits: 1970 Official/Provisional; 1992 WP/Democratic Left",
+          "ref": "research/SYNTHESIS.md"
+        }
+      ],
+      "roots": [
+        "Strategy becomes identity",
+        "No institutional way to disagree",
+        "Winner-takes-all control of resources",
+        "Dissent treated as disloyalty"
+      ],
+      "residual": "Too much tolerance of factions can paralyse decisions."
+    },
+    {
+      "id": "FM-14",
+      "name_en": "Nationalist capture",
+      "name_ga": "Gabháil náisiúnach",
+      "short": "When class politics fails to deliver, national identity becomes the organising grievance, and elites ride it.",
+      "cases": [
+        {
+          "text": "Yugoslavia: SANU Memorandum, Milošević",
+          "ref": "research/06-positive-models.md"
+        },
+        {
+          "text": "Connolly's 1897 warning; the Democratic Programme dismissed as 'poetry'",
+          "ref": "research/07-irish-lineage.md"
+        }
+      ],
+      "roots": [
+        "Class politics failing",
+        "Uneven regional development",
+        "Threatened elites seeking new legitimacy",
+        "Movement and nation symbols fusing"
+      ],
+      "residual": "The project is grounded in Irish republican history. That is a strength and a danger at once."
+    },
+    {
+      "id": "FM-15",
+      "name_en": "Entrenched emergency powers",
+      "name_ga": "Cumhachtaí éigeandála buana",
+      "short": "Emergencies are real, but the people who hold emergency powers decide when the emergency ends.",
+      "cases": [
+        {
+          "text": "The Cheka; the 1921 'temporary' ban on factions",
+          "ref": "research/02-suppression-of-pluralism.md"
+        },
+        {
+          "text": "Weimar Article 48 (1930–33)",
+          "ref": "research/SYNTHESIS.md"
+        }
+      ],
+      "roots": [
+        "Real emergencies",
+        "No automatic end",
+        "A penalty for revoking (Weimar's dissolution trap)"
+      ],
+      "residual": "Sunset rules can be gamed by rolling declarations; the design counts new declarations on the same facts as extensions."
+    },
+    {
+      "id": "FM-16",
+      "name_en": "Ecological overshoot",
+      "name_ga": "Ró-úsáid éiceolaíoch",
+      "short": "Output as the measure of legitimacy, and no institution with power to represent ecological limits.",
+      "cases": [
+        {
+          "text": "Aral Sea; Ecocide in the USSR",
+          "ref": "research/09-ecology-and-growth.md"
+        },
+        {
+          "text": "Ireland: herd 6.9m, agriculture 38% of emissions; data centres 23% of electricity",
+          "ref": "research/09-ecology-and-growth.md"
+        },
+        {
+          "text": "Cuba's Special Period (degrowth by necessity)",
+          "ref": "research/09-ecology-and-growth.md"
+        }
+      ],
+      "roots": [
+        "Growth as legitimacy",
+        "No ecological institution with power",
+        "Livelihoods tied to extractive sectors",
+        "Limits set only as prices"
+      ],
+      "residual": "Caps on the herd and data centres hit rural incomes and revenue: the constituencies whose loss drives FM-14 and FM-11."
+    },
+    {
+      "id": "FM-17",
+      "name_en": "Legitimacy decay / 'grey socialism'",
+      "name_ga": "Meath dlisteanachta",
+      "short": "The system functions, but daily life feels drab and ritualised, access depends on connections, and people stop believing.",
+      "cases": [
+        {
+          "text": "Yurchak: the late-Soviet 'performative shift'",
+          "ref": "research/10-legitimacy-and-everyday-life.md"
+        },
+        {
+          "text": "GDR: Trabant waits, Intershop",
+          "ref": "research/10-legitimacy-and-everyday-life.md"
+        },
+        {
+          "text": "Poland 1970 and 1980: price revolts",
+          "ref": "research/10-legitimacy-and-everyday-life.md"
+        },
+        {
+          "text": "Kern & Hainmueller: entertainment stabilised the GDR",
+          "ref": "research/10-legitimacy-and-everyday-life.md"
+        }
+      ],
+      "roots": [
+        "Ritual participation",
+        "Scarcity of visible goods",
+        "A connections or hard-currency tier",
+        "Comparison with richer neighbours",
+        "Administered prices",
+        "Aesthetic neglect",
+        "A sacrificial political offer",
+        "Target culture"
+      ],
+      "residual": "Variety pulls against ecological sufficiency. A democratic system can lose legitimacy and be voted out, and that must be accepted."
+    },
+    {
+      "id": "FM-18",
+      "name_en": "Social-reproduction failure / the double burden",
+      "name_ga": "Teip an atáirgthe shóisialta",
+      "short": "Women are brought into paid work while unpaid care stays theirs and stays invisible.",
+      "cases": [
+        {
+          "text": "Lenin and Kollontai's promise; the 1936 abortion ban",
+          "ref": "research/11-social-reproduction.md"
+        },
+        {
+          "text": "GDR: 78–91% female employment; housework still women's",
+          "ref": "research/11-social-reproduction.md"
+        },
+        {
+          "text": "Ireland: Art. 41.2; 2024 care referendum 73.9% No; 299,128 carers",
+          "ref": "research/11-social-reproduction.md"
+        }
+      ],
+      "roots": [
+        "Care underfunded relative to production",
+        "Men's role unchanged",
+        "Reproduction as a state resource",
+        "Care not measured"
+      ],
+      "residual": "Socialised care can slide into institutionalisation, a fear sharpened by Ireland's history."
+    }
+  ]
+}

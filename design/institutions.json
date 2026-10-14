@@ -1,0 +1,3468 @@
+{
+  "_note": "Rendered by the site's institution map. Edit text freely. pos = map coordinates. variants = only shown when the reader's Q1/Q4 setting matches. Edge kinds feed the overlays: accountability (elects, delegates, appoints, removes, vetoes, checks, barred), money (funds), information (informs, audits, oversees, refers). directs and negotiates show in the structure view.",
+  "groups": {
+    "people": {
+      "en": "The people",
+      "ga": "An Pobal"
+    },
+    "political": {
+      "en": "Councils, assemblies & government",
+      "ga": "Comhairlí, tionóil agus rialtas"
+    },
+    "check": {
+      "en": "Checks & integrity",
+      "ga": "Seiceálacha agus ionracas"
+    },
+    "security": {
+      "en": "Security & defence",
+      "ga": "Slándáil agus cosaint"
+    },
+    "economy": {
+      "en": "Economy & planning",
+      "ga": "Geilleagar agus pleanáil"
+    },
+    "public": {
+      "en": "Public services",
+      "ga": "Seirbhísí poiblí"
+    },
+    "culture": {
+      "en": "Culture & media",
+      "ga": "Cultúr agus meáin"
+    },
+    "external": {
+      "en": "External",
+      "ga": "Seachtrach"
+    }
+  },
+  "edge_kinds": {
+    "elects": "elects / chooses",
+    "delegates": "sends delegates to",
+    "appoints": "appoints",
+    "removes": "can remove / recall",
+    "vetoes": "can veto / approve",
+    "checks": "checks (strike, constraint, defiance)",
+    "barred": "constitutionally barred from directing",
+    "funds": "funds",
+    "informs": "informs / publishes to",
+    "audits": "audits",
+    "oversees": "oversees",
+    "refers": "refers / initiates",
+    "directs": "directs (lawfully)",
+    "negotiates": "negotiates with"
+  },
+  "overlays": {
+    "structure": [
+      "elects",
+      "delegates",
+      "appoints",
+      "directs",
+      "negotiates"
+    ],
+    "accountability": [
+      "removes",
+      "elects",
+      "appoints",
+      "vetoes",
+      "checks",
+      "barred"
+    ],
+    "money": [
+      "funds"
+    ],
+    "information": [
+      "informs",
+      "audits",
+      "oversees",
+      "refers"
+    ]
+  },
+  "nodes": [
+    {
+      "id": "people",
+      "name_en": "The people",
+      "name_ga": "An Pobal",
+      "group": "people",
+      "kind": "people",
+      "articles": [
+        2,
+        8,
+        9,
+        41
+      ],
+      "pos": {
+        "x": 910,
+        "y": 80
+      },
+      "summary": "Every resident voter. All powers derive from the people and are exercised only through the bodies below.",
+      "powers": [
+        "Vote in every election and referendum",
+        "Stand for any office as an individual",
+        "Recall any elected or delegated office-holder (20% petition)",
+        "Initiate laws and amendments (100,000 signatures)",
+        "Take part in their local assembly and workplace council",
+        "Direct their media voucher to news organisations of their choice"
+      ],
+      "composition": "Citizens aged 16+ and residents of five years or more",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": []
+    },
+    {
+      "id": "workplace-councils",
+      "name_en": "Workplace councils",
+      "name_ga": "Comhairlí Ionad Oibre",
+      "group": "political",
+      "kind": "deliberative",
+      "articles": [
+        34,
+        73,
+        75
+      ],
+      "pos": {
+        "x": 140,
+        "y": 230
+      },
+      "summary": "Elected each year by the workers of every social enterprise, public body and larger private firm. They appoint management and organise the work.",
+      "powers": [
+        "Appoint and dismiss the management of socially owned enterprises",
+        "Approve the enterprise plan and budget",
+        "Decide work organisation, safety and job rotation",
+        "Handle peer accountability with fair procedures",
+        "Federate by sector and county"
+      ],
+      "composition": "All workers of the enterprise; council elected by secret ballot",
+      "selection": "Annual election of individuals (no party lists)",
+      "term": "1 year",
+      "recall": "At any time by the workforce",
+      "pay": "Ordinary wage plus civic time",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-02"
+          ],
+          "mechanism": "Self-management has a constitutional floor (Art. 34) and its own federation, independent of the State and of any party.",
+          "precedent": [
+            {
+              "text": "Russian factory committees, 1917, subordinated and replaced by one-man management in 1918",
+              "source": "research/02-suppression-of-pluralism.md"
+            },
+            {
+              "text": "Yugoslav workers' councils, 1950",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Councils can become rubber stamps for management or for the most organised faction. Turnout in workplace elections may fall over time (FM-08).",
+          "strongest_critique": {
+            "liberal": "Workers are not the only stakeholders. Giving them control over firms that serve the public can sacrifice users' interests to insiders'.",
+            "market": "Firms run by their workers under-invest and under-hire: the Yugoslav evidence on income-per-member maximisation.",
+            "left": "Council communists would say a council that sits inside a state-planned economy with a leading party is self-management in name only."
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-07"
+          ],
+          "mechanism": "Rotation of unpleasant tasks and peer handling of shirking (Arts. 73, 75) replace both Stakhanovite norm-raising and indifference.",
+          "precedent": [
+            {
+              "text": "Stakhanovism, 1935–36",
+              "source": "research/04-stagnation-and-work.md"
+            },
+            {
+              "text": "Parecon's balanced job complexes",
+              "source": "research/03-planning-and-calculation.md"
+            }
+          ],
+          "residual_risk": "Peer pressure can become bullying. Rotation costs skill and efficiency.",
+          "strongest_critique": {
+            "liberal": "Peer discipline without outside appeal is a recipe for petty tyranny.",
+            "market": "Rotation destroys returns to specialisation.",
+            "left": "'Accountability to peers' still means workers policing each other on capital's old productivity terms."
+          }
+        }
+      ]
+    },
+    {
+      "id": "unions",
+      "name_en": "Trade unions",
+      "name_ga": "Ceardchumainn",
+      "group": "political",
+      "kind": "independent",
+      "articles": [
+        11
+      ],
+      "pos": {
+        "x": 360,
+        "y": 230
+      },
+      "summary": "Independent of the State and of every party, with the right to strike, including against the State.",
+      "powers": [
+        "Organise workers",
+        "Bargain collectively, including with public and socially owned enterprises",
+        "Strike, including against the State itself"
+      ],
+      "composition": "Voluntary membership",
+      "selection": "Their own rules",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-13"
+          ],
+          "mechanism": "Constitutional independence and the right to strike against the State (Art. 11.2). A workers' state that forbids independent workers' organisation has stopped being one.",
+          "precedent": [
+            {
+              "text": "The Workers' Opposition, banned 1921",
+              "source": "research/02-suppression-of-pluralism.md"
+            },
+            {
+              "text": "Solidarność, 1980",
+              "source": "research/10-legitimacy-and-everyday-life.md"
+            }
+          ],
+          "residual_risk": "Unions can become sectional, defending insiders against outsiders and users. A general strike against an elected government poses a real legitimacy conflict (see the stress test).",
+          "strongest_critique": {
+            "liberal": "Unions with a constitutional right to strike against the State can hold the public hostage.",
+            "market": "Union power in socially owned firms reproduces the soft budget constraint: strikes win rescues.",
+            "left": "In a 'workers' state' the bureaucracy will treat strikes as sabotage regardless of the text. Only independent organisation, not a clause, protects them."
+          }
+        }
+      ]
+    },
+    {
+      "id": "local-assemblies",
+      "name_en": "Local assemblies",
+      "name_ga": "Tionóil Áitiúla",
+      "group": "political",
+      "kind": "deliberative",
+      "articles": [
+        35,
+        57
+      ],
+      "pos": {
+        "x": 580,
+        "y": 230
+      },
+      "summary": "A new parish or ward tier (2,000–10,000 residents) open to every resident. It allocates at least a third of the county's capital budget.",
+      "powers": [
+        "Allocate their share of at least a third of the county capital budget",
+        "Elect delegates to the county council",
+        "Summon any local official to answer questions"
+      ],
+      "composition": "All residents aged 16+; standing committee chosen by lot each year",
+      "selection": "Open membership",
+      "term": "—",
+      "recall": "Delegates recallable",
+      "pay": "Civic time for committee members",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-08"
+          ],
+          "mechanism": "A constitutionally fixed share of the capital budget (Art. 57), so the assembly cannot be kept as a shell while its money is quietly removed.",
+          "precedent": [
+            {
+              "text": "Kerala People's Plan Campaign: 35–40% of the plan budget devolved",
+              "source": "research/06-positive-models.md"
+            },
+            {
+              "text": "Porto Alegre after 2004: kept in name, starved of money",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Attendance skews toward the retired, the confident and the organised. Meeting fatigue sets in.",
+          "strongest_critique": {
+            "liberal": "Open assemblies are dominated by whoever turns up; they have no clear accountability and no protection for absent minorities.",
+            "market": "Fragmenting capital budgets across hundreds of wards destroys economies of scale and coherent infrastructure planning.",
+            "left": "Participatory budgeting can become a way to make communities manage scarcity themselves, as in Porto Alegre's later years."
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-01"
+          ],
+          "mechanism": "A standing committee chosen by lot each year prepares business, so the same activists do not control the agenda year after year.",
+          "precedent": [
+            {
+              "text": "Ostbelgien's permanent citizens' council",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Committee members chosen by lot depend on council staff for information.",
+          "strongest_critique": {
+            "liberal": "Lot gives power to people who did not seek it and answer to no one.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "referendum",
+      "name_en": "Referendums & citizens' initiative",
+      "name_ga": "Reifrinn agus Tionscnamh Saoránach",
+      "group": "political",
+      "kind": "deliberative",
+      "articles": [
+        41,
+        109,
+        110
+      ],
+      "pos": {
+        "x": 800,
+        "y": 230
+      },
+      "summary": "The people decide every constitutional amendment and can initiate laws with 100,000 signatures. The Citizens' Chamber can force a referendum on any Act.",
+      "powers": [
+        "Approve every constitutional amendment",
+        "Decide citizen-initiated laws not enacted by the Assembly",
+        "Decide Acts referred by the Citizens' Chamber",
+        "Decide the party's status every ten years (Q1 default)"
+      ],
+      "composition": "All voters",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-12"
+          ],
+          "mechanism": "The people keep the final word on the constitution. Social ownership can be changed only by two Assemblies with an election between and then a referendum.",
+          "precedent": [
+            {
+              "text": "Bunreacht na hÉireann Art. 46",
+              "source": "research/08-ireland-today.md"
+            },
+            {
+              "text": "1937 plebiscite",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Referendums reward simple messages and well-funded campaigns. Equal public funding (Art. 41.2) helps but does not remove this.",
+          "strongest_critique": {
+            "liberal": "Direct democracy can override minority rights; the eternity clause covers only the democratic core.",
+            "market": "Voters cannot weigh complex economic trade-offs in a yes/no vote.",
+            "left": "Plebiscites have often legitimised strong executives rather than restraining them."
+          }
+        }
+      ]
+    },
+    {
+      "id": "electoral-commission",
+      "name_en": "Electoral Commission",
+      "name_ga": "An Coimisiún Toghcháin",
+      "group": "check",
+      "kind": "oversight",
+      "articles": [
+        101,
+        98
+      ],
+      "pos": {
+        "x": 1020,
+        "y": 230
+      },
+      "summary": "Runs every election and referendum, regulates campaign finance, draws boundaries, and registers parties as Q1 requires.",
+      "powers": [
+        "Conduct elections and referendums",
+        "Maintain the register",
+        "Regulate campaign finance",
+        "Draw constituency boundaries",
+        "Register parties (and apply to the Constitutional Court to refuse registration, under Q1-B)"
+      ],
+      "composition": "Independent board",
+      "selection": "Independent appointment under Art. 98",
+      "term": "Fixed",
+      "recall": "Removal only for misbehaviour by 2/3 of the Assembly after a court finding",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02"
+          ],
+          "mechanism": "Independence, a budget fixed by formula for five years, and protection against removal (Art. 98).",
+          "precedent": [
+            {
+              "text": "An Coimisiún Toghcháin (est. 2023)",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Whoever draws boundaries and registers parties can tilt the field, especially under Q1-B.",
+          "strongest_critique": {
+            "liberal": "A single commission policing political speech in campaigns is a dangerous concentration of power.",
+            "market": "—",
+            "left": "Electoral bodies inherit the assumptions of whoever designed them."
+          }
+        }
+      ]
+    },
+    {
+      "id": "citizens-chamber",
+      "name_en": "Citizens' Chamber",
+      "name_ga": "Seomra na Saoránach",
+      "group": "check",
+      "kind": "sortition",
+      "articles": [
+        39,
+        100,
+        85,
+        90,
+        32
+      ],
+      "pos": {
+        "x": 1240,
+        "y": 230
+      },
+      "summary": "120 residents chosen by lot, half renewed each year. It has binding power exactly where elected politicians have a conflict of interest.",
+      "powers": [
+        "Set officials' pay and permitted benefits (via the Pay and Privileges Panel)",
+        "Approve or refuse any extension of an emergency",
+        "Oversee the security services (via the Security Oversight Committee)",
+        "Force a referendum on any Act (2/3 vote within 60 days)",
+        "Audit the party's internal elections and finances (Q1)",
+        "Set the topics of citizens' assemblies",
+        "Hire and rotate its own secretariat"
+      ],
+      "composition": "120 residents chosen by lot, stratified by county, sex, age and class",
+      "selection": "Lot",
+      "term": "2 years, non-renewable",
+      "recall": "Removal only by the Chamber itself, 2/3, for misconduct",
+      "pay": "Full pay with civic leave",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-12"
+          ],
+          "mechanism": "Nobody sets their own pay. Pay and privileges are fixed and audited by people chosen by lot, who cannot build a career on it.",
+          "precedent": [
+            {
+              "text": "Athens: the Council of 500 by lot",
+              "source": "research/06-positive-models.md"
+            },
+            {
+              "text": "Ireland's citizens' assemblies, 2012–2023",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Members may be overawed by officials and defer to them.",
+          "strongest_critique": {
+            "liberal": "People chosen by lot answer to no electorate. Binding power without accountability is power without legitimacy.",
+            "market": "Amateurs setting public-sector pay will cause shortages of skilled staff.",
+            "left": "A randomly chosen body can be steered by whoever briefs it, and lot can become a depoliticising substitute for organised class power."
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-15",
+            "FM-04"
+          ],
+          "mechanism": "A binding veto on extending emergencies, and full-access security oversight by a body that no one can capture by winning an election.",
+          "precedent": [
+            {
+              "text": "Weimar Article 48: emergency rule without effective check",
+              "source": "research/SYNTHESIS.md"
+            },
+            {
+              "text": "Cheka and Stasi",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "In a real crisis a body chosen by lot may defer to the executive's account of the threat.",
+          "strongest_critique": {
+            "liberal": "Security decisions need expertise and secrecy, and lot provides neither.",
+            "market": "—",
+            "left": "—"
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-08"
+          ],
+          "mechanism": "Binding powers in bounded areas: advisory assemblies fade, as Ireland's own experience shows.",
+          "precedent": [
+            {
+              "text": "Irish assemblies' recommendations selectively implemented",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Secretariat capture. Clause 39.3 (the Chamber hires and rotates its own staff) is the counter, and it is not proven.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Bounded binding powers may still produce gridlock when the Chamber forces referendums on contested economic Acts.",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "citizens-assemblies",
+      "name_en": "Citizens' assemblies",
+      "name_ga": "Tionóil Saoránach",
+      "group": "political",
+      "kind": "sortition",
+      "articles": [
+        40
+      ],
+      "pos": {
+        "x": 1460,
+        "y": 230
+      },
+      "summary": "Ad hoc assemblies of 99–150 people chosen by lot, on topics set by the Chamber, the Assembly or 50,000 citizens. The Assembly must answer within six months.",
+      "powers": [
+        "Deliberate and recommend",
+        "Recommendations not adopted within two years can be sent to referendum by the Citizens' Chamber"
+      ],
+      "composition": "99–150 residents chosen by lot",
+      "selection": "Lot",
+      "term": "Per topic",
+      "recall": "—",
+      "pay": "Full pay with civic leave",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-08",
+            "FM-17"
+          ],
+          "mechanism": "A duty to respond with reasons, and an escalation route to referendum, so recommendations cannot simply lapse.",
+          "precedent": [
+            {
+              "text": "Convention on the Constitution, 2012–14; Citizens' Assembly 2016–18",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Agenda-setting and expert selection still shape outcomes.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "Assemblies can launder decisions already taken elsewhere."
+          }
+        }
+      ]
+    },
+    {
+      "id": "pay-panel",
+      "name_en": "Pay and Privileges Panel",
+      "name_ga": "Painéal Pá agus Pribhléidí",
+      "group": "check",
+      "kind": "sortition",
+      "articles": [
+        100,
+        28
+      ],
+      "pos": {
+        "x": 1680,
+        "y": 230
+      },
+      "summary": "21 members of the Citizens' Chamber chosen by lot each year. They fix the skilled worker's wage for all office-holders and audit asset declarations.",
+      "powers": [
+        "Fix the office-holders' wage and permitted benefits (binding)",
+        "Audit annual declarations of assets and interests",
+        "Refer breaches to the courts"
+      ],
+      "composition": "21 Chamber members chosen by lot",
+      "selection": "Lot",
+      "term": "1 year",
+      "recall": "—",
+      "pay": "As Chamber members",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-12"
+          ],
+          "mechanism": "Officials are paid a skilled worker's wage, in money only, with no benefit in kind unavailable to every resident. They use the same public services. Declarations are public.",
+          "precedent": [
+            {
+              "text": "Paris Commune: 'public service … at workman's wage'",
+              "source": "research/06-positive-models.md"
+            },
+            {
+              "text": "Voslensky on nomenklatura privileges in kind",
+              "source": "research/01-bureaucratic-degeneration.md"
+            },
+            {
+              "text": "Mondragon pay ratios",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Privilege moves into informal networks: access, favours, family connections. The Standards Commission has to follow it there.",
+          "strongest_critique": {
+            "liberal": "Capping pay for judges, doctors-in-office and top managers will drive talent abroad in an open EU labour market.",
+            "market": "Pay caps will produce under-the-table compensation, as Soviet experience shows.",
+            "left": "Equalising officials' pay doesn't touch the deeper source of bureaucratic power: control of information and appointments."
+          }
+        }
+      ]
+    },
+    {
+      "id": "federation",
+      "name_en": "Federation of Workplace Councils",
+      "name_ga": "Cónaidhm na gComhairlí Oibre",
+      "group": "political",
+      "kind": "deliberative",
+      "articles": [
+        34,
+        38,
+        56
+      ],
+      "pos": {
+        "x": 140,
+        "y": 380
+      },
+      "summary": "The workplace councils federated by sector and county, independent of the State and of any party. It sends delegates to the Congress of Councils and the National Investment Council.",
+      "powers": [
+        "Coordinate workplace councils",
+        "Send mandated delegates to the Congress of Councils and the National Investment Council"
+      ],
+      "composition": "Delegates of workplace councils",
+      "selection": "Delegation, mandated and recallable",
+      "term": "As mandated",
+      "recall": "By sending councils",
+      "pay": "Ordinary wage plus civic time",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-08"
+          ],
+          "mechanism": "Self-management federated through its own structures, not through the State or a party.",
+          "precedent": [
+            {
+              "text": "All-Russian Congress of Factory Committees, never held (anarchist-leaning account)",
+              "source": "research/02-suppression-of-pluralism.md"
+            }
+          ],
+          "residual_risk": "Federations develop their own full-time apparatus (Michels).",
+          "strongest_critique": {
+            "liberal": "A producers' federation with a role in national planning entrenches producer interests over consumers.",
+            "market": "Sectoral federations bargain for their sector, reproducing soft budget pressures.",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "county-councils",
+      "name_en": "County and city councils",
+      "name_ga": "Comhairlí Contae agus Cathrach",
+      "group": "political",
+      "kind": "deliberative",
+      "articles": [
+        36
+      ],
+      "pos": {
+        "x": 580,
+        "y": 380
+      },
+      "summary": "Two thirds elected by STV, one third delegated by local assemblies. They run local services, planning, housing allocation and policing priorities, and hire their own chief executive.",
+      "powers": [
+        "Govern local services, planning and housing allocation",
+        "Set local policing priorities",
+        "Appoint and dismiss the chief executive",
+        "Send delegates to the Congress of Councils and regional planning boards"
+      ],
+      "composition": "2/3 STV-elected, 1/3 delegated by local assemblies",
+      "selection": "Mixed",
+      "term": "4 years",
+      "recall": "Yes, by electors or delegating assemblies",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-08"
+          ],
+          "mechanism": "This reverses the 2014 split that left real power with appointed chief executives. Recall and delegation tie the council to its localities.",
+          "precedent": [
+            {
+              "text": "Irish local government after 2014",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "County politics can become clientelist, which is a long Irish tradition.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Local control of planning invites NIMBY blockage of housing and renewables.",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "party",
+      "name_en": "The party (leading socialist party)",
+      "name_ga": "An Páirtí",
+      "group": "political",
+      "kind": "party",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      },
+      "articles": [
+        30,
+        31,
+        32,
+        33,
+        115
+      ],
+      "pos": {
+        "x": 800,
+        "y": 380
+      },
+      "summary": "The only organisation that may run candidates under a party label. It has no reserved seats, no veto and no command over any state body, and must win against independents at every election.",
+      "powers": [
+        "Nominate candidates under a party label",
+        "Receive public funding as an electoral organisation",
+        "Organise, publish and campaign"
+      ],
+      "composition": "Voluntary membership; protected internal platforms and factions",
+      "selection": "Internal secret ballots; internal bodies by proportional representation",
+      "term": "Officials' terms limited, with rotation",
+      "recall": "Internal; renewal referendum every 10 years on its status",
+      "pay": "Officials at skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-13",
+            "FM-02"
+          ],
+          "mechanism": "Factions and platforms legally protected inside the party (Art. 31), the direct reversal of the 1921 ban, so disagreement stays visible and organised.",
+          "precedent": [
+            {
+              "text": "Tenth Party Congress, 1921: 'On Party Unity'",
+              "source": "research/02-suppression-of-pluralism.md"
+            }
+          ],
+          "residual_risk": "Factions protected on paper are not safe in practice when careers depend on the leadership's favour.",
+          "strongest_critique": {
+            "liberal": "One party, however internally plural, denies citizens the right to organise an electoral alternative. Internal pluralism is no substitute for external competition.",
+            "market": "—",
+            "left": "Every ruling party began with internal democracy. The Bolsheviks had factions until 1921. Rules do not survive a crisis; only the balance of forces does."
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-04",
+            "FM-01"
+          ],
+          "mechanism": "Party–state separation: no one holds senior party and state office at once, and the party is barred from commanding police, intelligence, defence, courts or audit (Art. 32).",
+          "precedent": [
+            {
+              "text": "Cheka as 'direct agencies of the Party'",
+              "source": "research/01-bureaucratic-degeneration.md"
+            },
+            {
+              "text": "Voslensky: nomenklatura and security under the Central Committee",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "Loyal non-office-holders can be placed in state posts. The audit by lot must look at networks.",
+          "strongest_critique": {
+            "liberal": "Separation on paper is easily evaded by informal channels.",
+            "market": "—",
+            "left": "—"
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-17",
+            "FM-02"
+          ],
+          "mechanism": "Its role is never guaranteed by law: independents can win every seat. *Drafter's addition:* a referendum every ten years on its status (Art. 33).",
+          "precedent": [
+            {
+              "text": "Uganda's 'no-party' Movement system (shows how organised incumbents win)",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "**Thinnest safeguard in the design.** An organised party competing against unorganised individuals wins most contests. A pro-market minority has speech but no electoral vehicle and may lose faith in the system or go underground (FM-10).",
+          "strongest_critique": {
+            "liberal": "This is a one-party state with good manners.",
+            "market": "Without competition between parties, policy errors go uncorrected for longer.",
+            "left": "A leading role must be earned in struggle. Constitutionalising even a party's *ballot label* monopoly invites careerists."
+          }
+        }
+      ]
+    },
+    {
+      "id": "parties",
+      "name_en": "Socialist parties",
+      "name_ga": "Páirtithe Sóisialacha",
+      "group": "political",
+      "kind": "party",
+      "variants": {
+        "Q1": [
+          "B"
+        ]
+      },
+      "articles": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "pos": {
+        "x": 800,
+        "y": 380
+      },
+      "summary": "Any party that accepts the democratic core and core social ownership may register and stand. Only the Constitutional Court may refuse registration, and only on narrow grounds.",
+      "powers": [
+        "Nominate candidates",
+        "Receive public funding (weighted toward small and new parties)"
+      ],
+      "composition": "Several parties",
+      "selection": "Internal secret ballots",
+      "term": "Officials' terms limited",
+      "recall": "Internal",
+      "pay": "Officials at skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-13",
+            "FM-02"
+          ],
+          "mechanism": "A split becomes a new party, not a crisis. The line is drawn by a court on narrow, published grounds, never by the governing party.",
+          "precedent": [
+            {
+              "text": "Multi-party soviets, 1917; Kronstadt's demands",
+              "source": "research/02-suppression-of-pluralism.md"
+            }
+          ],
+          "residual_risk": "The June 1918 expulsions were justified as defence against counter-revolution. Whoever controls the court defines 'socialist'.",
+          "strongest_critique": {
+            "liberal": "Banning parties by programme is incompatible with liberal democracy.",
+            "market": "—",
+            "left": "Pro-capitalist politics will return under socialist labels."
+          }
+        }
+      ]
+    },
+    {
+      "id": "associations",
+      "name_en": "Associations (no ballot role)",
+      "name_ga": "Cumainn",
+      "group": "political",
+      "kind": "party",
+      "variants": {
+        "Q1": [
+          "D"
+        ]
+      },
+      "articles": [
+        30,
+        31,
+        32,
+        33
+      ],
+      "pos": {
+        "x": 800,
+        "y": 380
+      },
+      "summary": "Associations campaign freely but cannot nominate candidates or run slates. Candidates stand as individuals, and the Citizens' Chamber may initiate legislation.",
+      "powers": [
+        "Publish, campaign and endorse ideas"
+      ],
+      "composition": "Voluntary",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-02"
+          ],
+          "mechanism": "No party machine controls nominations.",
+          "precedent": [
+            {
+              "text": "Athens; Uganda 1986–2005 (cautionary)",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "'No parties' tends to mean one hidden party. Informal slates form with less transparency.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Voters lose the information shortcut that party programmes provide.",
+            "left": "The best-organised existing network wins by default."
+          }
+        }
+      ]
+    },
+    {
+      "id": "national-assembly",
+      "name_en": "National Assembly",
+      "name_ga": "An Tionól Náisiúnta",
+      "group": "political",
+      "kind": "legislative",
+      "articles": [
+        37,
+        42,
+        44,
+        89,
+        90
+      ],
+      "pos": {
+        "x": 1020,
+        "y": 380
+      },
+      "summary": "160 members elected by STV for four years, individually recallable. It makes laws, elects and can recall the Executive Council at any time, and approves the plan and budget.",
+      "powers": [
+        "Make laws",
+        "Elect and recall the Executive Council at any time",
+        "Approve the national plan (with the Congress of Councils) and the budget",
+        "Approve or annul emergency declarations",
+        "Set the physical ecological budgets by law"
+      ],
+      "composition": "160 members, STV in 3–5 seat constituencies",
+      "selection": "Election",
+      "term": "4 years; max two consecutive terms",
+      "recall": "Constituency recall (20% petition)",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-03",
+            "FM-15"
+          ],
+          "mechanism": "It can recall the executive at any time without dissolving itself (Art. 44), so recall is cheap and carries no penalty.",
+          "precedent": [
+            {
+              "text": "Paris Commune; Weimar's dissolution trap",
+              "source": "research/SYNTHESIS.md"
+            }
+          ],
+          "residual_risk": "Easy recall can mean unstable government and short-termism.",
+          "strongest_critique": {
+            "liberal": "An executive that can be recalled at any time has no independent mandate to resist a passing majority.",
+            "market": "Unstable executives cannot make credible long-term commitments to investors or planners.",
+            "left": "—"
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-01"
+          ],
+          "mechanism": "Term limits (two consecutive terms, ten years in any office), a skilled worker's wage, and asset declarations.",
+          "precedent": [
+            {
+              "text": "Michels's iron law of oligarchy",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "Term limits drain expertise and empower permanent staff.",
+          "strongest_critique": {
+            "liberal": "Term limits disempower voters who want to re-elect a good representative.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "president",
+      "name_en": "President",
+      "name_ga": "An tUachtarán",
+      "group": "political",
+      "kind": "executive",
+      "articles": [
+        46
+      ],
+      "pos": {
+        "x": 1240,
+        "y": 380
+      },
+      "summary": "Directly elected for a single seven-year term. Ceremonial guardian with the power to refer Bills to the Constitutional Court.",
+      "powers": [
+        "Refer Bills to the Constitutional Court",
+        "Convene the Assembly if the Executive fails to",
+        "Appoint judges on the Judicial Appointments Commission's nomination"
+      ],
+      "composition": "One person",
+      "selection": "Direct election",
+      "term": "7 years, single term",
+      "recall": "—",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-03"
+          ],
+          "mechanism": "One non-renewable term and no executive power: continuity without a seat of power.",
+          "precedent": [
+            {
+              "text": "Bunreacht Art. 26 reference power",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "A popular president can use moral authority to campaign against the government.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "A head of state is a monarchical relic."
+          }
+        }
+      ]
+    },
+    {
+      "id": "constitutional-court",
+      "name_en": "Constitutional Court",
+      "name_ga": "An Chúirt Bhunreachtúil",
+      "group": "check",
+      "kind": "judicial",
+      "articles": [
+        94,
+        27,
+        64
+      ],
+      "pos": {
+        "x": 1460,
+        "y": 380
+      },
+      "summary": "Nine judges on single, staggered 12-year terms. It reviews laws on referral or individual complaint, enforces social rights, and reviews the Ecological Authority's vetoes.",
+      "powers": [
+        "Strike down unconstitutional laws and acts",
+        "Enforce social rights with structural orders and timetables",
+        "Rule on party registration (Q1-B)",
+        "Review Ecological Authority vetoes on points of law",
+        "Rule on whether an emergency has a factual basis"
+      ],
+      "composition": "9 judges",
+      "selection": "Judicial Appointments Commission",
+      "term": "12 years, single, staggered",
+      "recall": "Removal only for misbehaviour (Art. 92)",
+      "pay": "Not reducible in term",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-15",
+            "FM-04"
+          ],
+          "mechanism": "Independent courts are part of the eternal democratic core. Fusing the judiciary into the governing body is how emergency powers became permanent.",
+          "precedent": [
+            {
+              "text": "Cheka's extrajudicial powers",
+              "source": "research/01-bureaucratic-degeneration.md"
+            },
+            {
+              "text": "Paris Commune's recallable judges (not adopted)",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Courts can be packed slowly through appointments. Staggered single terms and the mixed appointments commission are the counter.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Justiciable social rights let judges make budget decisions they are not equipped for.",
+            "left": "Unelected judges recruited from the legal profession will strike down socialist legislation, as US courts did in the Lochner era."
+          }
+        }
+      ]
+    },
+    {
+      "id": "judicial-appointments",
+      "name_en": "Judicial Appointments Commission",
+      "name_ga": "Coimisiún um Cheapacháin Bhreithiúnacha",
+      "group": "check",
+      "kind": "oversight",
+      "articles": [
+        93
+      ],
+      "pos": {
+        "x": 1680,
+        "y": 380
+      },
+      "summary": "Judges, practising lawyers and members of the public chosen by lot, in equal thirds. It nominates every judge. No politician sits on it.",
+      "powers": [
+        "Nominate all judges"
+      ],
+      "composition": "Judges, lawyers and lay members chosen by lot, in equal numbers",
+      "selection": "Mixed",
+      "term": "Fixed",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-01"
+          ],
+          "mechanism": "Appointment is taken out of executive hands, with lay members chosen by lot against a closed professional caste.",
+          "precedent": [
+            {
+              "text": "Ireland's Judicial Appointments Commission reforms (to be sourced)",
+              "source": "research/SYNTHESIS.md"
+            }
+          ],
+          "residual_risk": "The profession's members may dominate the lay third.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "Self-selecting judiciaries reproduce their own class background."
+          }
+        }
+      ]
+    },
+    {
+      "id": "congress-of-councils",
+      "name_en": "Congress of Councils",
+      "name_ga": "Comhdháil na gComhairlí",
+      "group": "political",
+      "kind": "deliberative",
+      "articles": [
+        38,
+        56
+      ],
+      "pos": {
+        "x": 580,
+        "y": 530
+      },
+      "summary": "Equal numbers of delegates from county councils and the Federation of Workplace Councils. It co-approves the investment plan and can propose laws that the Assembly must vote on.",
+      "powers": [
+        "Co-approve the national investment plan",
+        "Propose laws (the Assembly must vote within 90 days)"
+      ],
+      "composition": "County and workplace delegates in equal numbers",
+      "selection": "Mandated delegation",
+      "term": "As mandated",
+      "recall": "By sending bodies",
+      "pay": "Civic time",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-08"
+          ],
+          "mechanism": "A second, council-based channel alongside direct election, never the only channel, unlike Soviet multi-tier indirect elections.",
+          "precedent": [
+            {
+              "text": "Soviet indirect election tiers",
+              "source": "research/02-suppression-of-pluralism.md"
+            }
+          ],
+          "residual_risk": "Delegation through tiers distances the base from decisions.",
+          "strongest_critique": {
+            "liberal": "Two chambers with different bases invites deadlock on the plan.",
+            "market": "Producer-weighted representation biases investment toward existing industries.",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "investment-council",
+      "name_en": "National Investment Council",
+      "name_ga": "Comhairle Infheistíochta Náisiúnta",
+      "group": "economy",
+      "kind": "planning",
+      "articles": [
+        56
+      ],
+      "pos": {
+        "x": 140,
+        "y": 530
+      },
+      "summary": "Negotiates the five-year investment plan among workers, users, counties and the executive. The Ecological Authority sits without a vote but holds a veto.",
+      "powers": [
+        "Prepare the five-year investment plan by negotiation",
+        "Coordinate the regional planning boards"
+      ],
+      "composition": "Delegates of the Federation, users' councils, county councils and the Executive; Ecological Authority (no vote)",
+      "selection": "Delegation",
+      "term": "Plan cycle",
+      "recall": "By sending bodies",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-05"
+          ],
+          "mechanism": "Negotiated coordination (Devine): market exchange for current output, negotiation for capacity. No single planning centre.",
+          "precedent": [
+            {
+              "text": "Devine, Democracy and Economic Planning (1988)",
+              "source": "research/03-planning-and-calculation.md"
+            },
+            {
+              "text": "Hayek, 'The Use of Knowledge in Society'",
+              "source": "research/03-planning-and-calculation.md"
+            }
+          ],
+          "residual_risk": "Negotiation bodies can become a coordinator class (FM-01). Devine's model is thin on operational detail.",
+          "strongest_critique": {
+            "liberal": "Committees negotiating investment will allocate by political weight, not returns.",
+            "market": "Hayek: the knowledge needed is local and tacit, and no negotiating council can gather it. Without capital markets there is no price for capital.",
+            "left": "Negotiated coordination is corporatism with a socialist vocabulary."
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-12",
+            "FM-01"
+          ],
+          "mechanism": "Open books (Art. 59): the plan's data and every enterprise's accounts are public.",
+          "precedent": [
+            {
+              "text": "Cybersyn's real-time data",
+              "source": "research/03-planning-and-calculation.md"
+            },
+            {
+              "text": "Djilas: control without ownership",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "Data can be published but not understood. Open data favours those with analysts.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "executive-council",
+      "name_en": "Executive Council",
+      "name_ga": "An Chomhairle Feidhmiúcháin",
+      "group": "political",
+      "kind": "executive",
+      "articles": [
+        43,
+        44,
+        86,
+        89
+      ],
+      "pos": {
+        "x": 1020,
+        "y": 530
+      },
+      "summary": "Seven members elected by the Assembly by proportional representation, recallable at any time. It decides collectively, and the chair rotates yearly.",
+      "powers": [
+        "Direct the public service and departments",
+        "Lawfully direct police and Defence Forces (as a body only)",
+        "Declare an emergency (72 hours unless the Assembly approves)",
+        "Negotiate foreign charters and EU exemptions"
+      ],
+      "composition": "7 members",
+      "selection": "Elected by the Assembly by PR",
+      "term": "Recallable at any time; Art. 28 limits",
+      "recall": "Assembly majority, any time, no dissolution",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-03"
+          ],
+          "mechanism": "A collective executive with a rotating chair (first among equals): no single office for a cult to grow around.",
+          "precedent": [
+            {
+              "text": "Swiss Federal Council",
+              "source": "research/SYNTHESIS.md"
+            },
+            {
+              "text": "Khrushchev's 1956 'cult of personality' report",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "Collective leadership can be slow and indecisive in a crisis. Charisma can still dominate from inside a collective.",
+          "strongest_critique": {
+            "liberal": "Diffuse responsibility means nobody is accountable for failures.",
+            "market": "—",
+            "left": "The Politburo was also formally collective."
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-01"
+          ],
+          "mechanism": "A skilled worker's wage, the same public services as everyone, and published declarations (Art. 28).",
+          "precedent": [
+            {
+              "text": "Paris Commune",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Informal privilege (access, networks).",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Underpaying ministers lowers the quality of government.",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "courts",
+      "name_en": "Courts",
+      "name_ga": "Na Cúirteanna",
+      "group": "check",
+      "kind": "judicial",
+      "articles": [
+        12,
+        92,
+        97,
+        84
+      ],
+      "pos": {
+        "x": 1460,
+        "y": 530
+      },
+      "summary": "Independent courts with jury trial. They alone may impose penalties or deprive liberty. Judges issue every surveillance warrant.",
+      "powers": [
+        "Try every offence",
+        "Issue intercept and surveillance warrants",
+        "Annul emergency orders",
+        "Hear whistle-blower and dissent cases"
+      ],
+      "composition": "Judges; juries for serious offences",
+      "selection": "Judicial Appointments Commission",
+      "term": "To retirement",
+      "recall": "Removal only for misbehaviour, 2/3 + tribunal",
+      "pay": "Not reducible",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-04",
+            "FM-10"
+          ],
+          "mechanism": "No tribunal outside the courts may punish, and no offence may be defined by opinion or allegiance: no 'counter-revolution' charge.",
+          "precedent": [
+            {
+              "text": "Cheka; Hungary 1956",
+              "source": "research/05-counter-revolution-and-external-pressure.md"
+            }
+          ],
+          "residual_risk": "Courts can be overwhelmed or intimidated in a real crisis.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "Bourgeois legality protects saboteurs as well as dissidents. That is the point, and it is also the risk."
+          }
+        }
+      ]
+    },
+    {
+      "id": "standards-commission",
+      "name_en": "Standards Commission",
+      "name_ga": "Coimisiún na gCaighdeán",
+      "group": "check",
+      "kind": "oversight",
+      "articles": [
+        103,
+        28
+      ],
+      "pos": {
+        "x": 1680,
+        "y": 530
+      },
+      "summary": "Investigates conflicts of interest, cooling-off breaches and networks of influence that do not appear in formal posts.",
+      "powers": [
+        "Investigate conflicts of interest and networks of influence",
+        "Refer breaches to the courts"
+      ],
+      "composition": "Independent",
+      "selection": "Art. 98",
+      "term": "Fixed",
+      "recall": "Art. 98",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-12"
+          ],
+          "mechanism": "It follows privilege into informal networks once formal privilege is abolished.",
+          "precedent": [
+            {
+              "text": "Voslensky; Kotz & Weir on elite conversion of control into ownership",
+              "source": "research/05-counter-revolution-and-external-pressure.md"
+            }
+          ],
+          "residual_risk": "Investigating 'networks' can become a political weapon.",
+          "strongest_critique": {
+            "liberal": "Investigating informal relationships is intrusive and open to abuse.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "eu",
+      "name_en": "European Union",
+      "name_ga": "An tAontas Eorpach",
+      "group": "external",
+      "kind": "external",
+      "articles": [
+        104,
+        105
+      ],
+      "pos": {
+        "x": 1240,
+        "y": 530
+      },
+      "summary": "Default (Q4-B): Ireland stays a member and negotiates exemptions, with a published Fallback Schedule. Switch Q4 to see the 'leave' and 'defy' paths.",
+      "summary_variants": {
+        "Q4=C": "Under Q4-C Ireland leaves the Union under Article 50. The EU becomes a trading partner, and Northern Ireland stays inside its goods market.",
+        "Q4=D": "Under Q4-D Ireland stays a member but openly declines to comply with specific rules, accepting infringement proceedings."
+      },
+      "powers": [
+        "Single market, competition and state-aid law",
+        "Euro and ECB monetary policy",
+        "Rule-of-law oversight (Art. 7 TEU)"
+      ],
+      "composition": "27 member states",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-11",
+            "FM-02",
+            "FM-06"
+          ],
+          "mechanism": "Membership keeps market access (82% public support), an outside rule-of-law check, and state-aid rules that harden budget constraints. Exemptions are sought openly. Any refusal to comply follows a Fallback Schedule published and approved in advance.",
+          "precedent": [
+            {
+              "text": "Art. 345 TFEU; Essent (2013); EMI polling 2025–26",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Treaty change needs unanimity, so exemptions may never come. A published fallback can be priced in by markets. The Q1 default (one party label) may be challenged under Art. 2 TEU.",
+          "strongest_critique": {
+            "liberal": "A state that pre-announces where it would break the law has already undermined legal certainty.",
+            "market": "Staying in the single market leaves most planning tools out of reach.",
+            "left": "The EU's economic constitution is neoliberal by design. Negotiating exemptions from it is reformism."
+          }
+        }
+      ]
+    },
+    {
+      "id": "regional-boards",
+      "name_en": "Regional planning boards",
+      "name_ga": "Boird Phleanála Réigiúnacha",
+      "group": "economy",
+      "kind": "planning",
+      "articles": [
+        56
+      ],
+      "pos": {
+        "x": 140,
+        "y": 680
+      },
+      "summary": "Constituted like the National Investment Council, they plan investment within each region and weight it toward regional need.",
+      "powers": [
+        "Plan regional investment within the national plan",
+        "Weight investment by regional need"
+      ],
+      "composition": "Workplace, user, county and executive delegates",
+      "selection": "Delegation",
+      "term": "Plan cycle",
+      "recall": "By sending bodies",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-09",
+            "FM-14"
+          ],
+          "mechanism": "Investment is steered by regional need, not only by enterprise surplus, against Yugoslavia's widening gap (Slovenia 2.5% unemployment, Kosovo 21% in 1965).",
+          "precedent": [
+            {
+              "text": "Woodward, Socialist Unemployment",
+              "source": "research/04-stagnation-and-work.md"
+            }
+          ],
+          "residual_risk": "Regional boards bargain against each other for national money.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Spreading investment by region rather than return wastes capital.",
+            "left": "Regional planning bodies became vehicles for republic-level elites in Yugoslavia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "land-farm-board",
+      "name_en": "Land and Farm Transition Board",
+      "name_ga": "Bord Aistrithe Talún agus Feirme",
+      "group": "economy",
+      "kind": "planning",
+      "articles": [
+        67,
+        5
+      ],
+      "pos": {
+        "x": 360,
+        "y": 680
+      },
+      "summary": "At least half its members are elected by farmers. It negotiates the land-use plan and the herd transition, with income guarantees.",
+      "powers": [
+        "Negotiate the national land-use plan",
+        "Administer income guarantees and stewardship payments",
+        "Return processing to co-operative ownership"
+      ],
+      "composition": "At least half elected by farmers; also processing workers, the Ecological Authority and the Executive",
+      "selection": "Election and delegation",
+      "term": "Plan cycle",
+      "recall": "By farmer electors",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-14",
+            "FM-16"
+          ],
+          "mechanism": "The herd transition is negotiated with farmers rather than imposed, with income guaranteed at the household's five-year average, and family farms protected from collectivisation without consent.",
+          "precedent": [
+            {
+              "text": "CSO herd 6.9m; agriculture 38% of emissions; €10.7bn beef and dairy exports",
+              "source": "research/09-ecology-and-growth.md"
+            },
+            {
+              "text": "Soviet forced collectivisation (general)",
+              "source": "research/SYNTHESIS.md"
+            }
+          ],
+          "residual_risk": "Farmers' delegates may block reduction indefinitely. The board then faces the Ecological Authority's veto, which is a real conflict without an easy resolution.",
+          "strongest_critique": {
+            "liberal": "Guaranteeing income pegged to boom-year cattle prices is very expensive.",
+            "market": "Paying farmers to stop farming creates dependency and leaves land idle.",
+            "left": "Protecting family farms entrenches a conservative petty-proprietor class (the Land Acts' own legacy)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "public-service",
+      "name_en": "Public service",
+      "name_ga": "An tSeirbhís Phoiblí",
+      "group": "political",
+      "kind": "executive",
+      "articles": [
+        45
+      ],
+      "pos": {
+        "x": 800,
+        "y": 680
+      },
+      "summary": "Recruited on merit by an independent Public Appointments Commission. There is no list of posts needing party or political approval.",
+      "powers": [
+        "Administer departments under the Executive Council",
+        "Refuse unlawful instructions"
+      ],
+      "composition": "Career public servants",
+      "selection": "Open competition",
+      "term": "Career",
+      "recall": "Disciplinary procedures",
+      "pay": "Within Art. 55 ratios",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-12"
+          ],
+          "mechanism": "There is no nomenklatura list: appointments below the Executive are on merit, with a duty to refuse unlawful instructions.",
+          "precedent": [
+            {
+              "text": "Voslensky, Nomenklatura",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "A merit-based permanent service becomes its own caste (Michels; Trotsky's 'policeman').",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Without market discipline, public administration expands (Parkinson; Kornai).",
+            "left": "A permanent civil service is exactly the bureaucracy Marx wanted the Commune to dissolve."
+          }
+        }
+      ]
+    },
+    {
+      "id": "security-oversight",
+      "name_en": "Security Oversight Committee",
+      "name_ga": "Coiste Maoirseachta Slándála",
+      "group": "security",
+      "kind": "sortition",
+      "articles": [
+        85
+      ],
+      "pos": {
+        "x": 1240,
+        "y": 680
+      },
+      "summary": "12 members of the Citizens' Chamber chosen by lot, 4 Assembly members chosen by lot from outside the Executive and the largest grouping, and a judge-Inspector. It has full access and can suspend operations.",
+      "powers": [
+        "Full access to the records, premises and staff of the police, intelligence and Defence Forces",
+        "Publish findings",
+        "Suspend unlawful operations pending the High Court",
+        "Review all surveillance warrants"
+      ],
+      "composition": "12 by lot from the Citizens' Chamber + 4 Assembly members (not Executive or largest grouping) + Inspector",
+      "selection": "Lot",
+      "term": "Chamber term",
+      "recall": "—",
+      "pay": "As members",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-04",
+            "FM-15"
+          ],
+          "mechanism": "Oversight by a body that cannot be captured by winning an election, with full access and the power to suspend operations.",
+          "precedent": [
+            {
+              "text": "Stasi: 91,015 staff, 173,081 informants (1989)",
+              "source": "research/01-bureaucratic-degeneration.md"
+            },
+            {
+              "text": "Cheka answerable only to the party",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "Members chosen by lot may defer to security professionals. The Inspector and full access are the counterweight, and they are not proven.",
+          "strongest_critique": {
+            "liberal": "Leaks from lay overseers endanger operations and sources.",
+            "market": "—",
+            "left": "Oversight legitimises the existence of a secret service that a workers' democracy should not have at all."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ombudsman",
+      "name_en": "Ombudsman",
+      "name_ga": "An tOmbudsman",
+      "group": "check",
+      "kind": "oversight",
+      "articles": [
+        95,
+        53
+      ],
+      "pos": {
+        "x": 1460,
+        "y": 680
+      },
+      "summary": "Investigates complaints against any public body or socially owned enterprise, including complaints from users' councils.",
+      "powers": [
+        "Investigate complaints",
+        "Enter premises and see records",
+        "Publish reports"
+      ],
+      "composition": "Independent office",
+      "selection": "Art. 98",
+      "term": "Fixed",
+      "recall": "Art. 98",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-17"
+          ],
+          "mechanism": "Gives every resident a free route to challenge the administration, so grievances do not simply accumulate.",
+          "precedent": [
+            {
+              "text": "Irish Ombudsman (existing office)",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Reports are ignored if they have no binding force.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "audit-office",
+      "name_en": "Audit Office",
+      "name_ga": "An tArd-Reachtaire Cuntas agus Ciste",
+      "group": "check",
+      "kind": "oversight",
+      "articles": [
+        99,
+        98
+      ],
+      "pos": {
+        "x": 1680,
+        "y": 680
+      },
+      "summary": "Audits every public body, socially owned enterprise, charter enterprise and funded party, and reports publicly to the Assembly and the Citizens' Chamber.",
+      "powers": [
+        "Audit all public money",
+        "Report publicly",
+        "Support the Pay and Privileges Panel"
+      ],
+      "composition": "Comptroller and Auditor General and staff",
+      "selection": "Art. 98",
+      "term": "Fixed",
+      "recall": "2/3 + court finding",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-06",
+            "FM-12"
+          ],
+          "mechanism": "Independent audit with a budget fixed by formula. The party is barred from instructing it (Art. 32).",
+          "precedent": [
+            {
+              "text": "Kornai: soft budgets need visibility to harden",
+              "source": "research/03-planning-and-calculation.md"
+            }
+          ],
+          "residual_risk": "Audit sees accounts, not informal power.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "public-enterprises",
+      "name_en": "National public enterprises",
+      "name_ga": "Fiontair Phoiblí Náisiúnta",
+      "group": "economy",
+      "kind": "enterprise",
+      "articles": [
+        5,
+        48,
+        53,
+        54
+      ],
+      "pos": {
+        "x": 140,
+        "y": 830
+      },
+      "summary": "The grid, water, rail, housing construction, energy generation and other strategic sectors. Boards are one third workers, one third users and communities, and one third appointed. Budgets are hard.",
+      "powers": [
+        "Run strategic sectors",
+        "Appoint management through workplace councils"
+      ],
+      "composition": "Tripartite boards; users' councils",
+      "selection": "Mixed",
+      "term": "—",
+      "recall": "Worker and user members recallable",
+      "pay": "Ratio max 1:4",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-12"
+          ],
+          "mechanism": "The housing stock, grid, water, health and rail can be privatised only by two Assemblies with an election between, then a referendum (Art. 109).",
+          "precedent": [
+            {
+              "text": "Kotz & Weir: privatisation by the elite",
+              "source": "research/05-counter-revolution-and-external-pressure.md"
+            }
+          ],
+          "residual_risk": "Entrenchment is a secondary defence: Weimar shows gains hold only while the balance of forces does.",
+          "strongest_critique": {
+            "liberal": "Locking sectors into public ownership freezes economic structure against future needs.",
+            "market": "—",
+            "left": "—"
+          }
+        },
+        {
+          "failure_modes": [
+            "FM-06",
+            "FM-09"
+          ],
+          "mechanism": "Hard budgets: a rescue is a public, costed vote, never automatic. Users sit on the board.",
+          "precedent": [
+            {
+              "text": "Kornai, Economics of Shortage",
+              "source": "research/03-planning-and-calculation.md"
+            },
+            {
+              "text": "Devine's stakeholder model",
+              "source": "research/03-planning-and-calculation.md"
+            }
+          ],
+          "residual_risk": "Political pressure to rescue large local employers.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Public enterprises always face softer budgets than private ones, whatever the rules say.",
+            "left": "Tripartite boards reproduce management-labour bargaining under a new name."
+          }
+        }
+      ]
+    },
+    {
+      "id": "cooperatives",
+      "name_en": "Co-operatives",
+      "name_ga": "Comharchumainn",
+      "group": "economy",
+      "kind": "enterprise",
+      "articles": [
+        50,
+        47
+      ],
+      "pos": {
+        "x": 360,
+        "y": 830
+      },
+      "summary": "Worker, consumer and producer co-ops. Membership opens after at most a year's probation, non-member staff are capped at 10%, reserves are indivisible, and there is no demutualisation.",
+      "powers": [
+        "Produce and trade in markets",
+        "Govern themselves by one member, one vote"
+      ],
+      "composition": "Members",
+      "selection": "Open after probation",
+      "term": "—",
+      "recall": "—",
+      "pay": "Ratio max 1:4",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-09",
+            "FM-12"
+          ],
+          "mechanism": "Rules against insider capture: compulsory admission after probation, a 10% cap on non-member staff, indivisible reserves, and no conversion to shareholder companies.",
+          "precedent": [
+            {
+              "text": "Mondragon: ~40% member-owners; Fagor 2013",
+              "source": "research/06-positive-models.md"
+            },
+            {
+              "text": "Yugoslav income-per-member incentives",
+              "source": "research/04-stagnation-and-work.md"
+            }
+          ],
+          "residual_risk": "Compulsory membership dilutes commitment. Indivisible reserves weaken members' willingness to invest.",
+          "strongest_critique": {
+            "liberal": "Forcing co-ops to admit members limits their freedom of association.",
+            "market": "Co-ops under hard budgets in competitive markets drift toward capitalist behaviour.",
+            "left": "Co-ops in markets self-exploit; market socialism is still market discipline."
+          }
+        }
+      ]
+    },
+    {
+      "id": "small-private",
+      "name_en": "Small private enterprise",
+      "name_ga": "Fiontair Bheaga Phríobháideacha",
+      "group": "economy",
+      "kind": "enterprise",
+      "articles": [
+        51,
+        47
+      ],
+      "pos": {
+        "x": 580,
+        "y": 830
+      },
+      "summary": "Family firms, shops, cafés, trades and family farms with up to 50 employees. Workers have the right of first offer when a business is sold or its owner retires.",
+      "powers": [
+        "Trade freely in markets"
+      ],
+      "composition": "Owners and staff",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "Progressive tax; national floor",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-17",
+            "FM-05"
+          ],
+          "mechanism": "Variety and responsiveness where planning is weakest: no Trabant queues, no Intershop.",
+          "precedent": [
+            {
+              "text": "Trabant waiting lists; Intershop",
+              "source": "research/10-legitimacy-and-everyday-life.md"
+            },
+            {
+              "text": "Nove, Economics of Feasible Socialism",
+              "source": "research/03-planning-and-calculation.md"
+            }
+          ],
+          "residual_risk": "Private enterprise creates a constituency for restoration (FM-12) and market inequality.",
+          "strongest_critique": {
+            "liberal": "A 50-employee cap stunts successful firms and drives them abroad.",
+            "market": "—",
+            "left": "Petty capitalism is the seedbed of capitalist restoration."
+          }
+        }
+      ]
+    },
+    {
+      "id": "housing-authority",
+      "name_en": "Housing Authority",
+      "name_ga": "An tÚdarás Tithíochta",
+      "group": "public",
+      "kind": "service",
+      "articles": [
+        19,
+        69,
+        68
+      ],
+      "pos": {
+        "x": 800,
+        "y": 830
+      },
+      "summary": "Builds, owns and maintains public housing at cost rent for all, not only the poor, to high design standards, allocated by published rules.",
+      "powers": [
+        "Build and maintain public housing",
+        "Allocate by published rules",
+        "Share management with tenants' councils"
+      ],
+      "composition": "Board under Art. 48 model; tenants' councils",
+      "selection": "Mixed",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-17",
+            "FM-01"
+          ],
+          "mechanism": "Universal cost-rent housing and published allocation rules: no queue for a 'policeman' to control, and no priority for office-holders.",
+          "precedent": [
+            {
+              "text": "17,885 in emergency accommodation, Aug 2026",
+              "source": "research/08-ireland-today.md"
+            },
+            {
+              "text": "Trotsky: scarcity creates the policeman",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "Build-out takes a decade, and allocation queues will exist meanwhile.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Cost rent with no market signal under-prices good locations and misallocates housing.",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "health-service",
+      "name_en": "Health service",
+      "name_ga": "An tSeirbhís Sláinte",
+      "group": "public",
+      "kind": "service",
+      "articles": [
+        20,
+        70
+      ],
+      "pos": {
+        "x": 1020,
+        "y": 830
+      },
+      "summary": "A single-tier public service, free at the point of use. Nobody can buy faster access to public facilities.",
+      "powers": [
+        "Provide health care free at the point of use"
+      ],
+      "composition": "National service, regionally delivered",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-17",
+            "FM-01"
+          ],
+          "mechanism": "Single tier: no paid queue-jumping in public facilities, and no special clinics for officials.",
+          "precedent": [
+            {
+              "text": "894,369 on waiting lists, Dec 2025; Sláintecare",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Private practice outside public facilities remains, which keeps an informal second tier.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "Free at the point of use with no price signal means rationing by waiting.",
+            "left": "Allowing private practice at all preserves two-tier care."
+          }
+        }
+      ]
+    },
+    {
+      "id": "garda",
+      "name_en": "An Garda Síochána (police)",
+      "name_ga": "An Garda Síochána",
+      "group": "security",
+      "kind": "security",
+      "articles": [
+        82,
+        86
+      ],
+      "pos": {
+        "x": 1240,
+        "y": 830
+      },
+      "summary": "A civilian police service with no political function. Counties set local priorities, and officers have a duty to refuse unlawful orders, including against peaceful protest or strikes.",
+      "powers": [
+        "Policing under law"
+      ],
+      "composition": "Civilian service",
+      "selection": "Open competition",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-04",
+            "FM-10"
+          ],
+          "mechanism": "No political policing; a duty to refuse unlawful orders; independent complaints; oversight by lot.",
+          "precedent": [
+            {
+              "text": "Commune police as 'responsible and revocable agent'",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Police culture is resistant to change. Riot policing in a general strike is the real test.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "The police remain a special body of armed men separate from the people."
+          }
+        }
+      ]
+    },
+    {
+      "id": "policing-authority",
+      "name_en": "Policing Authority & Police Ombudsman",
+      "name_ga": "An tÚdarás Póilíneachta agus Ombudsman na bPóilíní",
+      "group": "security",
+      "kind": "oversight",
+      "articles": [
+        82,
+        83
+      ],
+      "pos": {
+        "x": 1460,
+        "y": 830
+      },
+      "summary": "Independent oversight of national policing policy, and independent investigation of every complaint and every death or serious injury involving the police.",
+      "powers": [
+        "Oversee policing policy",
+        "Investigate complaints independently"
+      ],
+      "composition": "Independent",
+      "selection": "Art. 98",
+      "term": "Fixed",
+      "recall": "Art. 98",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-04"
+          ],
+          "mechanism": "Police are never investigated by police.",
+          "precedent": [
+            {
+              "text": "Garda Ombudsman (existing)",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Under-resourced investigators defer to the force.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "open-data",
+      "name_en": "Open Data Office",
+      "name_ga": "Oifig na Sonraí Oscailte",
+      "group": "check",
+      "kind": "oversight",
+      "articles": [
+        59,
+        102
+      ],
+      "pos": {
+        "x": 1680,
+        "y": 830
+      },
+      "summary": "Ensures that the accounts, plans, contracts and input–output data of every public body and socially owned enterprise are public and usable.",
+      "powers": [
+        "Enforce publication",
+        "Publish the State's data"
+      ],
+      "composition": "Independent",
+      "selection": "Art. 98",
+      "term": "Fixed",
+      "recall": "Art. 98",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-01",
+            "FM-05",
+            "FM-12"
+          ],
+          "mechanism": "Open books against both Djilas (control hidden behind ownership) and Hayek (planners monopolising knowledge).",
+          "precedent": [
+            {
+              "text": "Cybersyn; Djilas",
+              "source": "research/03-planning-and-calculation.md"
+            }
+          ],
+          "residual_risk": "Data is published but not used; or it is used mostly by those with analysts.",
+          "strongest_critique": {
+            "liberal": "Full transparency of enterprise data destroys commercial confidentiality.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "charter-enterprises",
+      "name_en": "Foreign charter enterprises",
+      "name_ga": "Fiontair Chairte Eachtracha",
+      "group": "economy",
+      "kind": "enterprise",
+      "articles": [
+        52,
+        114
+      ],
+      "pos": {
+        "x": 140,
+        "y": 980
+      },
+      "summary": "Multinationals operating under charters approved by the Assembly that fix tax, workplace-council rights, ecological budgets and training. No expropriation without compensation.",
+      "powers": [
+        "Operate under charter"
+      ],
+      "composition": "Foreign-owned firms",
+      "selection": "—",
+      "term": "Charter period",
+      "recall": "Charter non-renewal",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-11"
+          ],
+          "mechanism": "The FDI model is changed openly and by stages, not ended overnight. Windfall tax is ring-fenced first.",
+          "precedent": [
+            {
+              "text": "Foreign MNCs paid 87% of CT; top 10 paid 56% (2025); IDA employment 312,468",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "The charter firms' lobby stays inside the republic. They can still leave, and booked profits can move instantly.",
+          "strongest_critique": {
+            "liberal": "Any charter regime raises political risk and will deter investment regardless of its terms.",
+            "market": "—",
+            "left": "Charters legitimise the continued exploitation of Irish workers by US capital."
+          }
+        }
+      ]
+    },
+    {
+      "id": "public-bank",
+      "name_en": "Public bank & credit unions",
+      "name_ga": "An Banc Poiblí agus Comhar Creidmheasa",
+      "group": "economy",
+      "kind": "enterprise",
+      "articles": [
+        61
+      ],
+      "pos": {
+        "x": 360,
+        "y": 980
+      },
+      "summary": "A public bank in every county plus credit unions and co-operative banks. The main source of credit for co-ops, social enterprises, housing and the transition.",
+      "powers": [
+        "Lend",
+        "Hold deposits"
+      ],
+      "composition": "Public and co-operative",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "Ratio max 1:4",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-06"
+          ],
+          "mechanism": "Lending by published criteria. Hard budgets apply to the bank too.",
+          "precedent": [
+            {
+              "text": "Kornai",
+              "source": "research/03-planning-and-calculation.md"
+            }
+          ],
+          "residual_risk": "Political lending, the classic failure of state banks.",
+          "strongest_critique": {
+            "liberal": "State banks lend by connection, not merit.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "job-guarantee",
+      "name_en": "Job Guarantee Service",
+      "name_ga": "Seirbhís Ráthaíochta Fostaíochta",
+      "group": "public",
+      "kind": "service",
+      "articles": [
+        23,
+        54,
+        76
+      ],
+      "pos": {
+        "x": 580,
+        "y": 980
+      },
+      "summary": "Socially useful work at a living wage, in care, repair, retrofit, restoration, culture and public works, for anyone who wants it, near home.",
+      "powers": [
+        "Offer work to all who seek it",
+        "Retrain workers from closed enterprises"
+      ],
+      "composition": "National service, locally delivered",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "Living wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-06",
+            "FM-07",
+            "FM-09"
+          ],
+          "mechanism": "Society, not the firm, holds the job guarantee, so enterprises can face hard budgets without workers facing destitution. It also absorbs those shut out by insider co-ops.",
+          "precedent": [
+            {
+              "text": "Kornai; Mondragon's redeployment of 1,000+ members",
+              "source": "research/06-positive-models.md"
+            }
+          ],
+          "residual_risk": "Make-work with low morale and low productivity.",
+          "strongest_critique": {
+            "liberal": "A guaranteed job at a living wage sets a floor that undermines labour discipline.",
+            "market": "Fiscal cost scales with every closure.",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "care-service",
+      "name_en": "National Care Service",
+      "name_ga": "An tSeirbhís Náisiúnta Cúraim",
+      "group": "public",
+      "kind": "service",
+      "articles": [
+        21,
+        71
+      ],
+      "pos": {
+        "x": 800,
+        "y": 980
+      },
+      "summary": "Universal childcare, home care and residential care; an income for home carers; and a national time-use survey every five years so care is counted and planned.",
+      "powers": [
+        "Provide childcare, home care and residential care",
+        "Pay carers' income",
+        "Commission time-use surveys"
+      ],
+      "composition": "National service",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "Care workers on public terms",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-18"
+          ],
+          "mechanism": "Care is counted (time-use survey), planned, and well paid. Choice between public and family care, with support either way. Non-transferable parental leave for each parent.",
+          "precedent": [
+            {
+              "text": "Soviet and GDR double burden",
+              "source": "research/11-social-reproduction.md"
+            },
+            {
+              "text": "2024 care referendum (73.9% No)",
+              "source": "research/11-social-reproduction.md"
+            }
+          ],
+          "residual_risk": "Underfunding relative to 'productive' investment, exactly as in the Eastern Bloc.",
+          "strongest_critique": {
+            "liberal": "Universal state childcare crowds out family choice and community provision.",
+            "market": "Very expensive.",
+            "left": "Paying for care turns family relationships into wage relationships (Federici's dilemma)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "arts-design",
+      "name_en": "Arts and Design Council",
+      "name_ga": "Comhairle na nEalaíon agus an Dearaidh",
+      "group": "culture",
+      "kind": "service",
+      "articles": [
+        80,
+        68,
+        25
+      ],
+      "pos": {
+        "x": 1020,
+        "y": 980
+      },
+      "summary": "Funds the arts, crafts, design and public amenity at arm's length, with a budget floor. One per cent of public capital budgets goes to design and amenity.",
+      "powers": [
+        "Fund the arts and design at arm's length"
+      ],
+      "composition": "Independent",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-17"
+          ],
+          "mechanism": "Morris's 'ornamental part of life' with a protected budget: beauty is not the first thing cut.",
+          "precedent": [
+            {
+              "text": "Morris, 'Useful Work versus Useless Toil'",
+              "source": "research/10-legitimacy-and-everyday-life.md"
+            }
+          ],
+          "residual_risk": "Arm's-length bodies develop house styles and clienteles.",
+          "strongest_critique": {
+            "liberal": "Publicly funded art serves the funders' taste.",
+            "market": "—",
+            "left": "Socialist-realist commissions began with good intentions too."
+          }
+        }
+      ]
+    },
+    {
+      "id": "intelligence",
+      "name_en": "Intelligence service",
+      "name_ga": "An tSeirbhís Faisnéise",
+      "group": "security",
+      "kind": "security",
+      "articles": [
+        84,
+        16
+      ],
+      "pos": {
+        "x": 1240,
+        "y": 980
+      },
+      "summary": "Counter-espionage and protection of infrastructure only. No power to arrest, detain or prosecute; warrants from a judge; a published budget; citizens can see their files.",
+      "powers": [
+        "Gather intelligence under judicial warrant"
+      ],
+      "composition": "Separate from police and defence",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-04",
+            "FM-15"
+          ],
+          "mechanism": "No powers of punishment, judicial warrants, full-access oversight by lot, a published budget, and a right to see one's own file.",
+          "precedent": [
+            {
+              "text": "Cheka from investigation to punishment within months",
+              "source": "research/01-bureaucratic-degeneration.md"
+            },
+            {
+              "text": "Stasi files opened after 1990 (Act to be sourced)",
+              "source": "research/01-bureaucratic-degeneration.md"
+            }
+          ],
+          "residual_risk": "A real hostile intelligence threat (Chile) may expose the limits of a weak service, and pressure to strengthen it will come in a crisis.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "Any secret service will eventually serve those in power."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ecological-authority",
+      "name_en": "Ecological Authority",
+      "name_ga": "Údarás Éiceolaíochta",
+      "group": "check",
+      "kind": "oversight",
+      "articles": [
+        63,
+        64,
+        65
+      ],
+      "pos": {
+        "x": 1460,
+        "y": 980
+      },
+      "summary": "Independent. Advises on and enforces the physical budgets set by the Assembly, with a veto over any plan item or charter that would breach them, reviewable only by the Constitutional Court.",
+      "powers": [
+        "Advise on physical budgets",
+        "Monitor compliance",
+        "Veto plan items or charters that breach budgets"
+      ],
+      "composition": "9 members appointed by 3 judges + 6 members of the Citizens' Chamber; scientists, farmers, sector workers, public",
+      "selection": "Panel",
+      "term": "7 years, single",
+      "recall": "Art. 98",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-16",
+            "FM-05"
+          ],
+          "mechanism": "The independent institution Soviet planning lacked. Democracy sets the limits; the Authority enforces them.",
+          "precedent": [
+            {
+              "text": "Aral Sea; Feshbach & Friendly, Ecocide in the USSR",
+              "source": "research/09-ecology-and-growth.md"
+            },
+            {
+              "text": "Hickel & Kallis 2020",
+              "source": "research/09-ecology-and-growth.md"
+            }
+          ],
+          "residual_risk": "Budgets can be set loosely by the Assembly. An unelected veto will be resented, especially by farmers.",
+          "strongest_critique": {
+            "liberal": "Technocrats with a veto over economic plans is a recipe for unaccountable rule.",
+            "market": "Quantity caps ignore costs and substitution; prices would do the job better.",
+            "left": "Ecological technocracy depoliticises a class question: who pays for the transition."
+          }
+        }
+      ]
+    },
+    {
+      "id": "media-regulator",
+      "name_en": "Media Regulator",
+      "name_ga": "Rialtóir na Meán",
+      "group": "culture",
+      "kind": "oversight",
+      "articles": [
+        78,
+        79
+      ],
+      "pos": {
+        "x": 1680,
+        "y": 980
+      },
+      "summary": "Independent. It licenses broadcasting, enforces ownership limits and accuracy in news, and appoints a third of the Public Media Trust board. It may not regulate opinion.",
+      "powers": [
+        "License broadcasting",
+        "Enforce ownership limits",
+        "Administer media vouchers"
+      ],
+      "composition": "Independent",
+      "selection": "Art. 98",
+      "term": "Fixed",
+      "recall": "Art. 98",
+      "pay": "Skilled worker's wage",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-17"
+          ],
+          "mechanism": "Pluralism by ownership limits and citizen-directed media vouchers. The State never chooses which voices are heard.",
+          "precedent": [
+            {
+              "text": "Kern & Hainmueller: openness stabilised the GDR",
+              "source": "research/10-legitimacy-and-everyday-life.md"
+            }
+          ],
+          "residual_risk": "An 'accuracy' remit can creep into regulating opinion.",
+          "strongest_critique": {
+            "liberal": "Any regulator of news is a censor in waiting.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "social-wealth-fund",
+      "name_en": "Social Wealth Fund",
+      "name_ga": "Ciste an Rachmais Shóisialta",
+      "group": "economy",
+      "kind": "fund",
+      "articles": [
+        60,
+        114
+      ],
+      "pos": {
+        "x": 360,
+        "y": 1130
+      },
+      "summary": "Holds windfall revenues, including corporation tax above trend, to finance the transition, the Co-operative Development Fund and long-term investment. It cannot fund current spending.",
+      "powers": [
+        "Invest for the long term",
+        "Finance the transition and co-op development"
+      ],
+      "composition": "Independent board",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "Ratio max 1:4",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-11"
+          ],
+          "mechanism": "Windfall corporation tax, dependent on a few US firms, is ring-fenced *before* any change, so that its loss is survivable.",
+          "precedent": [
+            {
+              "text": "Revenue CT 2025; IFAC windfall estimates",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Raids on the fund in hard times.",
+          "strongest_critique": {
+            "liberal": "Sovereign funds become political slush funds.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "language-commissioner",
+      "name_en": "Language Commissioner",
+      "name_ga": "An Coimisinéir Teanga",
+      "group": "culture",
+      "kind": "oversight",
+      "articles": [
+        4,
+        81
+      ],
+      "pos": {
+        "x": 800,
+        "y": 1130
+      },
+      "summary": "Protects language rights, including the material rights in the Gaeltacht (housing, jobs, services), and can take enforcement proceedings.",
+      "powers": [
+        "Enforce language rights in court"
+      ],
+      "composition": "Independent office",
+      "selection": "—",
+      "term": "—",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-17",
+            "FM-14"
+          ],
+          "mechanism": "Material rather than symbolic support for Irish: daily speakers outside education numbered about 72,000 in 2022.",
+          "precedent": [
+            {
+              "text": "CSO Census 2022",
+              "source": "research/08-ireland-today.md"
+            }
+          ],
+          "residual_risk": "Enforcement cannot create speakers.",
+          "strongest_critique": {
+            "liberal": "Compulsion breeds resentment of the language.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "public-media-trust",
+      "name_en": "Public Media Trust",
+      "name_ga": "Iontaobhas na Meán Poiblí",
+      "group": "culture",
+      "kind": "media",
+      "articles": [
+        77
+      ],
+      "pos": {
+        "x": 1020,
+        "y": 1130
+      },
+      "summary": "Public broadcasting and digital media, funded as a fixed share of national income for ten years at a time. The board is a third staff, a third chosen by lot and a third appointed by the regulator.",
+      "powers": [
+        "Editorial independence"
+      ],
+      "composition": "Board: staff, lot, regulator-appointed",
+      "selection": "Mixed",
+      "term": "Fixed",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-02",
+            "FM-03"
+          ],
+          "mechanism": "No state monopoly on truth: funding cannot be cut as pressure, and no party executive member may sit on the board.",
+          "precedent": [
+            {
+              "text": "Luxemburg on press freedom",
+              "source": "research/02-suppression-of-pluralism.md"
+            }
+          ],
+          "residual_risk": "A cosy staff consensus. Plural media funding is the counterweight.",
+          "strongest_critique": {
+            "liberal": "Public media crowd out private journalism.",
+            "market": "—",
+            "left": "—"
+          }
+        }
+      ]
+    },
+    {
+      "id": "defence-forces",
+      "name_en": "Defence Forces",
+      "name_ga": "Óglaigh na hÉireann",
+      "group": "security",
+      "kind": "security",
+      "articles": [
+        7,
+        87,
+        88
+      ],
+      "pos": {
+        "x": 1240,
+        "y": 1130
+      },
+      "summary": "Neutral territorial, sea, air and undersea defence, and UN peacekeeping under the triple lock. No role in any political or industrial dispute.",
+      "powers": [
+        "Defend territory, airspace, seas and undersea infrastructure",
+        "Peacekeeping under UN mandate with Executive and Assembly approval"
+      ],
+      "composition": "Professional forces with representative associations",
+      "selection": "—",
+      "term": "Commanders on fixed terms",
+      "recall": "—",
+      "pay": "—",
+      "safeguards": [
+        {
+          "failure_modes": [
+            "FM-10",
+            "FM-04"
+          ],
+          "mechanism": "Civilian control requiring 2/3 consent to senior appointments; a constitutional ban on any domestic political role; a duty to refuse unlawful orders.",
+          "precedent": [
+            {
+              "text": "Chile 1973",
+              "source": "research/05-counter-revolution-and-external-pressure.md"
+            }
+          ],
+          "residual_risk": "Officers' loyalty cannot be legislated. Chile's commander had sworn loyalty too.",
+          "strongest_critique": {
+            "liberal": "—",
+            "market": "—",
+            "left": "A professional army separate from the armed people is the Commune's first lesson ignored."
+          }
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "people",
+      "to": "workplace-councils",
+      "kind": "elects",
+      "note": "Workers elect councils each year"
+    },
+    {
+      "from": "people",
+      "to": "local-assemblies",
+      "kind": "elects",
+      "note": "Every resident is a member"
+    },
+    {
+      "from": "people",
+      "to": "county-councils",
+      "kind": "elects",
+      "note": "Two thirds elected by STV"
+    },
+    {
+      "from": "people",
+      "to": "national-assembly",
+      "kind": "elects",
+      "note": "160 members by STV"
+    },
+    {
+      "from": "people",
+      "to": "president",
+      "kind": "elects",
+      "note": "Single 7-year term"
+    },
+    {
+      "from": "people",
+      "to": "referendum",
+      "kind": "refers",
+      "note": "100,000 signatures for an initiative"
+    },
+    {
+      "from": "people",
+      "to": "national-assembly",
+      "kind": "removes",
+      "note": "Constituency recall at a 20% petition"
+    },
+    {
+      "from": "people",
+      "to": "county-councils",
+      "kind": "removes",
+      "note": "Recall"
+    },
+    {
+      "from": "people",
+      "to": "land-farm-board",
+      "kind": "elects",
+      "note": "Farmers elect at least half"
+    },
+    {
+      "from": "people",
+      "to": "unions",
+      "kind": "elects",
+      "note": "Voluntary membership"
+    },
+    {
+      "from": "people",
+      "to": "media-regulator",
+      "kind": "funds",
+      "note": "Each adult directs a media voucher (administered by the regulator)"
+    },
+    {
+      "from": "workplace-councils",
+      "to": "federation",
+      "kind": "delegates",
+      "note": "Mandated, recallable delegates"
+    },
+    {
+      "from": "workplace-councils",
+      "to": "public-enterprises",
+      "kind": "appoints",
+      "note": "Appoint and dismiss management"
+    },
+    {
+      "from": "workplace-councils",
+      "to": "cooperatives",
+      "kind": "appoints",
+      "note": "Members govern"
+    },
+    {
+      "from": "local-assemblies",
+      "to": "county-councils",
+      "kind": "delegates",
+      "note": "One third of county seats"
+    },
+    {
+      "from": "federation",
+      "to": "congress-of-councils",
+      "kind": "delegates",
+      "note": "Half of Congress"
+    },
+    {
+      "from": "county-councils",
+      "to": "congress-of-councils",
+      "kind": "delegates",
+      "note": "Half of Congress"
+    },
+    {
+      "from": "federation",
+      "to": "investment-council",
+      "kind": "delegates"
+    },
+    {
+      "from": "county-councils",
+      "to": "investment-council",
+      "kind": "delegates"
+    },
+    {
+      "from": "county-councils",
+      "to": "regional-boards",
+      "kind": "delegates"
+    },
+    {
+      "from": "investment-council",
+      "to": "regional-boards",
+      "kind": "directs",
+      "note": "Regional plans inside the national plan"
+    },
+    {
+      "from": "national-assembly",
+      "to": "executive-council",
+      "kind": "elects",
+      "note": "By PR"
+    },
+    {
+      "from": "national-assembly",
+      "to": "executive-council",
+      "kind": "removes",
+      "note": "Recall at any time, without dissolution"
+    },
+    {
+      "from": "national-assembly",
+      "to": "defence-forces",
+      "kind": "appoints",
+      "note": "2/3 consent to senior commanders"
+    },
+    {
+      "from": "national-assembly",
+      "to": "ecological-authority",
+      "kind": "directs",
+      "note": "Sets the physical budgets by law"
+    },
+    {
+      "from": "president",
+      "to": "constitutional-court",
+      "kind": "refers",
+      "note": "Refers Bills before signing"
+    },
+    {
+      "from": "president",
+      "to": "courts",
+      "kind": "appoints",
+      "note": "On the Judicial Appointments Commission's nomination"
+    },
+    {
+      "from": "judicial-appointments",
+      "to": "courts",
+      "kind": "appoints",
+      "note": "Nominates every judge"
+    },
+    {
+      "from": "judicial-appointments",
+      "to": "constitutional-court",
+      "kind": "appoints",
+      "note": "Nominates"
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "judicial-appointments",
+      "kind": "appoints",
+      "note": "Lay members by lot"
+    },
+    {
+      "from": "constitutional-court",
+      "to": "national-assembly",
+      "kind": "vetoes",
+      "note": "Strikes down unconstitutional laws"
+    },
+    {
+      "from": "constitutional-court",
+      "to": "ecological-authority",
+      "kind": "oversees",
+      "note": "Reviews vetoes on points of law"
+    },
+    {
+      "from": "executive-council",
+      "to": "public-service",
+      "kind": "directs"
+    },
+    {
+      "from": "executive-council",
+      "to": "garda",
+      "kind": "directs",
+      "note": "Lawful direction as a body only"
+    },
+    {
+      "from": "executive-council",
+      "to": "defence-forces",
+      "kind": "directs",
+      "note": "Lawful direction as a body only"
+    },
+    {
+      "from": "executive-council",
+      "to": "intelligence",
+      "kind": "directs",
+      "note": "Lawful direction as a body only"
+    },
+    {
+      "from": "executive-council",
+      "to": "public-enterprises",
+      "kind": "appoints",
+      "note": "One third of boards, with Assembly consent"
+    },
+    {
+      "from": "executive-council",
+      "to": "job-guarantee",
+      "kind": "directs"
+    },
+    {
+      "from": "county-councils",
+      "to": "garda",
+      "kind": "directs",
+      "note": "Local policing priorities"
+    },
+    {
+      "from": "county-councils",
+      "to": "public-service",
+      "kind": "appoints",
+      "note": "Hire their own chief executive"
+    },
+    {
+      "from": "people",
+      "to": "citizens-chamber",
+      "kind": "elects",
+      "note": "Chosen by lot, stratified"
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "pay-panel",
+      "kind": "appoints",
+      "note": "21 by lot each year"
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "security-oversight",
+      "kind": "appoints",
+      "note": "12 by lot"
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "referendum",
+      "kind": "refers",
+      "note": "2/3 vote forces a referendum on any Act"
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "executive-council",
+      "kind": "vetoes",
+      "note": "Must approve any extension of an emergency"
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "citizens-assemblies",
+      "kind": "refers",
+      "note": "Sets topics"
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "ecological-authority",
+      "kind": "appoints",
+      "note": "6 of the 9 appointing panel members"
+    },
+    {
+      "from": "citizens-assemblies",
+      "to": "national-assembly",
+      "kind": "informs",
+      "note": "Recommendations; reply due within 6 months"
+    },
+    {
+      "from": "pay-panel",
+      "to": "executive-council",
+      "kind": "audits",
+      "note": "Fixes pay and audits declarations"
+    },
+    {
+      "from": "pay-panel",
+      "to": "national-assembly",
+      "kind": "audits",
+      "note": "Fixes pay and audits declarations"
+    },
+    {
+      "from": "pay-panel",
+      "to": "courts",
+      "kind": "refers",
+      "note": "Refers breaches"
+    },
+    {
+      "from": "security-oversight",
+      "to": "intelligence",
+      "kind": "oversees",
+      "note": "Full access; may suspend operations"
+    },
+    {
+      "from": "security-oversight",
+      "to": "garda",
+      "kind": "oversees",
+      "note": "Full access"
+    },
+    {
+      "from": "security-oversight",
+      "to": "defence-forces",
+      "kind": "oversees",
+      "note": "Full access"
+    },
+    {
+      "from": "courts",
+      "to": "intelligence",
+      "kind": "oversees",
+      "note": "Every warrant comes from a judge"
+    },
+    {
+      "from": "policing-authority",
+      "to": "garda",
+      "kind": "oversees",
+      "note": "Independent complaints and policy oversight"
+    },
+    {
+      "from": "audit-office",
+      "to": "public-enterprises",
+      "kind": "audits"
+    },
+    {
+      "from": "audit-office",
+      "to": "executive-council",
+      "kind": "audits"
+    },
+    {
+      "from": "audit-office",
+      "to": "cooperatives",
+      "kind": "audits",
+      "note": "Where public funds are involved"
+    },
+    {
+      "from": "audit-office",
+      "to": "national-assembly",
+      "kind": "informs",
+      "note": "Public reports"
+    },
+    {
+      "from": "audit-office",
+      "to": "citizens-chamber",
+      "kind": "informs",
+      "note": "Public reports"
+    },
+    {
+      "from": "ombudsman",
+      "to": "public-service",
+      "kind": "oversees",
+      "note": "Complaints"
+    },
+    {
+      "from": "standards-commission",
+      "to": "executive-council",
+      "kind": "audits",
+      "note": "Conflicts of interest and networks"
+    },
+    {
+      "from": "standards-commission",
+      "to": "courts",
+      "kind": "refers"
+    },
+    {
+      "from": "open-data",
+      "to": "people",
+      "kind": "informs",
+      "note": "Publishes accounts, plans and data"
+    },
+    {
+      "from": "public-enterprises",
+      "to": "open-data",
+      "kind": "informs",
+      "note": "Open books"
+    },
+    {
+      "from": "investment-council",
+      "to": "open-data",
+      "kind": "informs",
+      "note": "Plan data"
+    },
+    {
+      "from": "electoral-commission",
+      "to": "referendum",
+      "kind": "oversees",
+      "note": "Runs every vote"
+    },
+    {
+      "from": "media-regulator",
+      "to": "public-media-trust",
+      "kind": "appoints",
+      "note": "One third of the board"
+    },
+    {
+      "from": "public-media-trust",
+      "to": "people",
+      "kind": "informs"
+    },
+    {
+      "from": "ecological-authority",
+      "to": "investment-council",
+      "kind": "vetoes",
+      "note": "Vetoes plan items that breach budgets"
+    },
+    {
+      "from": "ecological-authority",
+      "to": "charter-enterprises",
+      "kind": "vetoes",
+      "note": "Vetoes charters that breach budgets"
+    },
+    {
+      "from": "land-farm-board",
+      "to": "investment-council",
+      "kind": "informs",
+      "note": "Land-use plan"
+    },
+    {
+      "from": "unions",
+      "to": "national-assembly",
+      "kind": "checks",
+      "note": "Right to strike, including against the State"
+    },
+    {
+      "from": "language-commissioner",
+      "to": "public-service",
+      "kind": "oversees",
+      "note": "Language rights"
+    },
+    {
+      "from": "social-wealth-fund",
+      "to": "cooperatives",
+      "kind": "funds",
+      "note": "Co-operative Development Fund"
+    },
+    {
+      "from": "social-wealth-fund",
+      "to": "housing-authority",
+      "kind": "funds",
+      "note": "Transition investment"
+    },
+    {
+      "from": "social-wealth-fund",
+      "to": "land-farm-board",
+      "kind": "funds",
+      "note": "Income guarantees and stewardship payments"
+    },
+    {
+      "from": "charter-enterprises",
+      "to": "social-wealth-fund",
+      "kind": "funds",
+      "note": "Windfall corporation tax"
+    },
+    {
+      "from": "national-assembly",
+      "to": "health-service",
+      "kind": "funds",
+      "note": "Budget"
+    },
+    {
+      "from": "national-assembly",
+      "to": "care-service",
+      "kind": "funds",
+      "note": "Budget"
+    },
+    {
+      "from": "national-assembly",
+      "to": "job-guarantee",
+      "kind": "funds",
+      "note": "Budget"
+    },
+    {
+      "from": "national-assembly",
+      "to": "public-media-trust",
+      "kind": "funds",
+      "note": "Fixed share of national income for 10 years"
+    },
+    {
+      "from": "national-assembly",
+      "to": "arts-design",
+      "kind": "funds",
+      "note": "Budget floor"
+    },
+    {
+      "from": "national-assembly",
+      "to": "citizens-chamber",
+      "kind": "funds",
+      "note": "Full pay and civic leave"
+    },
+    {
+      "from": "county-councils",
+      "to": "local-assemblies",
+      "kind": "funds",
+      "note": "At least a third of the capital budget"
+    },
+    {
+      "from": "public-bank",
+      "to": "cooperatives",
+      "kind": "funds",
+      "note": "Credit"
+    },
+    {
+      "from": "public-bank",
+      "to": "small-private",
+      "kind": "funds",
+      "note": "Credit"
+    },
+    {
+      "from": "investment-council",
+      "to": "public-enterprises",
+      "kind": "funds",
+      "note": "Investment plan"
+    },
+    {
+      "from": "investment-council",
+      "to": "public-bank",
+      "kind": "directs",
+      "note": "Credit priorities"
+    },
+    {
+      "from": "party",
+      "to": "national-assembly",
+      "kind": "elects",
+      "note": "Nominates candidates under its label; must beat independents",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "party",
+      "kind": "audits",
+      "note": "Audits internal elections and finances (Art. 32.3)",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "audit-office",
+      "to": "party",
+      "kind": "audits",
+      "note": "Public funds",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "party",
+      "to": "garda",
+      "kind": "barred",
+      "note": "Barred: no party command over police (Art. 32.2)",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "party",
+      "to": "intelligence",
+      "kind": "barred",
+      "note": "Barred (Art. 32.2)",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "party",
+      "to": "courts",
+      "kind": "barred",
+      "note": "Barred (Art. 32.2)",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "party",
+      "to": "audit-office",
+      "kind": "barred",
+      "note": "Barred (Art. 32.2)",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "party",
+      "to": "defence-forces",
+      "kind": "barred",
+      "note": "Barred (Art. 32.2)",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "people",
+      "to": "referendum",
+      "kind": "refers",
+      "note": "Renewal referendum on the party's status every 10 years (Art. 33)",
+      "variants": {
+        "Q1": [
+          "A"
+        ]
+      }
+    },
+    {
+      "from": "parties",
+      "to": "national-assembly",
+      "kind": "elects",
+      "note": "Nominate candidates",
+      "variants": {
+        "Q1": [
+          "B"
+        ]
+      }
+    },
+    {
+      "from": "constitutional-court",
+      "to": "parties",
+      "kind": "oversees",
+      "note": "Rules on registration, narrowly",
+      "variants": {
+        "Q1": [
+          "B"
+        ]
+      }
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "parties",
+      "kind": "audits",
+      "note": "Audits finances",
+      "variants": {
+        "Q1": [
+          "B"
+        ]
+      }
+    },
+    {
+      "from": "parties",
+      "to": "garda",
+      "kind": "barred",
+      "note": "Barred (Art. 32.2)",
+      "variants": {
+        "Q1": [
+          "B"
+        ]
+      }
+    },
+    {
+      "from": "parties",
+      "to": "courts",
+      "kind": "barred",
+      "note": "Barred (Art. 32.2)",
+      "variants": {
+        "Q1": [
+          "B"
+        ]
+      }
+    },
+    {
+      "from": "associations",
+      "to": "garda",
+      "kind": "barred",
+      "note": "Barred (Art. 32)",
+      "variants": {
+        "Q1": [
+          "D"
+        ]
+      }
+    },
+    {
+      "from": "citizens-chamber",
+      "to": "national-assembly",
+      "kind": "refers",
+      "note": "May initiate legislation (Q1-D, Art. 33)",
+      "variants": {
+        "Q1": [
+          "D"
+        ]
+      }
+    },
+    {
+      "from": "executive-council",
+      "to": "eu",
+      "kind": "negotiates",
+      "note": "Negotiates exemptions; Fallback Schedule published in advance",
+      "variants": {
+        "Q4": [
+          "B"
+        ]
+      }
+    },
+    {
+      "from": "national-assembly",
+      "to": "eu",
+      "kind": "vetoes",
+      "note": "Approves the Fallback Schedule",
+      "variants": {
+        "Q4": [
+          "B"
+        ]
+      }
+    },
+    {
+      "from": "eu",
+      "to": "executive-council",
+      "kind": "checks",
+      "note": "State-aid and rule-of-law constraints",
+      "variants": {
+        "Q4": [
+          "B",
+          "D"
+        ]
+      }
+    },
+    {
+      "from": "executive-council",
+      "to": "eu",
+      "kind": "negotiates",
+      "note": "Negotiates withdrawal and trade terms",
+      "variants": {
+        "Q4": [
+          "C"
+        ]
+      }
+    },
+    {
+      "from": "executive-council",
+      "to": "eu",
+      "kind": "checks",
+      "note": "Declines to comply with specific rules",
+      "variants": {
+        "Q4": [
+          "D"
+        ]
+      }
+    }
+  ]
+}
