@@ -1,0 +1,525 @@
+/* Economy section. Chart colours are a five-slot categorical palette in the site's civic hues
+   (slate, ochre, violet, teal, rust), validated with the dataviz palette checker for lightness,
+   chroma, colour-blind separation (adjacent pairs ΔE ≥ 10) and ≥ 3:1 contrast, in each mode
+   against that mode's card surface (DECISIONS D-68). Grey is used only for "other" flows. */
+:root {
+  --c1: #2f6fa3;
+  --c2: #c27c0e;
+  --c3: #7a5aa8;
+  --c4: #00907e;
+  --c5: #b84a2a;
+  --c-neutral: #8f897c;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --c1: #4a8ac4;
+    --c2: #c58625;
+    --c3: #977ad0;
+    --c4: #119a88;
+    --c5: #cf6747;
+    --c-neutral: #77756d;
+  }
+}
+:root[data-theme='dark'] {
+  --c1: #4a8ac4;
+  --c2: #c58625;
+  --c3: #977ad0;
+  --c4: #119a88;
+  --c5: #cf6747;
+  --c-neutral: #77756d;
+}
+
+.sub-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  border-bottom: 2px solid var(--ink);
+}
+.sub-nav a {
+  display: block;
+  padding: 0.45rem 0.8rem;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  color: var(--ink);
+  border: 2px solid transparent;
+  border-bottom: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.sub-nav a .ga {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+.sub-nav a[aria-current='page'] {
+  background: var(--band);
+  color: var(--on-band);
+}
+.sub-nav a[aria-current='page'] .ga {
+  color: var(--on-band);
+}
+.view-title {
+  margin-top: 0.4rem;
+}
+
+.model-flag {
+  border: 2px dashed var(--ochre);
+  background: var(--ochre-bg);
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+}
+.settings-note {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  border-left: 4px solid var(--rule);
+  padding-left: 0.7rem;
+}
+.verdict {
+  font-family: var(--font-sans);
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius);
+  border-left: 6px solid;
+}
+.verdict.ok {
+  border-color: var(--green);
+  background: var(--card);
+}
+.verdict.broken {
+  border-color: var(--rust);
+  background: var(--rust-bg);
+}
+
+.econ-root .stat-row {
+  margin: 1.5rem 0;
+}
+.econ-root .stat {
+  display: flex;
+  flex-direction: column;
+  max-width: 13rem;
+}
+.stat-num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--green);
+  font-stretch: 110%;
+  line-height: 1.1;
+}
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+
+/* ---- figures */
+.chart-figure {
+  position: relative;
+  margin: 1.2rem 0 2rem;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 0.8rem 0.9rem 0.6rem;
+}
+.chart-figure figcaption {
+  font-family: var(--font-sans);
+  margin-bottom: 0.4rem;
+}
+.chart-title {
+  display: block;
+  font-weight: 800;
+  font-size: 1rem;
+}
+.chart-desc {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+  margin-top: 0.15rem;
+}
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  margin: 0.3rem 0 0.4rem;
+}
+.lg-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.sw {
+  display: inline-block;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 2px;
+  background: var(--sw);
+  flex: none;
+}
+.sw-line {
+  height: 0;
+  border-top: 3px solid var(--sw);
+  background: none;
+  width: 1.2rem;
+  border-radius: 0;
+}
+.sw-line.dash {
+  border-top-style: dashed;
+}
+.chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.chart-foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--ink-2);
+  border-top: 1px solid var(--rule);
+  padding-top: 0.4rem;
+  margin-top: 0.3rem;
+}
+.chart-table {
+  overflow-x: auto;
+  margin-top: 0.6rem;
+}
+.chart-tip {
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  padding: 0.4rem 0.6rem;
+  border-radius: var(--radius);
+  max-width: 22rem;
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.25);
+}
+.chart-tip .sw {
+  margin-right: 0.3rem;
+}
+.tip-row {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line charts */
+.line-chart text {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  fill: var(--ink-2);
+}
+.line-chart .grid {
+  stroke: var(--rule);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+.line-chart .zero {
+  stroke: var(--ink-2);
+  stroke-width: 1.2;
+}
+.line-chart .series {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 2.4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.line-chart .series.dash {
+  stroke-dasharray: 6 4;
+}
+.line-chart .threshold {
+  stroke: var(--ink-2);
+  stroke-width: 1.4;
+  stroke-dasharray: 3 4;
+}
+.line-chart .threshold-label {
+  font-weight: 700;
+}
+.line-chart .transition-band {
+  fill: var(--paper-2);
+  opacity: 0.55;
+}
+.line-chart .band-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.line-chart .broken-band {
+  fill: var(--rust-bg);
+  opacity: 0.7;
+}
+.line-chart .break-marker line {
+  stroke: var(--rust);
+  stroke-width: 2;
+}
+.line-chart .break-marker text {
+  fill: var(--rust);
+  font-weight: 800;
+}
+.line-chart .cursor {
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+.line-chart .dot {
+  fill: var(--c);
+  stroke: var(--card);
+  stroke-width: 2;
+}
+.line-chart:focus-visible,
+.bar-chart .seg:focus-visible,
+.sankey-chart .link:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* bars */
+.bar-chart .seg {
+  fill: var(--c);
+}
+.bar-chart text {
+  font-family: var(--font-sans);
+  font-size: 12.5px;
+  fill: var(--ink);
+}
+.bar-chart .row-total {
+  font-weight: 700;
+  fill: var(--ink-2);
+}
+
+/* sankey */
+.sankey-chart .link {
+  fill: none;
+  stroke: var(--c);
+  stroke-opacity: 0.38;
+}
+.sankey-chart .link:hover,
+.sankey-chart .link.is-active {
+  stroke-opacity: 0.75;
+}
+.sankey-chart .node {
+  fill: var(--c);
+}
+.sankey-chart .node-label {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--ink);
+}
+.sankey-chart .node-value {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  fill: var(--ink-2);
+}
+
+/* data tables */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  margin: 0.6rem 0 1rem;
+}
+.data-table caption {
+  text-align: left;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+.data-table th,
+.data-table td {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.3rem 0.45rem;
+  text-align: left;
+  vertical-align: top;
+}
+.data-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.data-table thead th {
+  border-bottom: 2px solid var(--ink);
+}
+.kind {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.05rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+}
+.kind-assumption {
+  background: var(--ochre-bg);
+  border-color: var(--ochre);
+}
+.kind-data {
+  background: var(--card);
+}
+
+/* structure */
+.tier-list {
+  display: grid;
+  gap: 0.6rem;
+  margin: 0.6rem 0 1rem;
+}
+.tier dt {
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+.tier dt .ga {
+  font-weight: 500;
+  font-style: italic;
+  color: var(--ink-2);
+  font-size: 0.9em;
+}
+.tier dd {
+  margin: 0.1rem 0 0 1.3rem;
+  font-size: 0.95rem;
+}
+.tier .arts {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+}
+.inv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+@media (max-width: 760px) {
+  .inv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.year-pick,
+.energy-pick {
+  margin: 0.6rem 0;
+}
+
+/* pressure explorer */
+.pressure-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: 1rem 1.4rem;
+  margin: 1rem 0;
+}
+.pressure-form > p {
+  grid-column: 1 / -1;
+}
+.slider {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 4px solid var(--green);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.8rem;
+}
+.slider label {
+  font-weight: 800;
+  font-size: 0.92rem;
+  display: block;
+}
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.slider input[type='range'] {
+  flex: 1;
+  accent-color: var(--green);
+  min-height: 2rem;
+}
+.slider output {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  min-width: 3.2rem;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.slider-range,
+.slider-links {
+  margin: 0.2rem 0;
+  font-family: var(--font-sans);
+}
+.tip-point {
+  display: block;
+  color: var(--ink);
+}
+.slider-src summary {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+.slider-src p {
+  font-size: 0.88rem;
+  margin: 0.3rem 0;
+}
+.result-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+}
+.result-tiles > div {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.7rem;
+}
+.result-tiles dt {
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  font-weight: 700;
+}
+.result-tiles dd {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+.year-table summary {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  cursor: pointer;
+}
+.year-table {
+  overflow-x: auto;
+}
+.model-spec pre {
+  overflow-x: auto;
+}
+.sankey-chart .col-head {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  fill: var(--ink-2);
+}
+@media (max-width: 600px) {
+  .bar-chart text,
+  .line-chart text {
+    font-size: 12px;
+  }
+  .sankey-chart .node-label {
+    font-size: 11px;
+  }
+  .sankey-chart .node-value {
+    font-size: 10px;
+  }
+  .chart-figure {
+    padding: 0.6rem 0.5rem 0.5rem;
+  }
+}

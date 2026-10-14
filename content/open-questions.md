@@ -45,6 +45,8 @@ Bodies chosen by lot have binding power over officials' pay, emergency extension
 
 - **The knowledge problem is answered only in part.** Negotiated planning answers Mises better than Hayek. Devine's model is thin on operational detail. ([research note](research/03-planning-and-calculation.md))
 - **Innovation.** Incentives to innovate are weaker than under capitalism. Public R&D, open licences and the freedom to start co-operatives may not make up for that.
+- **The republic only stays afloat if most of the multinationals' local spending stays, or something replaces it.** On the economy model's central settings, the external balance and the budget break in year 5; the tipping point is roughly two-fifths of the multinationals leaving. That is the model's honest answer, not a forecast, and the [pressure explorer](#/economy/pressure) shows how it moves with each assumption. The design's charter regime (Art. 52) and its export base outside the multinationals carry more weight than the design has yet given them.
+- **The design needs more tax.** Without an extra progressive tax of about 5% of GNI\*, its public provision is unfunded ([the model](#/economy/model)).
 - **The transition will cost GDP.** Losing part of the multinational sector will make Ireland poorer by conventional measures, at least for a time. The design argues the trade (housing, health, care, time, security) is worth it. It does not promise otherwise.
 - **The figures are guesses.** The 1:4 pay ratio, the 50-employee conversion threshold and similar numbers are reasoned guesses, not findings.
 

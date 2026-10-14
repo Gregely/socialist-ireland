@@ -9,12 +9,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "validate": "node tests/validate.mjs",
-    "test": "node tests/validate.mjs && node tests/smoke.mjs && node tests/variants.mjs && node tests/keyboard.mjs"
+    "test": "node tests/validate.mjs && node tests/economy.mjs && node tests/smoke.mjs && node tests/variants.mjs && node tests/keyboard.mjs && node tests/economy-ui.mjs"
   },
   "dependencies": {
     "@fontsource-variable/archivo": "5.2.6",
     "@fontsource-variable/source-serif-4": "5.2.8",
     "d3-geo": "^3.1.1",
+    "d3-sankey": "^0.12.3",
     "marked": "15.0.12",
     "topojson-client": "^3.1.0"
   },

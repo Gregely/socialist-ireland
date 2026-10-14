@@ -27,6 +27,11 @@ const ROUTES = (process.env.ROUTES || [
   'stress/leaving-the-eu?path=s1.s2.s3a.s4.s5.s6.s7b', 'stress/leaving-the-eu?path=s1.s2.s3b', 'stress/capital-flight?path=s1.s2.s3.s4b', 'stress/term-limits?path=s1.s2.s3.s4b', 'stress/harvest-energy-shock?path=s1.s2.s3.s4a',
   'stress/security-scandal?path=s1.s2.s3.s4a', 'stress/general-strike?path=s1.s2.s3.s4a', 'stress/sabotage?path=s1.s2.s3.s4b.end',
   'day/01-nurse-cork', 'day/02-farmer-leitrim', 'day/03-delegate-tallaght', 'day/04-journalist-galway', 'day/05-carer-limerick',
+  'economy', 'economy/structure', 'economy/flows', 'economy/flows?year=10', 'economy/flows?year=20', 'economy/afloat', 'economy/pressure', 'economy/model',
+  // the explorer at both ends of every slider
+  'economy/pressure?mne_exit=0&capital_flight=0&devaluation=0&trade_terms=0&herd_reduction=0&hours_reduction=0&energy_price=-0.3&participation=0.6',
+  'economy/pressure?mne_exit=1&capital_flight=0.3&devaluation=0.5&trade_terms=1&herd_reduction=0.6&hours_reduction=0.2&energy_price=1.1&participation=0.05',
+  'economy/afloat?mne_exit=0.2', 'economy/structure?mne_exit=1', 'research/12-economy', 'research/13-leaving-the-eu',
 ].join(',')).split(',');
 
 await mkdir('test-results', { recursive: true });

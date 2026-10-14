@@ -1,0 +1,76 @@
+{
+  "_note": "Physical flows for the Economy section. 'today' figures are real data; 'design' factors are the drafter's assumptions for year 10 of the transition, applied by the page. Energy is in ktoe (1 ktoe = 11.63 GWh); emissions in Mt CO2eq; materials in Mt. Flows exclude stock changes and statistical differences, so supply totals are the sums of the flows shown.",
+  "energy": {
+    "unit": "ktoe",
+    "year": 2024,
+    "source": "SEAI National Energy Balance 2024 as published by the CSO (table SEI01); research 12 §6.1",
+    "sources": {
+      "oil": { "en": "Oil (imported)" },
+      "gas": { "en": "Natural gas (imported 79%)" },
+      "coalpeat": { "en": "Coal and peat" },
+      "wind": { "en": "Wind" },
+      "otherren": { "en": "Bioenergy, solar, hydro, heat pumps" },
+      "elecimp": { "en": "Electricity imports" },
+      "waste": { "en": "Non-renewable waste" }
+    },
+    "uses": {
+      "transport": { "en": "Transport" },
+      "homes": { "en": "Homes" },
+      "industry": { "en": "Industry" },
+      "datacentres": { "en": "Data centres and ICT" },
+      "commercial": { "en": "Other commercial and public" },
+      "agri": { "en": "Farming and fishing" },
+      "losses": { "en": "Losses in generation and the grid" },
+      "other": { "en": "Non-energy use and refining" }
+    },
+    "to_electricity": { "oil": 150, "gas": 2421, "coalpeat": 161, "wind": 1002, "otherren": 409, "elecimp": 435, "waste": 83 },
+    "electricity_to": { "transport": 37, "homes": 720, "industry": 596, "datacentres": 691, "commercial": 739, "agri": 42 },
+    "direct": {
+      "oil": { "transport": 4839, "homes": 1083, "industry": 352, "commercial": 202, "agri": 241, "other": 390 },
+      "gas": { "transport": 18, "homes": 480, "industry": 936, "commercial": 340, "other": 79 },
+      "coalpeat": { "homes": 233, "industry": 38 },
+      "otherren": { "transport": 330, "homes": 121, "industry": 188, "commercial": 61 },
+      "waste": { "industry": 72 }
+    },
+    "design": {
+      "_about": "Drafter's assumptions for year 10, each a multiplier on the 2024 flow. They follow the design's direction (electrify, build renewables, cap data centres, cut aviation) but are not a costed energy plan.",
+      "wind": { "factor": 2.5, "why": "Onshore and offshore wind built by public and community enterprise (Arts. 48, 49)" },
+      "otherren": { "factor": 1.4, "why": "Heat pumps and solar" },
+      "elecimp": { "factor": 1.0, "why": "Interconnectors unchanged" },
+      "gas_to_electricity": { "factor": 0.4, "why": "Gas generation reduced to back-up" },
+      "oil_transport": { "factor": 0.55, "why": "Public transport and electrification; aviation designated for reduction (Art. 114)" },
+      "oil_homes": { "factor": 0.35, "why": "Retrofits and heat pumps" },
+      "gas_direct": { "factor": 0.7, "why": "Industry and homes moving off gas" },
+      "coalpeat": { "factor": 0, "why": "No coal or peat burning" },
+      "datacentres": { "factor": 0.8, "why": "Data centres designated for planned reduction (Arts. 65, 114)" },
+      "transport_electricity": { "add": 450, "why": "Electric transport replacing some of the oil saved" },
+      "homes_electricity": { "add": 250, "why": "Heat pumps" }
+    }
+  },
+  "emissions": {
+    "unit": "Mt CO2eq",
+    "year": 2025,
+    "source": "EPA provisional greenhouse gas inventory 1990–2025 (July 2026); research 12 §6.2",
+    "sectors": [
+      { "id": "agri", "en": "Agriculture", "value": 20.398, "design": { "driver": "herd", "share": 0.74, "why": "Enteric fermentation and manure are 74% of agricultural emissions (EPA 2024 final); they fall with the herd" } },
+      { "id": "transport", "en": "Transport", "value": 11.608, "design": { "driver": "factor", "factor": 0.55, "why": "As oil in transport (energy design above)" } },
+      { "id": "energy", "en": "Energy industries", "value": 6.59, "design": { "driver": "factor", "factor": 0.4, "why": "As gas in electricity generation" } },
+      { "id": "residential", "en": "Homes", "value": 5.212, "design": { "driver": "factor", "factor": 0.45, "why": "Retrofits and heat pumps" } },
+      { "id": "industry", "en": "Industry (combustion and processes)", "value": 5.996, "design": { "driver": "factor", "factor": 0.75, "why": "Partial electrification; cement process emissions remain" } },
+      { "id": "other", "en": "Commercial, public, waste and F-gases", "value": 2.847, "design": { "driver": "factor", "factor": 0.7, "why": "Drafter's assumption" } }
+    ],
+    "budgets": [
+      { "en": "Carbon budget 2026–30 (yearly average)", "value": 40, "source": "200 Mt over five years (EPA)" },
+      { "en": "Carbon budget 2031–35 (yearly average)", "value": 30.2, "source": "151 Mt over five years (EPA)" }
+    ]
+  },
+  "materials": {
+    "unit": "Mt",
+    "year": 2024,
+    "source": "CSO Material Flow Accounts 2024 (research 12 §6.4)",
+    "extraction": { "Grazed grass and fodder": 34.6, "Crops, wood, fish and other biomass": 6.3, "Rock, sand and gravel": 53.6, "Fossil fuels (gas, peat)": 1.2, "Metal ores": 0.2 },
+    "imports": 45.1,
+    "exports": 17.7,
+    "consumption": { "Non-metallic minerals": 57.1, "Biomass": 47.4, "Fossil fuels": 12.5, "Metals": 5.3, "Other": 1.0 }
+  }
+}

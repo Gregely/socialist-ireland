@@ -36,6 +36,7 @@ function checkText(where, text = '') {
   for (const m of text.matchAll(/#\/map\?node=([\w-]+)/g)) if (!NODES.has(m[1])) err(where, `unknown map node ${m[1]}`);
   for (const m of text.matchAll(/#\/stress\/([\w-]+)/g)) if (!SCENARIOS.has(m[1])) err(where, `unknown stress test ${m[1]}`);
   for (const m of text.matchAll(/#\/day\/([\w-]+)/g)) if (!VIGNETTES.has(m[1])) err(where, `unknown vignette ${m[1]}`);
+  for (const m of text.matchAll(/#\/economy\/([\w-]+)/g)) if (!['structure', 'flows', 'afloat', 'pressure', 'model'].includes(m[1])) err(where, `unknown economy view ${m[1]}`);
   // "Art. 104", "Arts. 30–33", "Article 57" → the article must exist
   for (const m of text.matchAll(/\bArt(?:icle|s?\.)\s+(\d+)(?:\s*[–-]\s*(\d+))?/g)) {
     const [a, b] = [Number(m[1]), Number(m[2] || m[1])];
@@ -104,7 +105,18 @@ for (const f of scenarioFiles) {
 
 // ---- vignettes, pages, decisions
 for (const f of vignetteFiles) checkText(`vignette ${f}`, await read(`content/vignettes/${f}`));
-for (const f of ['content/overview.md', 'content/open-questions.md']) checkText(f, await read(f));
+for (const f of ['content/overview.md', 'content/open-questions.md', 'content/economy/intro.md', 'content/economy/structure.md', 'content/economy/flows.md', 'content/economy/afloat.md']) checkText(f, await read(f));
+// economy structure: tiers point at real institutions and articles; slider stress tests exist
+const econStructure = await json('content/economy/structure.json');
+for (const t of econStructure.tiers) {
+  if (!NODES.has(t.node)) err(`economy tier ${t.id}`, `unknown institution ${t.node}`);
+  for (const a of t.articles) if (!ARTICLES.has(a)) err(`economy tier ${t.id}`, `missing Article ${a}`);
+}
+const econParams = await json('design/economy-params.json');
+for (const [k, s] of Object.entries(econParams.sliders)) {
+  for (const id of s.stress || []) if (!SCENARIOS.has(id)) err(`economy slider ${k}`, `unknown stress test ${id}`);
+  for (const f of s.fms || []) if (!FMS.has(f)) err(`economy slider ${k}`, `unknown ${f}`);
+}
 for (const q of decisions.questions) {
   checkText(`decisions ${q.id}`, [q.rationale_md, q.honesty_md, q.contrast?.text_md, ...(q.costs || []), ...(q.gains || []), ...(q.thin_points || [])].join('\n'));
   for (const o of q.options || []) checkText(`decisions ${q.id}-${o.id}`, [o.rationale_md, o.honesty_md, ...(o.thin_points || [])].join('\n'));

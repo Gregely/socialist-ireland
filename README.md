@@ -11,7 +11,8 @@ npm install
 npm run dev        # local dev server with live reload
 npm run build      # static build in dist/
 npm run validate   # checks every cross-reference in the content (no build needed)
-npm test           # after a build: validate, smoke + accessibility (axe), variant switching, keyboard tests
+npm test           # after a build: validate, economy identities, smoke + accessibility (axe), variants, keyboard, economy UI
+node tests/economy.mjs   # just the economy model's accounting identities (no build needed)
 ```
 
 The build is plain static files with relative paths and hash routing. Upload `dist/` to any static host (GitHub Pages, Netlify, a web server), or open it from a local web server. There is no backend.
@@ -33,6 +34,9 @@ All content lives in Markdown and JSON. Change a file, then rebuild (or keep `np
 | A day in the republic | `content/vignettes/*.md` | Front matter: `title`, `title_ga`, `who`, `place`, `fms`, `order` |
 | Key works and how they were read | `content/bibliography.json` | `access`: `primary`, `secondary`, `abstract` or `reviews` |
 | Research notes | `research/*.md` | Rendered on the site under Sources; every external link is listed automatically |
+| **Economy model assumptions** | `design/economy-params.json` | Every parameter has `value`, `source` and `kind` (data, derived or assumption). Change a value and rebuild; `npm test` checks the accounts still close. Run `node scripts/economy/params-table.mjs` to refresh the table in `design/economy-model.md` |
+| Economy model specification | `design/economy-model.md` | Shown on the site under Economy › The model |
+| Economy section text and data | `content/economy/*.md`, `structure.json`, `physical.json` | Ownership targets by sector; energy, emissions and materials flows and the illustrative design factors |
 
 ### Conventions inside the text
 
@@ -50,7 +54,8 @@ research/   Phase 1: sourced research notes and SYNTHESIS.md (18 failure modes)
 design/     Phase 2: constitution, institutions, decisions, decision log, options outline
 content/    Site pages, scenarios, vignettes, bibliography
 src/        The site (Vite + vanilla JS): pages/, lib/, styles/
-tests/      Playwright smoke + axe, variant and keyboard checks; shot.mjs screenshot helper
+tests/      Content validator; economy identity tests; Playwright smoke + axe, variant, keyboard and economy UI checks; shot.mjs screenshot helper
+scripts/    Data-preparation scripts (geo, economy) run by hand; their outputs are committed
 ```
 
 ## Honesty notes

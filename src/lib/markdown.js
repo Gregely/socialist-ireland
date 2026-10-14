@@ -36,6 +36,7 @@ export function siteHref(href) {
   if (inResearch) return `#/research/${inResearch[1]}`;
   const bare = href.match(/^(?:\.\/)?([\w.-]+?)\.md(#.*)?$/);
   if (bare && research[bare[1]]) return `#/research/${bare[1]}`;
+  if (/(?:^|\.\.\/|\/)?design\/economy-(model\.md|params\.json)$/.test(href) || /^economy-(model\.md|params\.json)$/.test(href)) return '#/economy/model';
   const design = href.match(/(?:^|\.\.\/)design\/(constitution|decisions|PHASE2-OUTLINE|DECISIONS)\.(md|json)/);
   if (design) return design[1] === 'constitution' ? '#/constitution' : '#/choices';
   return href;

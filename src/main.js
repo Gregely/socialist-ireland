@@ -5,6 +5,7 @@ import './styles/tokens.css';
 import './styles/base.css';
 import './styles/components.css';
 import './styles/map.css';
+import './styles/economy.css';
 
 import { site } from './lib/data.js';
 import { SECTIONS, esc } from './lib/ui.js';
@@ -18,6 +19,7 @@ import stress from './pages/stress.js';
 import day from './pages/day.js';
 import constitution from './pages/constitution.js';
 import choices from './pages/choices.js';
+import economy from './pages/economy.js';
 import openQuestions from './pages/open.js';
 import sources from './pages/sources.js';
 import researchNote from './pages/research.js';
@@ -30,6 +32,7 @@ const ROUTES = {
   day,
   constitution,
   choices,
+  economy,
   open: openQuestions,
   sources,
   research: researchNote,

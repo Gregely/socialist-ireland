@@ -25,8 +25,9 @@ export const SECTIONS = [
   { route: 'day', ga: 'Lá sa Phoblacht', en: 'A day in the republic', short: 'A day in…', num: 5 },
   { route: 'constitution', ga: 'An Bunreacht', en: 'Constitution', num: 6 },
   { route: 'choices', ga: 'Na Roghanna', en: 'Design choices', short: 'Choices', num: 7 },
-  { route: 'open', ga: 'Ceisteanna Oscailte', en: 'Open questions', num: 8 },
-  { route: 'sources', ga: 'Foinsí', en: 'Sources', num: 9 },
+  { route: 'economy', ga: 'An Geilleagar', en: 'Economy', num: 8 },
+  { route: 'open', ga: 'Ceisteanna Oscailte', en: 'Open questions', num: 9 },
+  { route: 'sources', ga: 'Foinsí', en: 'Sources', num: 10 },
 ];
 
 export function scoreClass(s) {

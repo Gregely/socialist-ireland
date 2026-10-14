@@ -1,0 +1,3 @@
+**Money.** Each band is a flow of money in one year, from the sector that pays (left) to the sector that receives (right). Choose Ireland today (year 0, calibrated to the 2025 national accounts), the end of the transition (year 10) or the long run (year 20), at the pressure explorer's current settings.
+
+**Things.** Money is not the only budget. The design's ecological limits are physical: an annual budget of energy, materials and emissions set by the [[ecological-authority|Ecological Authority]], which has a veto over the plan (Arts. 63–64; FM-16). The energy diagram shows where Ireland's energy comes from and goes today, and the drafter's illustrative picture for year 10. The emissions chart sets both against the legal carbon budgets.
