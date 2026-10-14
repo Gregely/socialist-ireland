@@ -1,0 +1,68 @@
+{
+  "title_en": "Capital flight",
+  "title_ga": "Teitheadh caipitil",
+  "summary": "A year into the transition, three of the ten largest corporation-tax payers announce they will move their booked profits, and some real operations, out of Ireland. Deposits start to leave the banks.",
+  "fms": ["FM-11", "FM-10", "FM-17", "FM-15"],
+  "start": "s1",
+  "steps": {
+    "s1": {
+      "title": "The announcement",
+      "when": "Month 14 of the transition",
+      "text_md": "Two US technology firms and a pharmaceutical company announce that from next year their European profits will be booked in the Netherlands and Switzerland, and that about 6,000 jobs will move over three years. In 2025 the ten largest payers accounted for **56%** of corporation tax ([Revenue](https://www.revenue.ie/en/corporate/documents/research/ct-analysis-2026.pdf)). Commentators predict a fiscal hole of several billion euro. Within a week, €4 billion of deposits move to banks abroad.",
+      "institutions": ["charter-enterprises", "executive-council", "social-wealth-fund"],
+      "safeguards": ["FM-11"],
+      "risk_md": "The move was the most predictable shock of the transition, and markets will test whether the State's plan for it is real.",
+      "next": "s2"
+    },
+    "s2": {
+      "title": "The ring-fence holds",
+      "when": "Weeks 1–4",
+      "text_md": "Because windfall corporation tax was ring-fenced in the [[social-wealth-fund|Social Wealth Fund]] from the first year of the transition (Art. 114), the loss falls on the Fund's investment programme, not on wages, pensions or the health service. No current spending depended on it (Art. 60). The [[audit-office|Audit Office]] publishes the exposure the same week, and the [[open-data|Open Data Office]] publishes the charter terms each firm had agreed.",
+      "institutions": ["social-wealth-fund", "audit-office", "open-data"],
+      "safeguards": ["FM-11", "FM-17"],
+      "risk_md": "The Fund's planned investments (co-op development, retrofits) are delayed, so the damage is real, just slower and less visible.",
+      "next": "s3"
+    },
+    "s3": {
+      "title": "Deposits keep leaving",
+      "when": "Week 5",
+      "choice_prompt": "Deposit outflows reach €11 billion. Ministers propose capital controls. What happens?",
+      "text_md": "Free movement of capital is a core EU rule (Art. 63 TFEU), and capital controls are among the hardest things to do as a member state. The [[executive-council|Executive Council]] can declare an emergency for 72 hours, but needs the [[national-assembly|National Assembly]] to continue it, and the [[citizens-chamber|Citizens' Chamber]] to extend it beyond 30 days.",
+      "institutions": ["executive-council", "national-assembly", "citizens-chamber", "eu"],
+      "safeguards": ["FM-15", "FM-11"],
+      "alt_notes": {
+        "Q4=C": "**Under the 'leave' alternative**, Ireland has its own currency and can impose capital controls at once. But the outflow is larger and faster, because devaluation is now a live risk, and controls on a new currency are harder to make credible.",
+        "Q4=D": "**Under the 'stay but defy' alternative**, the Executive can simply impose controls in breach of EU law. The Commission opens proceedings, and the defiance itself accelerates outflows."
+      },
+      "choices": [
+        { "label": "Declare an emergency and impose temporary capital controls", "to": "s4a", "note": "Fast, but uses emergency powers and collides with EU law." },
+        { "label": "No controls: deposit guarantee, public bank backstop and a published plan", "to": "s4b", "note": "Slower, legally safe, and relies on confidence." }
+      ]
+    },
+    "s4a": {
+      "title": "Emergency controls",
+      "when": "Weeks 5–9",
+      "text_md": "The Executive declares an emergency limited to capital movements. The Assembly approves it within 72 hours. At day 30 the Citizens' Chamber is asked to extend it. After hearing the Central Bank, the Fiscal Council and two dissenting economists, it extends by 30 days and refuses a second extension. Under the default design, the State notifies the Commission that this falls under the published **Fallback Schedule**, which named capital movements in a crisis as an area where the State would decline to comply.",
+      "institutions": ["executive-council", "national-assembly", "citizens-chamber", "courts", "eu"],
+      "safeguards": ["FM-15", "FM-02"],
+      "risk_md": "Controls buy time but signal fear. If the Chamber had refused the first extension, the State would have had to lift controls mid-crisis. **The 90-day cap is a real constraint, not a formality.**",
+      "outcome_md": "Outflows slow. The Commission opens infringement proceedings, which run for two years. The emergency ends on day 60, as the constitution requires. In polling, trust in the government falls, but trust in the *system* holds, because the limits were visibly kept.",
+      "next": "end"
+    },
+    "s4b": {
+      "title": "Confidence without controls",
+      "when": "Weeks 5–12",
+      "text_md": "The State extends the deposit guarantee and the [[public-bank|public bank]] opens accounts for anyone moving money out of the private banks. The Executive publishes, in full, a three-year plan for the lost revenue, drawn from the Fund, from progressive tax and from a slower investment programme.",
+      "institutions": ["public-bank", "executive-council", "open-data"],
+      "safeguards": ["FM-11", "FM-17"],
+      "risk_md": "This depends on confidence, which is the thing under attack. If outflows had continued past €20 billion, this path would have run out of road and the emergency route would have been back on the table under worse conditions.",
+      "outcome_md": "Outflows peak at €17 billion and partly reverse within a year. The public-bank network gains 300,000 accounts. Investment is delayed by about eighteen months. Nobody's wages or services are cut.",
+      "next": "end"
+    },
+    "end": {
+      "title": "What this test shows",
+      "text_md": "**The safeguard that mattered most was the one set up before the crisis:** ring-fencing windfall revenue in year one. The Fallback Schedule made the emergency path lawful in domestic terms and transparent, but not costless. The emergency sunset forced the Executive to plan to *end* controls from the start.",
+      "risk_md": "This scenario assumes the firms announced and moved gradually. A sudden, coordinated move by several firms at once, combined with a hostile campaign by a foreign government (FM-10), would test the 90-day cap much harder."
+    }
+  }
+}

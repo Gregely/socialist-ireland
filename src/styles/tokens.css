@@ -1,0 +1,88 @@
+/* Palette: mid-century Irish public information. Paper, signal green (road
+   signs, An Post), ochre, slate, and rust used sparingly for warnings. */
+:root {
+  --paper: #f3efe6;
+  --paper-2: #e8e1d2;
+  --paper-3: #ddd4c1;
+  --card: #fbf8f2;
+  --ink: #1b2320;
+  --ink-2: #4b5450;
+  --rule: #c9bfaa;
+  --green: #0e5b3a;
+  --green-2: #0a4a2f;
+  --on-green: #f6f2e8;
+  --ochre: #8a5a12;
+  --ochre-bg: #f1dfb8;
+  --slate: #2e5a78;
+  --rust: #9b3520;
+  --rust-bg: #f5ddd3;
+  --focus: #c27c0e;
+
+  --g-people: #1b2320;
+  --g-political: #0e5b3a;
+  --g-check: #2e5a78;
+  --g-security: #7a2e1d;
+  --g-economy: #8a5a12;
+  --g-public: #1f6f62;
+  --g-culture: #6a4a73;
+  --g-external: #5f5b52;
+
+  --e-default: #6c6a60;
+  --e-funds: #8a5a12;
+  --e-removes: #9b3520;
+  --e-info: #2e5a78;
+  --e-barred: #9b3520;
+
+  --s-pp: #0e5b3a;
+  --s-p: #3f7d55;
+  --s-0: #6c6a60;
+  --s-m: #a5551f;
+  --s-mm: #9b3520;
+
+  --font-sans: 'Archivo Variable', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Source Serif 4 Variable', Georgia, 'Times New Roman', serif;
+  --measure: 68ch;
+  --radius: 4px;
+  --gutter: clamp(16px, 4vw, 40px);
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #121614;
+    --paper-2: #1a201d;
+    --paper-3: #242b27;
+    --card: #181d1b;
+    --ink: #ebe5d8;
+    --ink-2: #b4ad9e;
+    --rule: #3a423d;
+    --green: #6cbf93;
+    --green-2: #8fd3ad;
+    --on-green: #0f1a14;
+    --ochre: #e2ab55;
+    --ochre-bg: #3a2c12;
+    --slate: #86b7d8;
+    --rust: #ec8c70;
+    --rust-bg: #3a1f17;
+    --focus: #f0b54a;
+    --g-people: #ebe5d8;
+    --g-political: #6cbf93;
+    --g-check: #86b7d8;
+    --g-security: #ec8c70;
+    --g-economy: #e2ab55;
+    --g-public: #6cc2b2;
+    --g-culture: #c49ad0;
+    --g-external: #aaa496;
+    --e-default: #8d8a7f;
+    --e-funds: #e2ab55;
+    --e-removes: #ec8c70;
+    --e-info: #86b7d8;
+    --e-barred: #ec8c70;
+    --s-pp: #6cbf93;
+    --s-p: #9fd0a8;
+    --s-0: #a7a294;
+    --s-m: #f0a46e;
+    --s-mm: #ec8c70;
+    color-scheme: dark;
+  }
+}

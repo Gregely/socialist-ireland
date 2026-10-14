@@ -1,0 +1,567 @@
+{
+  "_note": "access: primary = read directly; secondary = read via summaries/encyclopedias or partial text; abstract = abstract/publisher description only; reviews = read only through reviews. Shown on the Sources page.",
+  "works": [
+    {
+      "author": "Marx, Karl",
+      "title": "The Civil War in France",
+      "year": "1871",
+      "access": "primary",
+      "topic": "06-positive-models",
+      "url": "https://www.marxists.org/archive/marx/works/1871/civil-war-france/ch05.htm",
+      "note": "Chapter 5 passages on recall, workman's wages and the police checked directly."
+    },
+    {
+      "author": "Luxemburg, Rosa",
+      "title": "The Russian Revolution",
+      "year": "1918",
+      "access": "primary",
+      "topic": "02-suppression-of-pluralism",
+      "url": "https://www.marxists.org/archive/luxemburg/1918/russian-revolution/ch06.htm",
+      "note": "Chapter 6 ('The Problem of Dictatorship') checked directly."
+    },
+    {
+      "author": "Trotsky, Leon",
+      "title": "The Revolution Betrayed",
+      "year": "1936",
+      "access": "primary",
+      "topic": "01-bureaucratic-degeneration",
+      "url": "https://www.marxists.org/archive/trotsky/1936/revbet/index.htm",
+      "note": "Chapters 5 and 11 consulted; other chapters through summaries."
+    },
+    {
+      "author": "Connolly, James",
+      "title": "Socialism and Nationalism (Shan Van Vocht)",
+      "year": "1897",
+      "access": "primary",
+      "topic": "07-irish-lineage",
+      "url": "https://www.marxists.org/archive/connolly/1897/01/socnat.htm"
+    },
+    {
+      "author": "Connolly, James",
+      "title": "The Re-Conquest of Ireland",
+      "year": "1915",
+      "access": "primary",
+      "topic": "07-irish-lineage",
+      "url": "https://www.marxists.org/archive/connolly/1915/rcoi/foreword.htm",
+      "note": "Foreword checked directly; other chapters through summaries."
+    },
+    {
+      "author": "Dáil Éireann",
+      "title": "Democratic Programme of the First Dáil",
+      "year": "1919",
+      "access": "primary",
+      "topic": "07-irish-lineage",
+      "url": "https://en.wikisource.org/wiki/Democratic_Programme_of_the_First_D%C3%A1il"
+    },
+    {
+      "author": "Hayek, F. A.",
+      "title": "The Use of Knowledge in Society",
+      "year": "1945",
+      "access": "primary",
+      "topic": "03-planning-and-calculation",
+      "url": "https://www.econlib.org/library/Essays/hykKnw.html"
+    },
+    {
+      "author": "Kollontai, Alexandra",
+      "title": "Communism and the Family",
+      "year": "1920",
+      "access": "primary",
+      "topic": "11-social-reproduction",
+      "url": "https://www.marxists.org/archive/kollonta/1920/communism-family.htm"
+    },
+    {
+      "author": "Morris, William",
+      "title": "Useful Work versus Useless Toil",
+      "year": "1884",
+      "access": "primary",
+      "topic": "10-legitimacy-and-everyday-life",
+      "url": "https://libcom.org/article/useful-work-versus-useless-toil-william-morris"
+    },
+    {
+      "author": "Bunreacht na hÉireann",
+      "title": "Constitution of Ireland (consolidated)",
+      "year": "1937",
+      "access": "primary",
+      "topic": "08-ireland-today",
+      "url": "https://en.wikisource.org/wiki/Constitution_of_Ireland",
+      "note": "Articles 43, 45 and 46 checked directly."
+    },
+    {
+      "author": "Revenue Commissioners",
+      "title": "Corporation Tax: 2025 payments and 2024 returns",
+      "year": "2026",
+      "access": "primary",
+      "topic": "08-ireland-today",
+      "url": "https://www.revenue.ie/en/corporate/documents/research/ct-analysis-2026.pdf"
+    },
+    {
+      "author": "Central Statistics Office",
+      "title": "Census 2022 Profiles 4 and 8; Crops and Livestock June 2025",
+      "year": "2023",
+      "access": "primary",
+      "topic": "08-ireland-today",
+      "url": "https://www.cso.ie/en/releasesandpublications/ep/p-clsjf/cropsandlivestocksurveyfinalresultsjune2025"
+    },
+    {
+      "author": "Environmental Protection Agency",
+      "title": "Ireland's Greenhouse Gas Emissions 1990–2024",
+      "year": "2025",
+      "access": "primary",
+      "topic": "09-ecology-and-growth",
+      "url": "https://www.epa.ie/our-services/monitoring--assessment/climate-change/ghg/agriculture/"
+    },
+    {
+      "author": "Helms, Richard (notes), in FRUS 1969–76 vol. XXI",
+      "title": "Meeting with the President on Chile, 15 September 1970",
+      "year": "1970",
+      "access": "primary",
+      "topic": "05-counter-revolution-and-external-pressure",
+      "url": "https://history.state.gov/historicaldocuments/frus1969-76v21/d93",
+      "note": "The transcription in the Foreign Relations of the United States series."
+    },
+    {
+      "author": "Lenin, V. I.",
+      "title": "A Great Beginning (extract: Women and Marxism)",
+      "year": "1919",
+      "access": "secondary",
+      "topic": "11-social-reproduction",
+      "url": "https://www.marxists.org/archive/lenin/works/subject/women/abstract/19_06_28.htm",
+      "note": "The quoted passage was confirmed against this extract through a search summary; the full text was not read."
+    },
+    {
+      "author": "Mises, Ludwig von",
+      "title": "Economic Calculation in the Socialist Commonwealth",
+      "year": "1920",
+      "access": "secondary",
+      "topic": "03-planning-and-calculation",
+      "url": "https://mises.org/online-book/economic-calculation-socialist-commonwealth/introduction-1990-edition",
+      "note": "Read through Mises Institute summaries."
+    },
+    {
+      "author": "Lange, Oskar",
+      "title": "On the Economic Theory of Socialism",
+      "year": "1936",
+      "access": "secondary",
+      "topic": "03-planning-and-calculation",
+      "note": "Read through encyclopedia summaries.",
+      "via": [
+        {
+          "text": "Econlib biography",
+          "url": "https://www.econlib.org/library/Enc/bios/Lange.html"
+        }
+      ]
+    },
+    {
+      "author": "Michels, Robert",
+      "title": "Political Parties",
+      "year": "1911",
+      "access": "secondary",
+      "topic": "01-bureaucratic-degeneration",
+      "note": "Read through encyclopedia entries.",
+      "via": [
+        {
+          "text": "Encyclopedia.com",
+          "url": "https://www.encyclopedia.com/topic/iron_law_of_oligarchy.aspx"
+        }
+      ]
+    },
+    {
+      "author": "Cockshott, Paul & Cottrell, Allin",
+      "title": "Towards a New Socialism",
+      "year": "1993",
+      "access": "secondary",
+      "topic": "03-planning-and-calculation",
+      "url": "https://www.dcs.gla.ac.uk/~wpc/reports/tns.epub",
+      "note": "Freely available; summarised here from secondary accounts."
+    },
+    {
+      "author": "Albert, Michael & Hahnel, Robin",
+      "title": "Looking Forward / Parecon",
+      "year": "1991",
+      "access": "secondary",
+      "topic": "03-planning-and-calculation",
+      "url": "https://znetwork.org/wp-content/uploads/zbooks/www/books/lf_glossary.htm",
+      "note": "Glossary and secondary accounts."
+    },
+    {
+      "author": "Thompson, William",
+      "title": "An Inquiry into the Principles of the Distribution of Wealth",
+      "year": "1824",
+      "access": "secondary",
+      "topic": "07-irish-lineage",
+      "note": "Read through secondary accounts.",
+      "via": [
+        {
+          "text": "Irish Marxist Review",
+          "url": "https://www.marxists.org/history/etol/newspape/irishmr/vol01/no04/osullivan.pdf"
+        }
+      ]
+    },
+    {
+      "author": "Thompson, William & Wheeler, Anna Doyle",
+      "title": "Appeal of One Half the Human Race",
+      "year": "1825",
+      "access": "secondary",
+      "topic": "07-irish-lineage",
+      "note": "Read through secondary accounts.",
+      "via": [
+        {
+          "text": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/William_Thompson_(philosopher)"
+        }
+      ]
+    },
+    {
+      "author": "Connolly, James",
+      "title": "Labour in Irish History",
+      "year": "1910",
+      "access": "secondary",
+      "topic": "07-irish-lineage",
+      "url": "https://www.marxists.org/archive/connolly/1910/lih/index.htm",
+      "note": "Index page and commentary only."
+    },
+    {
+      "author": "US Senate Select Committee (Church Committee)",
+      "title": "Covert Action in Chile 1963–1973",
+      "year": "1975",
+      "access": "secondary",
+      "topic": "05-counter-revolution-and-external-pressure",
+      "url": "https://www.aarclibrary.org/publib/church/reports/vol7/pdf/ChurchV7_13_Appendix.pdf",
+      "note": "Findings as summarised in secondary sources; figures still to be checked against the report."
+    },
+    {
+      "author": "Federici, Silvia",
+      "title": "Social reproduction theory: history, issues and present challenges",
+      "year": "2019",
+      "access": "secondary",
+      "topic": "11-social-reproduction",
+      "url": "https://www.radicalphilosophy.com/wp-content/uploads/2019/04/radical_philosophy_2_04_federici-social-reproduction-theory.pdf"
+    },
+    {
+      "author": "Siegelbaum, Lewis",
+      "title": "Year of the Stakhanovite (Seventeen Moments essay)",
+      "year": "2015",
+      "access": "secondary",
+      "topic": "04-stagnation-and-work",
+      "url": "https://soviethistory.msu.edu/1936/year-of-the-stakhanovite/",
+      "note": "His book Stakhanovism and the Politics of Productivity (1988) was not consulted."
+    },
+    {
+      "author": "Hickel, Jason & Kallis, Giorgos",
+      "title": "Is Green Growth Possible?",
+      "year": "2020",
+      "access": "abstract",
+      "topic": "09-ecology-and-growth",
+      "url": "https://research.gold.ac.uk/26392",
+      "note": "Abstract and repository record only."
+    },
+    {
+      "author": "Kern, Holger Lutz & Hainmueller, Jens",
+      "title": "Opium for the Masses: How Foreign Media Can Stabilize Authoritarian Regimes",
+      "year": "2009",
+      "access": "abstract",
+      "topic": "10-legitimacy-and-everyday-life",
+      "url": "https://www.mit.edu/~jhainm/Paper/OVM2009.pdf",
+      "note": "Abstract and summaries."
+    },
+    {
+      "author": "Kotz, David & Weir, Fred",
+      "title": "Revolution from Above: The Demise of the Soviet System",
+      "year": "1997",
+      "access": "abstract",
+      "topic": "05-counter-revolution-and-external-pressure",
+      "url": "https://www.routledge.com/products/9780203350928",
+      "note": "Publisher description and one review."
+    },
+    {
+      "author": "Woodward, Susan",
+      "title": "Socialist Unemployment: The Political Economy of Yugoslavia, 1945–1990",
+      "year": "1995",
+      "access": "abstract",
+      "topic": "04-stagnation-and-work",
+      "url": "https://press.princeton.edu/node/43750",
+      "note": "Publisher description and secondary citations."
+    },
+    {
+      "author": "Bren, Paulina & Neuburger, Mary (eds.)",
+      "title": "Communism Unwrapped: Consumption in Cold War Eastern Europe",
+      "year": "2012",
+      "access": "abstract",
+      "topic": "10-legitimacy-and-everyday-life",
+      "note": "Publisher description, table of contents and a review.",
+      "via": [
+        {
+          "text": "Austrian History Yearbook review",
+          "url": "https://www.cambridge.org/core/journals/austrian-history-yearbook/article/paulina-bren-and-mary-neuburger-edscommunism-unwrapped-consumption-in-cold-war-eastern-europe-new-york-oxford-university-press-2012-pp-432-illus/08998B52B3B7803F3217EE75F18B6059"
+        }
+      ]
+    },
+    {
+      "author": "Djilas, Milovan",
+      "title": "The New Class: An Analysis of the Communist System",
+      "year": "1957",
+      "access": "reviews",
+      "topic": "01-bureaucratic-degeneration",
+      "via": [
+        {
+          "text": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_New_Class:_An_Analysis_of_the_Communist_System"
+        },
+        {
+          "text": "marxists.org (Swedish intro)",
+          "url": "https://www.marxists.org/svenska/djilas-m/1957/den_nya_klassen.html"
+        }
+      ]
+    },
+    {
+      "author": "Voslensky, Michael",
+      "title": "Nomenklatura: Anatomy of the Soviet Ruling Class",
+      "year": "1980",
+      "access": "reviews",
+      "topic": "01-bureaucratic-degeneration",
+      "via": [
+        {
+          "text": "Socialist Standard review",
+          "url": "https://www.worldsocialism.org/spgb/?p=20423"
+        }
+      ]
+    },
+    {
+      "author": "Kornai, János",
+      "title": "Economics of Shortage",
+      "year": "1980",
+      "access": "reviews",
+      "topic": "03-planning-and-calculation",
+      "via": [
+        {
+          "text": "Marginal Revolution",
+          "url": "https://marginalrevolution.com/marginalrevolution/2021/10/janos-kornai-and-the-soft-budget-constraint.html"
+        }
+      ]
+    },
+    {
+      "author": "Nove, Alec",
+      "title": "The Economics of Feasible Socialism",
+      "year": "1983",
+      "access": "reviews",
+      "topic": "03-planning-and-calculation",
+      "via": [
+        {
+          "text": "Dissent",
+          "url": "https://dissentmagazine.org/article/david-belkin/"
+        },
+        {
+          "text": "Harman 1989",
+          "url": "https://www.marxists.org/archive/harman/1989/xx/marketsoc.html"
+        }
+      ]
+    },
+    {
+      "author": "Devine, Pat",
+      "title": "Democracy and Economic Planning",
+      "year": "1988",
+      "access": "reviews",
+      "topic": "03-planning-and-calculation",
+      "via": [
+        {
+          "text": "P2P Foundation",
+          "url": "https://wiki.P2PFoundation.net/Democracy_and_Economic_Planning"
+        },
+        {
+          "text": "Anarchist Library review",
+          "url": "https://theanarchistlibrary.org/library/anarcho-review-of-democracy-and-economic-planning"
+        }
+      ]
+    },
+    {
+      "author": "Medina, Eden",
+      "title": "Cybernetic Revolutionaries",
+      "year": "2011",
+      "access": "reviews",
+      "topic": "03-planning-and-calculation",
+      "via": [
+        {
+          "text": "Project MUSE review",
+          "url": "https://muse.jhu.edu/article/522475/pdf"
+        }
+      ]
+    },
+    {
+      "author": "Isaac, T. M. Thomas & Franke, Richard W.",
+      "title": "Local Democracy and Development",
+      "year": "2002",
+      "access": "reviews",
+      "topic": "06-positive-models",
+      "via": [
+        {
+          "text": "Franke's summaries",
+          "url": "https://msuweb.montclair.edu/~franker/isaacbook.htm"
+        }
+      ]
+    },
+    {
+      "author": "Van Reybrouck, David",
+      "title": "Against Elections",
+      "year": "2013",
+      "access": "reviews",
+      "topic": "06-positive-models",
+      "note": "Not consulted; cited only as part of the sortition revival.",
+      "via": [
+        {
+          "text": "Britannica, sortition",
+          "url": "https://www.britannica.com/topic/sortition"
+        }
+      ]
+    },
+    {
+      "author": "Wright, Erik Olin",
+      "title": "Envisioning Real Utopias",
+      "year": "2010",
+      "access": "reviews",
+      "topic": "06-positive-models",
+      "via": [
+        {
+          "text": "Crooked Timber",
+          "url": "https://crookedtimber.org/2007/05/08/rules-for-radical-thinking/"
+        }
+      ]
+    },
+    {
+      "author": "Feshbach, Murray & Friendly, Alfred",
+      "title": "Ecocide in the USSR",
+      "year": "1992",
+      "access": "reviews",
+      "topic": "09-ecology-and-growth",
+      "via": [
+        {
+          "text": "Laboratorium review",
+          "url": "https://soclabo.org/index.php/laboratorium/article/view/1479"
+        }
+      ]
+    },
+    {
+      "author": "Hickel, Jason",
+      "title": "Less is More: How Degrowth Will Save the World",
+      "year": "2020",
+      "access": "reviews",
+      "topic": "09-ecology-and-growth",
+      "via": [
+        {
+          "text": "AIIA review",
+          "url": "https://www.internationalaffairs.org.au/australianoutlook/book-review-less-is-more-how-degrowth-will-save-the-world/"
+        },
+        {
+          "text": "Wetzel review",
+          "url": "https://theanarchistlibrary.org/library/tom-wetzel-review-of-jason-hickel-less-is-more.html"
+        }
+      ]
+    },
+    {
+      "author": "Saito, Kohei",
+      "title": "Marx in the Anthropocene: Towards the Idea of Degrowth Communism",
+      "year": "2023",
+      "access": "reviews",
+      "topic": "09-ecology-and-growth",
+      "via": [
+        {
+          "text": "LA Review of Books",
+          "url": "https://lareviewofbooks.org/article/red-and-green-make-degrowth-on-kohei-saitos-marx-in-the-anthropocene"
+        }
+      ]
+    },
+    {
+      "author": "Huber, Matthew",
+      "title": "Climate Change as Class War",
+      "year": "2022",
+      "access": "reviews",
+      "topic": "09-ecology-and-growth",
+      "via": [
+        {
+          "text": "Global Labour Journal review",
+          "url": "https://mulpress.mcmaster.ca/globallabour/article/view/5242/4287"
+        }
+      ]
+    },
+    {
+      "author": "Vettese, Troy & Pendergrass, Drew",
+      "title": "Half-Earth Socialism",
+      "year": "2022",
+      "access": "reviews",
+      "topic": "09-ecology-and-growth",
+      "via": [
+        {
+          "text": "LSE USAPP review",
+          "url": "https://blogs.lse.ac.uk/usappblog/2022/06/05/book-review-half-earth-socialism-a-plan-to-save-the-future-from-extinction-climate-change-and-pandemics-by-drew-pendergrass-and-troy-vettese"
+        },
+        {
+          "text": "Cosmonaut review",
+          "url": "https://cosmonautmag.com/2022/10/who-holds-up-half-the-earth-a-review-of-half-earth-socialism"
+        }
+      ]
+    },
+    {
+      "author": "Yurchak, Alexei",
+      "title": "Everything Was Forever, Until It Was No More",
+      "year": "2005",
+      "access": "reviews",
+      "topic": "10-legitimacy-and-everyday-life",
+      "via": [
+        {
+          "text": "Sheila Fitzpatrick, LRB",
+          "url": "https://lrb.co.uk/v28/n10/sheila-fitzpatrick/normal-people"
+        }
+      ]
+    },
+    {
+      "author": "Fisher, Mark",
+      "title": "Capitalist Realism: Is There No Alternative?",
+      "year": "2009",
+      "access": "reviews",
+      "topic": "10-legitimacy-and-everyday-life",
+      "via": [
+        {
+          "text": "Spike Magazine",
+          "url": "https://spikemagazine.com/mark-fisher-capitalist-realism/"
+        },
+        {
+          "text": "Weird Economies",
+          "url": "https://weirdeconomies.com/fixes/from-critique-to-construction-acid-communism-and-postcapitalist-desire"
+        }
+      ]
+    },
+    {
+      "author": "Ghodsee, Kristen",
+      "title": "Why Women Have Better Sex Under Socialism",
+      "year": "2018",
+      "access": "reviews",
+      "topic": "11-social-reproduction",
+      "via": [
+        {
+          "text": "Times Higher Education",
+          "url": "https://www.timeshighereducation.com/node/663938"
+        },
+        {
+          "text": "Reason",
+          "url": "https://reason.com/2019/03/01/no-sex-wasnt-better-for-women/"
+        }
+      ]
+    },
+    {
+      "author": "Bhattacharya, Tithi (ed.)",
+      "title": "Social Reproduction Theory",
+      "year": "2017",
+      "access": "reviews",
+      "topic": "11-social-reproduction",
+      "note": "Cited by title only."
+    },
+    {
+      "author": "Mespoulet, Martine",
+      "title": "Time-budget surveys and gender in the USSR (Clio)",
+      "year": "2015",
+      "access": "abstract",
+      "topic": "11-social-reproduction",
+      "url": "https://www.rhuthmos.eu/IMG/article_PDF/Un-article-de-Martine-Mespoulet_a2016.pdf",
+      "note": "Abstract only; hours-per-week figures not extracted."
+    }
+  ]
+}

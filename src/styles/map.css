@@ -1,0 +1,426 @@
+.map-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.6rem;
+  align-items: flex-end;
+  padding: 0.8rem 0;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--font-sans);
+}
+.fm-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.fm-select select {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  max-width: 22rem;
+}
+.zoom-buttons {
+  display: flex;
+  gap: 0.25rem;
+}
+.zoom-buttons button,
+.view-toggle {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  min-width: 2.4rem;
+  height: 2.4rem;
+  border: 2px solid var(--ink-2);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  padding: 0 0.6rem;
+}
+.view-toggle[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.map-status {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  min-height: 1.4em;
+  margin: 0.5rem 0;
+  color: var(--ink-2);
+}
+.map-layout {
+  position: relative;
+}
+.map-hint {
+  margin: 0.6rem 0 0;
+  font-family: var(--font-sans);
+}
+.map-wrap {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1820 / 1200;
+  max-height: 82vh;
+  touch-action: none;
+  cursor: grab;
+  background-image: radial-gradient(var(--rule) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+.map-svg:active {
+  cursor: grabbing;
+}
+.node {
+  cursor: pointer;
+}
+.node rect {
+  fill: var(--card);
+  stroke: var(--g);
+  stroke-width: 2;
+}
+.node .band {
+  fill: var(--g);
+  stroke: none;
+}
+.node .n-en {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-stretch: 82%;
+  font-size: 18px;
+  fill: var(--ink);
+}
+.node .n-ga {
+  font-family: var(--font-sans);
+  font-style: italic;
+  font-stretch: 85%;
+  font-size: 13px;
+  fill: var(--ink-2);
+}
+.node:hover rect:first-child,
+.node:focus-visible rect:first-child {
+  stroke-width: 4;
+}
+.node:focus-visible {
+  outline: none;
+}
+.node:focus-visible rect:first-child {
+  stroke: var(--focus);
+}
+.node.is-sel rect:first-child {
+  fill: var(--g);
+  stroke-width: 3;
+}
+.node.is-sel .n-en,
+.node.is-sel .n-ga {
+  fill: var(--card);
+}
+.node.is-hl rect:first-child {
+  stroke: var(--rust);
+  stroke-width: 5;
+}
+.node.is-dim {
+  opacity: 0.3;
+}
+.edge {
+  fill: none;
+  stroke: var(--e-default);
+  stroke-width: 1.6;
+  opacity: 0.75;
+}
+.edge.k-funds {
+  stroke: var(--e-funds);
+  stroke-width: 2.2;
+}
+.edge.k-removes,
+.edge.k-vetoes {
+  stroke: var(--e-removes);
+  stroke-width: 2;
+}
+.edge.k-checks {
+  stroke: var(--e-removes);
+  stroke-dasharray: 2 4;
+}
+.edge.k-informs,
+.edge.k-audits,
+.edge.k-oversees,
+.edge.k-refers {
+  stroke: var(--e-info);
+}
+.edge.k-audits,
+.edge.k-oversees {
+  stroke-dasharray: 6 3;
+}
+.edge.k-barred {
+  stroke: var(--e-barred);
+  stroke-dasharray: 3 5;
+  opacity: 0.85;
+}
+.edge.k-delegates {
+  stroke-dasharray: 9 3;
+}
+.edge.k-appoints {
+  stroke-dasharray: 1.5 3.5;
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+.edge.k-negotiates {
+  stroke-dasharray: 14 4 2 4;
+}
+.edge.k-directs {
+  stroke: var(--ink-2);
+}
+.edge.is-dim,
+.barred-x.is-dim {
+  opacity: 0.08;
+}
+.edge.is-active {
+  opacity: 1;
+  stroke-width: 3;
+}
+.barred-x {
+  fill: var(--e-barred);
+  font-size: 18px;
+  font-weight: 800;
+  text-anchor: middle;
+  font-family: var(--font-sans);
+}
+.mk path {
+  fill: var(--e-default);
+}
+.mk-funds path {
+  fill: var(--e-funds);
+}
+.mk-removes path,
+.mk-vetoes path,
+.mk-checks path,
+.mk-barred path {
+  fill: var(--e-removes);
+}
+.mk-informs path,
+.mk-audits path,
+.mk-oversees path,
+.mk-refers path {
+  fill: var(--e-info);
+}
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 2rem;
+  padding: 0.7rem 0.9rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+}
+.map-legend > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.9rem;
+  align-items: center;
+}
+.map-legend strong {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+}
+.lg i {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--g);
+  margin-right: 0.3rem;
+  vertical-align: -1px;
+  border-radius: 2px;
+}
+.lk line {
+  stroke: var(--e-default);
+  stroke-width: 2.5;
+}
+.lk.k-funds line { stroke: var(--e-funds); }
+.lk.k-removes line,
+.lk.k-vetoes line { stroke: var(--e-removes); }
+.lk.k-checks line { stroke: var(--e-removes); stroke-dasharray: 2 3; }
+.lk.k-barred line { stroke: var(--e-barred); stroke-dasharray: 3 4; }
+.lk.k-informs line,
+.lk.k-refers line { stroke: var(--e-info); }
+.lk.k-audits line,
+.lk.k-oversees line { stroke: var(--e-info); stroke-dasharray: 6 3; }
+.lk.k-delegates line { stroke-dasharray: 8 3; }
+.lk.k-appoints line { stroke-dasharray: 1.5 3.5; stroke-linecap: round; }
+.lk.k-negotiates line { stroke-dasharray: 10 3 2 3; }
+.lk.k-directs line { stroke: var(--ink-2); }
+.lk svg {
+  vertical-align: middle;
+  margin-right: 0.3rem;
+}
+
+.map-panel {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 6px solid var(--green);
+  border-radius: var(--radius);
+  padding: 0.8rem 1.1rem 1.2rem;
+  font-size: 0.95rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(440px, 46%);
+  max-height: 100%;
+  overflow: auto;
+  box-shadow: -8px 8px 24px rgb(0 0 0 / 0.18);
+}
+.map-panel:focus {
+  outline: none;
+}
+@media (max-width: 960px) {
+  .map-panel {
+    position: static;
+    width: auto;
+    max-height: none;
+    margin-top: 1rem;
+    box-shadow: none;
+  }
+}
+.panel-head {
+  position: relative;
+  padding-right: 2.2rem;
+}
+.panel-head h2 {
+  margin-top: 0.2rem;
+}
+.panel-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--ink-2);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 800;
+}
+.arts {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+}
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 0.8rem;
+  font-size: 0.9rem;
+}
+.facts dt {
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+.facts dd {
+  margin: 0;
+}
+.map-panel h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-top: 2px solid var(--ink);
+  padding-top: 0.5rem;
+}
+.map-panel h4 {
+  margin: 0.8rem 0 0.3rem;
+  font-size: 0.85rem;
+}
+.safeguard {
+  border-left: 4px solid var(--green);
+  padding-left: 0.8rem;
+  margin-bottom: 1.2rem;
+}
+.safeguard p {
+  margin: 0.35rem 0;
+}
+.prec {
+  font-size: 0.88rem;
+}
+.critique {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.2rem 0.6rem;
+  font-size: 0.88rem;
+  margin: 0;
+}
+.critique dt {
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ochre);
+  padding-top: 0.15rem;
+}
+.critique dd {
+  margin: 0;
+}
+.crit-head {
+  margin-bottom: 0.1rem !important;
+}
+.conn {
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+.conn li {
+  margin-bottom: 0.25rem;
+}
+.lk-kind {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--ink-2);
+}
+.lk-kind.k-barred,
+.lk-kind.k-removes {
+  color: var(--rust);
+}
+.panel-empty {
+  color: var(--ink-2);
+}
+.map-list section {
+  margin-bottom: 1.5rem;
+}
+.map-list h3 {
+  border-top: 3px solid var(--g);
+  padding-top: 0.4rem;
+}
+.map-list h3 .ga {
+  font-weight: 400;
+  font-size: 0.85em;
+  margin-left: 0.4rem;
+}
+.inst-list {
+  list-style: none;
+  padding: 0;
+}
+.inst-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.inst-list .link-button {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+.map-wrap[hidden] ~ .map-panel {
+  position: static;
+  width: auto;
+  max-height: none;
+  margin-top: 1rem;
+  box-shadow: none;
+}
