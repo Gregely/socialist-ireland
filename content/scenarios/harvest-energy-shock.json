@@ -1,0 +1,62 @@
+{
+  "title_en": "A harvest and energy shock",
+  "title_ga": "Turraing fómhair agus fuinnimh",
+  "summary": "A sodden summer ruins the fodder harvest. Then, in January, a gas-supply interruption coincides with a week of still, cold weather and almost no wind power.",
+  "fms": ["FM-16", "FM-14", "FM-17", "FM-15", "FM-05"],
+  "start": "s1",
+  "steps": {
+    "s1": {
+      "title": "Two shocks in one winter",
+      "when": "Year 5, autumn to January",
+      "text_md": "Fodder stocks are a third below normal. Then a fault cuts gas imports for ten days during a week of high pressure, cold, and almost no wind. Electricity demand peaks while supply falls. Data centres still use roughly a fifth of the State's electricity ([09](research/09-ecology-and-growth.md)).",
+      "institutions": ["executive-council", "ecological-authority", "public-enterprises", "land-farm-board"],
+      "safeguards": ["FM-16"],
+      "risk_md": "Shocks like this are when planned limits are most likely to be abandoned for good.",
+      "next": "s2"
+    },
+    "s2": {
+      "title": "Who gets the power",
+      "when": "January, days 1–10",
+      "text_md": "Because electricity is **allocated by quantity** under the physical budgets (Art. 63), the [[public-enterprises|grid operator]] already has a published order of priority: homes, hospitals and care, water and transport first. Data-centre charters (Art. 52) include interruptible supply, so their allocation is cut by 60% for the ten days under contract, without an emergency. Every household's free basic energy allowance continues. Prices for use above the allowance rise under the published formula (Art. 58.2), with automatic compensation for low-income households, so **there is no overnight price announcement for anyone to march against**.",
+      "institutions": ["public-enterprises", "charter-enterprises", "executive-council"],
+      "safeguards": ["FM-17", "FM-11", "FM-16"],
+      "risk_md": "Two charter firms threaten to leave over the curtailment, though it was in their contracts. Rules agreed in calm conditions are tested when they bite.",
+      "next": "s3"
+    },
+    "s3": {
+      "title": "The fodder gap",
+      "when": "February",
+      "choice_prompt": "Farmers need fodder now. Importing it, and the fertiliser to grow more, would breach this year's nitrogen budget. What happens?",
+      "text_md": "The [[land-farm-board|Land and Farm Transition Board]], half of whose members are elected by farmers, asks for an emergency loosening of the nitrogen budget. The [[ecological-authority|Ecological Authority]] can veto any plan item that breaches a budget. But the budgets themselves are set by law, by the [[national-assembly|National Assembly]].",
+      "institutions": ["land-farm-board", "ecological-authority", "national-assembly"],
+      "safeguards": ["FM-16", "FM-14"],
+      "choices": [
+        { "label": "The Assembly amends this year's nitrogen budget by law, with a payback over three years", "to": "s4a", "note": "Lawful and democratic, but it sets a precedent." },
+        { "label": "Hold the budget; bring forward the paid herd reduction instead", "to": "s4b", "note": "Keeps the limit, and asks the most from the hardest constituency." }
+      ]
+    },
+    "s4a": {
+      "title": "Loosen now, repay later",
+      "text_md": "The Assembly passes a one-year amendment to the nitrogen budget with a statutory payback over three years. The Ecological Authority does not veto it: the law changed, so it is not a breach. The Authority publishes its view that the payback is unrealistic. Fodder is imported and the herd is fed.",
+      "institutions": ["national-assembly", "ecological-authority", "land-farm-board"],
+      "safeguards": ["FM-14", "FM-17"],
+      "risk_md": "**This is exactly how physical budgets get hollowed out**: one reasonable exception at a time. Whether the payback happens depends on a future Assembly. The design leaves it there on purpose, because the alternative is an unelected body overriding the legislature in a food crisis.",
+      "outcome_md": "No animals starve and there are no farm protests. Nitrogen overshoots by 8% that year. Two years later, the payback is quietly rescheduled.",
+      "next": "end"
+    },
+    "s4b": {
+      "title": "Hold the line, pay the cost",
+      "text_md": "The budget holds. The Land Board negotiates an early, voluntary reduction of 120,000 cattle, with income guarantees at each farm's five-year average (Art. 67) and payments for conversion and rewetting. Fodder is pooled through the co-operatives and rationed by published rule.",
+      "institutions": ["land-farm-board", "cooperatives", "social-wealth-fund"],
+      "safeguards": ["FM-16", "FM-14"],
+      "risk_md": "Many farmers feel coerced by circumstance even though the reduction is formally voluntary. A rural protest movement forms, and some of its rhetoric is nationalist ('Dublin bureaucrats against the land'). **This is the FM-14 risk the farm guarantees were meant to defuse, and they only partly do.**",
+      "outcome_md": "The nitrogen budget is kept. The income guarantees cost far more than planned. In the next election, independents backed by the rural protest movement win seats in seven counties.",
+      "next": "end"
+    },
+    "end": {
+      "title": "What this test shows",
+      "text_md": "**Allocation by quantity and published price formulas worked well for energy.** There was no price shock, no curtailment of homes and no emergency powers. **The land question has no clean answer.** Either the limit bends or the farmers bear a sharp, paid transition. The design makes the choice visible and democratic. It does not make it painless.",
+      "risk_md": "This assumes the grid had the storage and interconnection the transition plan called for. If it did not, homes would have faced cuts too, and the emergency route would have opened (FM-15)."
+    }
+  }
+}

@@ -24,13 +24,26 @@ const ROUTES = (process.env.ROUTES || [
   '', 'map', 'map?node=citizens-chamber', 'map?fm=FM-04&overlay=accountability', 'threats', 'threats/FM-02',
   'stress', 'stress/capital-flight', 'stress/capital-flight?path=s1.s2.s3', 'day', 'constitution', 'choices',
   'open', 'sources', 'research/SYNTHESIS',
+  'stress/eu-challenge?path=s1.s2.s3.s4b', 'stress/term-limits?path=s1.s2.s3.s4b', 'stress/harvest-energy-shock?path=s1.s2.s3.s4a',
+  'stress/security-scandal?path=s1.s2.s3.s4a', 'stress/general-strike?path=s1.s2.s3.s4a', 'stress/sabotage?path=s1.s2.s3.s4b.end',
+  'day/01-nurse-cork', 'day/02-farmer-leitrim', 'day/03-delegate-tallaght', 'day/04-journalist-galway', 'day/05-carer-limerick',
 ].join(',')).split(',');
 
 await mkdir('test-results', { recursive: true });
 const browser = await chromium.launch();
 let failures = 0;
-for (const [label, viewport] of [['desktop', { width: 1366, height: 900 }], ['mobile', { width: 390, height: 844 }]]) {
+const RUNS = [
+  ['desktop', { width: 1366, height: 900 }, null],
+  ['mobile', { width: 390, height: 844 }, null],
+  // the switchable alternatives (Q1 and Q4) must render too
+  ['alt-B-C', { width: 1366, height: 900 }, { Q1: 'B', Q4: 'C' }],
+  ['alt-D-D', { width: 1366, height: 900 }, { Q1: 'D', Q4: 'D' }],
+];
+for (const [label, viewport, variants] of RUNS) {
   const context = await browser.newContext({ viewport });
+  if (variants) {
+    await context.addInitScript((v) => localStorage.setItem('bunreacht.variants.v1', JSON.stringify(v)), variants);
+  }
   const page = await context.newPage();
   const errors = [];
   page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
@@ -42,7 +55,7 @@ for (const [label, viewport] of [['desktop', { width: 1366, height: 900 }], ['mo
     const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze();
     const serious = results.violations.filter((v) => ['serious', 'critical'].includes(v.impact));
     const name = `${label}-${r.replace(/[^\w]+/g, '_') || 'home'}`;
-    await page.screenshot({ path: `test-results/${name}.png`, fullPage: false });
+    if (!variants) await page.screenshot({ path: `test-results/${name}.png`, fullPage: false });
     const ok = !errors.length && !serious.length && h;
     if (!ok) failures++;
     console.log(`${ok ? 'ok  ' : 'FAIL'} ${label} #/${r} — ${(h || '(no heading)').trim().slice(0, 50)}`);

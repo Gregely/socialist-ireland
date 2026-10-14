@@ -1,7 +1,7 @@
 /* ---------- Header: a green civic band, like a road sign or a 1950s An Post notice */
 .site-header {
-  background: var(--green);
-  color: var(--on-green);
+  background: var(--band);
+  color: var(--on-band);
   border-bottom: 6px solid var(--ochre);
 }
 .masthead {
@@ -80,18 +80,18 @@
   display: flex;
   align-items: center;
   gap: 0.45rem;
-  color: var(--on-green);
+  color: var(--on-band);
   text-decoration: none;
   padding: 0.3rem 0.45rem 0.3rem 0.3rem;
   border-radius: var(--radius);
   border: 1px solid transparent;
 }
 .site-nav a:hover {
-  border-color: color-mix(in srgb, var(--on-green) 50%, transparent);
+  border-color: color-mix(in srgb, var(--on-band) 50%, transparent);
 }
 .site-nav a[aria-current='page'] {
-  background: var(--on-green);
-  color: var(--green-2);
+  background: var(--on-band);
+  color: var(--band);
 }
 .nav-num {
   display: grid;
@@ -421,6 +421,7 @@ input[type='search'] {
 /* ---------- Failure-mode chips and refs */
 .fm-chip {
   display: inline-flex;
+  text-align: left;
   align-items: baseline;
   gap: 0.3rem;
   font-family: var(--font-sans);
@@ -434,6 +435,7 @@ input[type='search'] {
   background: var(--card);
 }
 .fm-chip .fm-id {
+  white-space: nowrap;
   font-weight: 800;
   color: var(--rust);
 }

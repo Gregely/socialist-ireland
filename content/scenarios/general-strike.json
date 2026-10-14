@@ -1,0 +1,62 @@
+{
+  "title_en": "A general strike against the government",
+  "title_ga": "Stailc ghinearálta in aghaidh an rialtais",
+  "summary": "Facing a revenue shortfall, the Executive freezes public-sector pay and raises transport fares above the published formula. The unions, independent of the State and the party, call a general strike against the workers' government.",
+  "fms": ["FM-02", "FM-15", "FM-17", "FM-13", "FM-06"],
+  "start": "s1",
+  "steps": {
+    "s1": {
+      "title": "The freeze",
+      "when": "Year 7",
+      "text_md": "The [[executive-council|Executive Council]] proposes a two-year pay freeze across the public service and socially owned enterprises. It also proposes an emergency rise in public-transport fares above the published price formula. Congress of Trade Unions affiliates ballot for a 48-hour general strike, and win.",
+      "institutions": ["executive-council", "unions", "national-assembly"],
+      "safeguards": ["FM-02"],
+      "risk_md": "A 'workers' state' facing a strike by its own workers is the moment when twentieth-century socialist states reached for the language of sabotage and counter-revolution (Kronstadt, 1921; Poland, 1970 and 1980).",
+      "next": "s2"
+    },
+    "s2": {
+      "title": "The strike is lawful, and stays lawful",
+      "when": "Days 1–2",
+      "text_md": "Article 11.2 protects the right to strike **against the State itself**. Nothing about it is an offence (Art. 12.4 bars any charge defined by political character). [[garda|An Garda Síochána]] polices pickets as it would any lawful assembly, and officers have a duty to refuse unlawful orders against them (Art. 82.3). The [[defence-forces|Defence Forces]] have no role in industrial disputes (Art. 87.2). Hospitals and care run on minimum-service rotas that the unions agreed in advance.",
+      "institutions": ["unions", "garda", "defence-forces", "health-service", "care-service"],
+      "safeguards": ["FM-02", "FM-04", "FM-10"],
+      "risk_md": "Some ministers privately call the strike 'objectively counter-revolutionary'. The constitution makes that a political insult, not a legal category.",
+      "next": "s3"
+    },
+    "s3": {
+      "title": "The temptation",
+      "when": "Day 3",
+      "choice_prompt": "The unions announce an indefinite strike in transport and energy. Some on the Executive Council want to declare an emergency for 'failure of supply'. What happens?",
+      "text_md": "Article 89 does allow an emergency for a sudden failure of supply. But no emergency order may create an offence defined by allegiance, suspend the rights in Article 13(2), or dissolve any council. Any declaration needs the [[national-assembly|National Assembly]] within 72 hours.",
+      "institutions": ["executive-council", "national-assembly", "citizens-chamber"],
+      "safeguards": ["FM-15"],
+      "choices": [
+        { "label": "No emergency: the Assembly sends the freeze back, and the Citizens' Chamber forces a referendum on the fares Act", "to": "s4a" },
+        { "label": "The Executive declares an emergency to requisition energy workers", "to": "s4b" }
+      ]
+    },
+    "s4a": {
+      "title": "Politics, not force",
+      "text_md": "The [[national-assembly|National Assembly]] votes down the pay freeze and replaces it with a time-limited levy on the highest incomes. The [[citizens-chamber|Citizens' Chamber]] uses its power to require a referendum on the fares Act (Art. 39.2.4), and the Act is defeated 61–39. The strike ends on day five. The Executive member responsible for finance is recalled.",
+      "institutions": ["national-assembly", "citizens-chamber", "referendum", "unions"],
+      "safeguards": ["FM-17", "FM-02", "FM-06"],
+      "risk_md": "The fiscal gap remains, and a government that cannot raise fares or freeze pay has fewer tools. Unions in socially owned enterprises can now push for rescues, which is the soft-budget pressure Kornai describes (FM-06). The hard-budget rule (Art. 54) means a rescue needs a public vote with its cost published, which is the counterweight.",
+      "outcome_md": "The republic comes out of its first general strike with its legitimacy *strengthened*: people saw that strikes against the government were lawful and could win. Its public finances are weaker.",
+      "next": "end"
+    },
+    "s4b": {
+      "title": "The emergency route",
+      "text_md": "The Executive declares an emergency and orders energy workers back under a requisition order. The [[courts|High Court]] suspends the requisition within a day as an unlawful restriction on a constitutional right that the emergency does not justify, since the grid is still being maintained under the unions' minimum-service rota. The Assembly refuses to approve the declaration at 72 hours. **Article 91 means refusing it carries no penalty for the Assembly.** The declaration lapses.",
+      "institutions": ["executive-council", "courts", "national-assembly"],
+      "safeguards": ["FM-15", "FM-04"],
+      "risk_md": "If the grid *had* been failing, the emergency would have been lawful, and the question would have become how narrowly it was drawn. The real line between a strike and a supply emergency is a judgement, and here it is made by courts and the Assembly, not by the Executive alone.",
+      "outcome_md": "The Executive is recalled. The strike ends a week later with a negotiated settlement. Trust in the *system* rises; trust in the party falls.",
+      "next": "end"
+    },
+    "end": {
+      "title": "What this test shows",
+      "text_md": "A workers' government that cannot be struck against is no workers' government. **The independence of the unions and the right to strike against the State (Art. 11.2) are the most direct lessons of 1921 and 1980.** The design treats a strike against the government as normal politics, and gives it peaceful outlets: recall, the Citizens' Chamber's referendum power, and the Assembly.",
+      "risk_md": "Repeated strikes in socially owned sectors could drive costs up and wear down planning capacity. The design accepts that risk as the price of not becoming 1921."
+    }
+  }
+}

@@ -42,7 +42,7 @@ export default function map(main, { params }) {
   const state = {
     overlay: OVERLAYS.some((o) => o[0] === params.get('overlay')) ? params.get('overlay') : 'structure',
     fm: FM[params.get('fm')] ? params.get('fm') : '',
-    selected: NODES[params.get('node')] ? params.get('node') : '',
+    selected: NODES[params.get('node')] && matches(NODES[params.get('node')].variants) ? params.get('node') : '',
     highlight: (params.get('highlight') || '').split(',').filter((id) => NODES[id]),
     list: params.get('view') === 'list',
     view: { ...VIEW },

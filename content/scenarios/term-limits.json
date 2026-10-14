@@ -1,0 +1,68 @@
+{
+  "title_en": "A popular leader and the term limit",
+  "title_ga": "Ceannaire móréilimh agus an teorainn téarma",
+  "summary": "The most popular figure in the republic, credited with the housing programme, reaches the end of her second term. Her supporters want the rules changed so she can stay.",
+  "fms": ["FM-03", "FM-15", "FM-13", "FM-02"],
+  "start": "s1",
+  "steps": {
+    "s1": {
+      "title": "\"Let her finish the job\"",
+      "when": "Year 8",
+      "text_md": "Máire Ní Bhriain has sat on the [[executive-council|Executive Council]] for two terms and chaired it twice. Under her, 90,000 public homes have been built. Article 28 limits anyone to two consecutive terms in the same office. A campaign, *Lig di an obair a chríochnú* (\"Let her finish the job\"), gathers 300,000 signatures for an amendment to relax the limit, and a large faction in the party backs it.",
+      "institutions": ["executive-council", "national-assembly", "referendum"],
+      "safeguards": ["FM-03"],
+      "risk_md": "Charisma cannot be legislated away. A popular figure is a political fact whether or not they hold office.",
+      "alt_notes": {
+        "Q1=D": "**Under 'councils with no parties'**, there is no party structure to slow her down or provide rival voices, so personalist politics is stronger. Uganda shows how a no-party system can centre on one figure."
+      },
+      "next": "s2"
+    },
+    "s2": {
+      "title": "The rules bite before anyone argues",
+      "when": "Weeks 1–2",
+      "text_md": "Two rules decide the matter before the political argument starts:\n\n- **Term limits are core-tier.** Changing Article 28 needs passage by two successive Assemblies with a general election in between, then a referendum (Art. 109). That takes at least four years.\n- **Article 28.4:** no change that relaxes a term limit can apply to anyone who holds the office when the change is first proposed.\n\nSo the amendment, even if it passes, **cannot benefit her**. The [[constitutional-court|Constitutional Court]] confirms this in an advisory reference requested by the [[president|President]].",
+      "institutions": ["constitutional-court", "president", "national-assembly"],
+      "safeguards": ["FM-03", "FM-02"],
+      "risk_md": "Supporters denounce the Court as 'unelected lawyers blocking the people'. Attacks on courts are how such campaigns usually escalate.",
+      "next": "s3"
+    },
+    "s3": {
+      "title": "The shortcut",
+      "when": "Week 3",
+      "choice_prompt": "Some supporters propose a shortcut: a housing emergency, declared so that 'continuity of leadership' can be maintained. What happens?",
+      "text_md": "Inside the party, an organised platform opposes both the amendment and any shortcut. Because factions are protected by Article 31, it does so openly, in the party press and at the party congress. It cannot be disciplined for it.",
+      "institutions": ["party", "executive-council"],
+      "safeguards": ["FM-13", "FM-15"],
+      "alt_notes": {
+        "Q1=B": "**Under 'several socialist parties'**, the opposition comes mainly from rival parties rather than an internal platform, which makes it louder but easier to dismiss as partisan."
+      },
+      "choices": [
+        { "label": "The Executive Council declines the shortcut; supporters pursue the amendment the long way", "to": "s4a" },
+        { "label": "A majority on the Executive Council declares a housing emergency anyway", "to": "s4b", "note": "Tests the emergency safeguards head-on." }
+      ]
+    },
+    "s4a": {
+      "title": "The long way",
+      "text_md": "The amendment passes the first Assembly. At the next general election, independents who oppose it gain seats. The second Assembly passes a narrower version (three terms, not unlimited) and the referendum approves it 54–46. It applies only to people who take office *after* the change. Ní Bhriain leaves the Council at the end of her term, as the constitution requires.",
+      "institutions": ["national-assembly", "referendum", "executive-council"],
+      "safeguards": ["FM-03", "FM-02"],
+      "risk_md": "She remains the most influential person in the party. Party–state separation (Art. 32) means that if she takes senior party office she cannot hold state office at the same time, but her influence over the party list is real and unaccountable. **Power outside office is the gap no clause closes.**",
+      "outcome_md": "The rule held, and the people still got to change it for the future. Turnover at the top happened on schedule.",
+      "next": "end"
+    },
+    "s4b": {
+      "title": "The emergency fails",
+      "text_md": "The Executive declares a housing emergency. Within 72 hours it needs the [[national-assembly|National Assembly]] to approve it. Article 89.3 says no emergency order may **extend any term of office**. The [[courts|High Court]] strikes the 'continuity' order down the next day. The Assembly approves a narrower emergency covering construction materials only. At day 30 the [[citizens-chamber|Citizens' Chamber]] refuses an extension: the Chamber finds no emergency that ordinary law cannot handle. Recall petitions are lodged against three Council members; one is recalled.",
+      "institutions": ["executive-council", "national-assembly", "courts", "citizens-chamber", "people"],
+      "safeguards": ["FM-15", "FM-03", "FM-04"],
+      "risk_md": "The safeguards worked because the courts were independent and the Chamber was willing to say no. **If the courts had been packed over the previous decade, this path ends very differently.** Judicial appointment (Art. 93) is the slow-moving guard behind the fast one.",
+      "outcome_md": "Ní Bhriain leaves office on schedule, damaged by the attempt. The episode becomes the standard example in civic education of why the sunset clauses exist.",
+      "next": "end"
+    },
+    "end": {
+      "title": "What this test shows",
+      "text_md": "**The non-incumbent rule (Art. 28.4) and the core-tier amendment procedure did most of the work** without any confrontation. The emergency safeguards were tested only because someone tried to bypass them. They held because each check was held by a different body: courts, Assembly, Chamber and the electorate.",
+      "risk_md": "Nothing in the design stops a charismatic figure from dominating *from outside office*. That is a limit of constitutional design, not of this one in particular (FM-03)."
+    }
+  }
+}

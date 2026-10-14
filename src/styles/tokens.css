@@ -11,6 +11,8 @@
   --green: #0e5b3a;
   --green-2: #0a4a2f;
   --on-green: #f6f2e8;
+  --band: #0e5b3a;
+  --on-band: #f6f2e8;
   --ochre: #8a5a12;
   --ochre-bg: #f1dfb8;
   --slate: #2e5a78;
@@ -59,6 +61,8 @@
     --green: #6cbf93;
     --green-2: #8fd3ad;
     --on-green: #0f1a14;
+    --band: #12392a;
+    --on-band: #ebe5d8;
     --ochre: #e2ab55;
     --ochre-bg: #3a2c12;
     --slate: #86b7d8;

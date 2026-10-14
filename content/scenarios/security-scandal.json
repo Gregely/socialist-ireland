@@ -1,0 +1,66 @@
+{
+  "title_en": "A security-service scandal",
+  "title_ga": "Scannal sa tseirbhís slándála",
+  "summary": "A journalist reveals that the intelligence service has been watching an environmental campaign and an organised platform inside the party, under cover of 'protecting infrastructure'.",
+  "fms": ["FM-04", "FM-02", "FM-13", "FM-01"],
+  "start": "s1",
+  "steps": {
+    "s1": {
+      "title": "The story breaks",
+      "when": "Year 6",
+      "text_md": "A reporter for a co-operative news outlet, funded largely through readers' media vouchers (Art. 79), publishes leaked documents. The [[intelligence|intelligence service]] has monitored a campaign against a wind farm in Connemara, and a platform inside the party that opposes the Executive's data-centre deals. The justification on file is 'protection of critical infrastructure'.",
+      "institutions": ["intelligence", "media-regulator", "public-media-trust"],
+      "safeguards": ["FM-04", "FM-02"],
+      "risk_md": "The reporter's source, a junior analyst, faces prosecution for the leak unless whistle-blower protection (Art. 96) applies.",
+      "alt_notes": {
+        "Q1=B": "**Under 'several socialist parties'**, the target is a rival party rather than an internal platform. The scandal is bigger and more partisan from day one.",
+        "Q1=D": "**Under 'councils with no parties'**, the target is an association of independent councillors."
+      },
+      "next": "s2"
+    },
+    "s2": {
+      "title": "Oversight with full access",
+      "when": "Weeks 1–6",
+      "text_md": "The [[security-oversight|Security Oversight Committee]] (twelve members of the Citizens' Chamber chosen by lot, four Assembly members from outside the Executive and the largest grouping, and a judge-Inspector) uses its full access. It finds:\n\n- warrants were obtained for 3 of the 11 people surveilled, on evidence the judge was not told was thin;\n- **8 were watched with no warrant at all**;\n- a request to watch the party platform came from a party official, through a member of the Executive Council.\n\nThe Committee suspends the operation (Art. 85.3). Every person surveilled is entitled to see their file (Art. 16).",
+      "institutions": ["security-oversight", "citizens-chamber", "courts", "intelligence", "party"],
+      "safeguards": ["FM-04", "FM-01"],
+      "risk_md": "The Committee depended on the service's own records being complete. Had the surveillance been kept off the books, full access would have found nothing.",
+      "next": "s3"
+    },
+    "s3": {
+      "title": "Publication",
+      "when": "Week 7",
+      "choice_prompt": "The Executive Council member responsible asks the Committee not to publish, citing national security. What happens?",
+      "text_md": "Article 32 makes it an offence for a party official to instruct any intelligence body, and for anyone to obey such an instruction. Article 84.4 bars investigating anyone for lawful political activity.",
+      "institutions": ["executive-council", "security-oversight", "party"],
+      "safeguards": ["FM-04", "FM-13"],
+      "choices": [
+        { "label": "The Committee publishes; the Assembly recalls the member", "to": "s4a" },
+        { "label": "The Executive Council as a whole backs its member and tries to stop publication", "to": "s4b" }
+      ]
+    },
+    "s4a": {
+      "title": "Accountability runs its course",
+      "text_md": "The Committee publishes its report, redacting only two names on a judge's order. The [[national-assembly|National Assembly]] recalls the Executive member responsible in the same sitting, without dissolving itself (Art. 44). The party official is charged under Article 32. The head of the intelligence service resigns. The [[standards-commission|Standards Commission]] opens an inquiry into the network of appointments behind the request. The analyst who leaked the documents is protected under Article 96.",
+      "institutions": ["security-oversight", "national-assembly", "standards-commission", "courts"],
+      "safeguards": ["FM-04", "FM-01", "FM-13"],
+      "risk_md": "The party leadership frames this as one bad apple. Whether the *culture* changes depends on whether the platform that was targeted gains or loses ground in the next internal elections.",
+      "outcome_md": "The scandal damages the government but strengthens public trust in the oversight system. Polling suggests most people think 'the system caught it'.",
+      "next": "end"
+    },
+    "s4b": {
+      "title": "The Executive closes ranks",
+      "text_md": "The Executive Council claims the report would endanger a current operation. The Committee asks the High Court to rule, as Article 85.2 allows. The judge reviews the material, finds no current lawful operation at risk, and orders publication within seven days. The Assembly recalls the entire Executive Council and elects a new one. Two members of the old Council are re-elected; the member responsible is not.",
+      "institutions": ["executive-council", "security-oversight", "courts", "national-assembly"],
+      "safeguards": ["FM-04", "FM-03", "FM-15"],
+      "risk_md": "**This path works only because the court is independent and the Assembly is willing to recall its own leadership.** Under the default party setting, most Assembly members belong to the same party as the Executive. Recall depends on the internal platforms and the independents being strong enough to force it.",
+      "outcome_md": "A full change of Executive, a public report and a new head of intelligence. The episode costs the party seats at the next election, mostly to independents.",
+      "next": "end"
+    },
+    "end": {
+      "title": "What this test shows",
+      "text_md": "**Several separate safeguards were needed, and each did a different job:** oversight by lot with full access, a judge between the Executive and secrecy, a bar on party command, the right to see one's own file, whistle-blower protection, and cheap recall. No single one would have been enough.",
+      "risk_md": "Surveillance that leaves no records, or a service that the oversight body trusts too much, would defeat this. The design's answer is rotation of committee members and the Inspector's independence, which is plausible but untested."
+    }
+  }
+}

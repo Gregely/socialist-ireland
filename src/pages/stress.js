@@ -1,5 +1,5 @@
 import { scenarios, NODES } from '../lib/data.js';
-import { matchesCondition, optionLabel } from '../lib/state.js';
+import { matchesCondition, optionLabel, getVariants, matches } from '../lib/state.js';
 import { renderMarkdown } from '../lib/markdown.js';
 import { esc, bi, fmChip, announce } from '../lib/ui.js';
 
@@ -59,7 +59,7 @@ function scenario(main, id, params) {
         step.institutions?.length
           ? `<div class="acting"><h3>Institutions acting</h3>
           <ul class="chip-list">${step.institutions
-            .filter((n) => NODES[n])
+            .filter((n) => NODES[n] && matches(NODES[n].variants))
             .map((n) => `<li><a class="inst-chip grp-${NODES[n].group}" href="#/map?node=${n}">${esc(NODES[n].name_en)}</a></li>`)
             .join('')}</ul>
           <a class="small" href="#/map?highlight=${step.institutions.join(',')}">See them together on the map</a></div>`
@@ -70,7 +70,7 @@ function scenario(main, id, params) {
       ${notes
         .map(([cond, text]) => {
           const [q, o] = cond.split('=');
-          return `<div class="alt-note"><h3>Under your alternative setting (${esc(q)}: ${esc(optionLabel(q, o.split(',')[0])?.short || o)})</h3>${renderMarkdown(text)}</div>`;
+          return `<div class="alt-note"><h3>Because of the setting you are viewing (${esc(q)}: ${esc(optionLabel(q, getVariants()[q])?.short || o)})</h3>${renderMarkdown(text)}</div>`;
         })
         .join('')}
       ${step.outcome_md ? `<div class="outcome"><h3>Where this path ends</h3>${renderMarkdown(step.outcome_md)}</div>` : ''}

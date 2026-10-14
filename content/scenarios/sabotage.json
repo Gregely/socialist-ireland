@@ -1,0 +1,65 @@
+{
+  "title_en": "A sabotage campaign",
+  "title_ga": "Feachtas sabaitéireachta",
+  "summary": "Substations are burned and an undersea cable is cut. An armed group claims responsibility, and there are signs of foreign backing. The pressure to 'do whatever it takes' is intense.",
+  "fms": ["FM-10", "FM-04", "FM-15", "FM-02", "FM-17"],
+  "start": "s1",
+  "steps": {
+    "s1": {
+      "title": "The attacks",
+      "when": "Year 3",
+      "text_md": "Over three weeks, four electricity substations in the midlands are burned and an undersea data cable off the west coast is cut. A group calling itself the 'Free Enterprise Defence Force' claims responsibility online. Intelligence suggests a foreign private funder and possibly a foreign state service.",
+      "institutions": ["intelligence", "garda", "defence-forces"],
+      "safeguards": ["FM-10"],
+      "risk_md": "This is a real threat. Chile shows that a democratic socialist government can face organised economic sabotage with foreign help ([05](research/05-counter-revolution-and-external-pressure.md)).",
+      "alt_notes": {
+        "Q1=A": "**Under the default party setting**, pro-market citizens have speech but no electoral vehicle. That does not justify sabotage. But it hands the group a recruiting line: 'they won't let us vote for it'. **This is where the default party choice costs most** (see the Choices page)."
+      },
+      "next": "s2"
+    },
+    "s2": {
+      "title": "Defence by the book",
+      "when": "Weeks 1–3",
+      "text_md": "The [[defence-forces|Defence Forces]] deploy to protect infrastructure, which is their constitutional role (Art. 87.1). The [[intelligence|intelligence service]] gets judge-issued warrants for 14 named suspects (Art. 84.3). [[garda|An Garda Síochána]] makes arrests and the courts charge six people with arson and criminal damage: **specific acts, not allegiance** (Art. 12.4).",
+      "institutions": ["defence-forces", "intelligence", "garda", "courts"],
+      "safeguards": ["FM-04", "FM-10"],
+      "risk_md": "Warrant-based investigation is slower than mass surveillance. Two more attacks happen during the investigation.",
+      "next": "s3"
+    },
+    "s3": {
+      "title": "The emergency request",
+      "when": "Week 4",
+      "choice_prompt": "The Executive Council asks for emergency powers: detention without charge for 14 days, and a ban on a pro-market association that it suspects of links to the group. What does the Assembly do?",
+      "text_md": "Article 12.2 (prompt appearance before a court) is in the eternal democratic core, and Article 13.2 says it cannot be suspended in any emergency. Banning an association for its *opinions* is barred by Articles 10 and 12.4. The association's links to the group are suspected, not proven.",
+      "institutions": ["executive-council", "national-assembly", "citizens-chamber", "courts"],
+      "safeguards": ["FM-15", "FM-02"],
+      "choices": [
+        { "label": "The Assembly approves a narrow emergency: protection zones and patrols, but no detention without charge and no ban", "to": "s4a" },
+        { "label": "The Assembly majority approves the full request", "to": "s4b", "note": "Tests whether the eternal core holds against a frightened majority." }
+      ]
+    },
+    "s4a": {
+      "title": "A narrow emergency",
+      "text_md": "The Assembly approves a 30-day emergency covering infrastructure protection zones and powers to requisition private security patrols. It rejects detention without charge and the association ban. At day 30 the [[citizens-chamber|Citizens' Chamber]] approves one extension, then refuses a second, finding the remaining threat manageable under ordinary law. The association is investigated under ordinary law. Two of its members are later charged with funding the group, on evidence.",
+      "institutions": ["national-assembly", "citizens-chamber", "garda", "courts"],
+      "safeguards": ["FM-15", "FM-02", "FM-04"],
+      "risk_md": "One further attack happens after the emergency ends. Critics say the Chamber was naive. **The design accepts some security risk as the price of not building a Cheka.**",
+      "outcome_md": "The campaign fades over six months as arrests mount and funding is traced. No one is held without charge. The pro-market association survives, now publicly split from those charged.",
+      "next": "end"
+    },
+    "s4b": {
+      "title": "The core holds against the majority",
+      "text_md": "A frightened Assembly majority approves the full request. Within 48 hours the [[courts|High Court]] declares the detention provision void: Article 14.2 releases everyone from any duty to obey a measure that breaches the democratic core. Detainees are released or charged. The [[constitutional-court|Constitutional Court]] strikes down the association ban as a ban on opinion. The [[citizens-chamber|Citizens' Chamber]] refuses any extension at day 30.",
+      "institutions": ["national-assembly", "courts", "constitutional-court", "citizens-chamber"],
+      "safeguards": ["FM-15", "FM-02", "FM-04"],
+      "risk_md": "This path works only if the police obey the court rather than the Executive. **Article 14.2 says they must, and Article 82.3 gives them the duty to refuse unlawful orders, but a constitution cannot make them.** This is the edge of what any written design can do.",
+      "outcome_md": "The courts' rulings are obeyed. The government loses face. The campaign is eventually defeated by ordinary policing and the tracing of its funding. Historians later argue about whether the courts would have been obeyed if the attacks had been deadlier.",
+      "next": "end"
+    },
+    "end": {
+      "title": "What this test shows",
+      "text_md": "Real sabotage is crime, and it can be fought as crime: warrants, arrests, trials, and soldiers guarding substations. **What the design refuses is the step from 'saboteurs' to 'enemies of the people'**: detention without trial and bans on opinion. That step is how the Cheka, the 1921 measures and Hungary in 1956 began.",
+      "risk_md": "Against a much larger campaign backed openly by a foreign state, the 90-day emergency cap and the eternal core would be under extreme strain. The design's position is that a republic which abandons them has already lost what it was defending. **That is a value judgement, and the design states it openly as one.**"
+    }
+  }
+}

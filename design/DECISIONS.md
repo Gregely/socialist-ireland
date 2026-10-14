@@ -71,3 +71,16 @@ These are the owner's answers to Q1–Q9 in [`PHASE2-OUTLINE.md`](PHASE2-OUTLINE
 | D-32 | A National Assembly elected by STV, plus a Congress of Councils (workplace and county delegates) as a second, council-based channel, plus the Citizens' Chamber by lot | The brief asked for workplace → local/county → national, and for delegation vs representation. Soviet multi-tier indirect election distanced voters from power, so the council channel is a *second* channel alongside direct STV election, never the only one |
 | D-33 | The President is kept: directly elected, a single 7-year term, ceremonial, with the power to refer Bills to the Constitutional Court | Continuity with the Article 26 reference power; no seat of power for a cult to grow around |
 | D-34 | Family farms are protected from collectivisation without consent (Art. 5.3) | The disaster of forced collectivisation, and the fact that Ireland's Land Acts created a nation of smallholders. It is the precondition for the negotiated herd transition |
+
+## Implementation decisions (Phase 3, the site)
+
+| # | Decision | Why |
+|---|---|---|
+| D-35 | Vite + vanilla JS; dependencies are marked (Markdown) and self-hosted Fontsource fonts (Archivo, Source Serif 4) | Small and readable; fonts work offline and need no third-party requests |
+| D-36 | Visual language: a signal-green civic band with an ochre rule, numbered "route" markers for sections, Irish in italic above English (road-sign convention), restrained paper palette, rust only for warnings and failure modes. No red stars or Soviet iconography | The owner's design brief: mid-century Irish public-information design |
+| D-37 | The map zooms with Ctrl/⌘ + scroll, pinch, or the +/− buttons. Plain scrolling scrolls the page | Avoids trapping page scroll inside the map |
+| D-38 | Every map view has an equivalent **list view**; every node is keyboard-focusable; the details panel returns focus on close | Accessibility: the diagram is never the only way to get the information |
+| D-39 | The stress-test "path" is kept in the URL (`?path=s1.s2.s3`) | Back and forward work; any step can be linked |
+| D-40 | Barred links (e.g. party → police) are drawn on the map as dashed red ✕ lines in the "who can remove whom" overlay | Makes the most important *negative* safeguards visible, not just the positive ones |
+| D-41 | Added Art. 28.4: no change to term limits applies to current or recent holders | Needed by the term-limits stress test; it was recommended in SYNTHESIS FM-03 but had been left out of the first draft |
+| D-42 | Tests: Playwright smoke run over all routes at desktop and mobile widths and with two alternative settings, failing on console errors or serious/critical axe (WCAG 2 A/AA) violations; plus variant and keyboard checks | Contrast, structure and keyboard use are checked automatically |
